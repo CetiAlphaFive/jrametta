@@ -5,9 +5,11 @@ project:
 website:
   title: "Jack T. Rametta"
   navbar:
+    background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: Home
+      - text: Home
+        file: index.qmd
       - research.qmd
 
 format:
