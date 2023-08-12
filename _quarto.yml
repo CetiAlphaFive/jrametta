@@ -23,5 +23,8 @@ format:
     css: styles.css
     toc: true
 
+execute:
+  freeze: auto  # re-render only when source changes
+# 
 editor: visual
 
