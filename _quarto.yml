@@ -5,8 +5,8 @@ project:
 website:
   title: "Jack T. Rametta"
   open-graph: true
-  twitter-card: 
-    site: "@jtrametta"
+  favicon: favicon.ico
+
   navbar:
     background: primary
     search: true
