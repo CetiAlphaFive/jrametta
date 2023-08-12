@@ -14,8 +14,9 @@ website:
       - text: Home
         file: index.qmd
       - research.qmd
-      - icon: LinkedIn
-        text: https://www.linkedin.com/in/samanthacsik/
+    right:
+        - icon: LinkedIn
+          href: https://www.linkedin.com/in/jack-rametta-b0546779
 format:
   html:
     theme: cosmo
