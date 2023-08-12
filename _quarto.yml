@@ -15,13 +15,25 @@ website:
         file: index.qmd
       - research.qmd
     right:
-        - icon: LinkedIn
-          href: https://www.linkedin.com/in/jack-rametta-b0546779
+      - icon: LinkedIn
+        href: https://www.linkedin.com/in/jack-rametta-b0546779
+      - icon: folder-symlink
+        href: https://www.marvinschmitt.com/blog/website-tutorial-quarto/
+      - icon: twitter
+        href: https://twitter.com/MarvinSchmittML
+      - icon: linkedin
+        href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
+      - icon: envelope
+        aria-label: email
+        href: "mailto:mail.marvinschmitt@gmail.com"  
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
 
+execute:
+  freeze: auto  # re-render only when source changes
+# 
 editor: visual
 
