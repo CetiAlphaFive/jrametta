@@ -5,7 +5,8 @@ project:
 website:
   title: "Jack T. Rametta"
   open-graph: true
-  favicon: favicon.ico
+  twitter-card: true
+  favicon: https://github.com/CetiAlphaFive/jrametta/blob/main/favicon.ico
 
   navbar:
     background: primary
