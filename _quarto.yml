@@ -16,6 +16,7 @@ website:
       - research.qmd
     right:
       - icon: github
+        text: Github
         href: https://github.com/CetiAlphaFive
       - icon: twitter
         href: https://twitter.com/jtrametta
