@@ -6,7 +6,6 @@ website:
   title: "Jack T. Rametta"
   open-graph: true
   twitter-card: true
-  favicon: https://github.com/CetiAlphaFive/jrametta/blob/main/favicon.ico
   navbar:
     background: primary
     search: true
