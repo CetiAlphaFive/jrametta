@@ -7,7 +7,6 @@ website:
   open-graph: true
   twitter-card: true
   favicon: https://github.com/CetiAlphaFive/jrametta/blob/main/favicon.ico
-
   navbar:
     background: primary
     search: true
@@ -26,12 +25,13 @@ website:
       - icon: envelope
         aria-label: email
         href: "mailto:jtrametta@gmail.com"  
+#       
 format:
   html:
     theme: sandstone
     css: styles.css
     toc: true
-
+#
 execute:
   freeze: auto  # re-render only when source changes
 # 
