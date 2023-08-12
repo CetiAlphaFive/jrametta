@@ -1,0 +1,33 @@
+---
+title: "Research"
+editor: visual
+---
+
+[**Dissertation Project**]{.underline}
+
+**The Lingering Effects of the Contract with America on Congressional Capacity**
+
+My dissertation focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics. To this end, I compile two novel datasets encompassing the universe of public reports from the Congressional Research Service and the Government Accountability Office. With these datasets, I am able to derive high resolution images of the effects of the Contract with America on Congressional oversight and policymaking capacity across a wide range of substantive domains and federal agencies. These data also provide a venue to test longstanding theories of inter-branch and legislative-bureaucratic relations.
+
+[**Methods Projects**]{.underline}
+
+**The Balance Permutation Test: A Machine Learning Replacement for Balance Tables** (with Sam Fuller)
+
+*Under Review.*
+
+**Machine Learning for Subgroup Analysis: Powerful and Dangerous** (with Sam Fuller)
+
+*Working Paper, 2023. A version of this project was presented at MPSA 2023.*
+
+**Omnibus, Cross-Validated Variable Importance Scores** (with Sam Fuller)
+
+*Working Paper*, 2022.
+
+[**Substantive Projects**]{.underline}
+
+**Affect or Ideology?: The Heterogeneous Effects of Political Cues on Policy Support** (with Nicolás de la Cerda and Sam Fuller)\
+*Under Review. A version of this project was presented at WPSA 2023.*
+
+**Hearts and Minds: Locating Voters in Affective-Ideological Space** (with Christopher D. Hare and Sam Fuller)
+
+*Working Paper, 2023. A version of this project was presented at MPSA 2023.*
