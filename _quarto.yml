@@ -28,7 +28,7 @@ website:
         href: "mailto:jtrametta@gmail.com"  
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
     toc: true
 
