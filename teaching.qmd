@@ -1,0 +1,40 @@
+---
+title: "Teaching"
+editor: visual
+---
+
+Below is a list of courses I've assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.
+
+[**Graduate Courses**]{.underline}
+
+*The University of Michigan*
+
+-   ICPSR 2023: Machine Learning for Social Sciences (Summer: 2023, Christopher D. Hare)
+
+-   ICPSR 2022: Machine Learning for Social Sciences (Summer: 2022, Christopher D. Hare)
+
+*The University of California, Davis*
+
+-   POL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)
+
+-   POL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)
+
+-   POL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)
+
+[**Undergraduate Courses**]{.underline}
+
+-   POL 001: Introduction to American Politics Spring 2023 (S: 2023, Scott MacKenzie)
+
+-   POL 051: The Scientific Study of Politics (Research Methods) (W: 2023, McCage Griffiths)
+
+-   POL 051: The Scientific Study of Politics (Research Methods) (F: 2022, Juan Tellez)
+
+-   POL 001: Introduction to American Politics Spring 2021 (S: 2021, Ben Highton)
+
+-   POL 114: Quantitative Analysis of Political Data (W: 2021, Ben Highton)
+
+-   POL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)
+
+-   POL 147B: British Politics (S: 2020, James F. Adams)
+
+-   POL 012A: Politics and Sports (W: 2020, Ethan Scheiner)
