@@ -117,7 +117,7 @@ plot.df$ll.cover.c <- as.factor(ifelse(Y.test >= plot.df$ll.lower.c & Y.test <= 
 
 Now we can plot a comparison between the local linear forest model predictions wrapped in the standard Gaussian and conformal intervals (both aiming for 95% coverage).
 
-```{r, comparison plots}
+```{r, comparison plots,dpi=300}
 # llf plot with grf uncertainty bands 
 ll.plot <- plot.df %>% 
            ggplot(aes(y = ll.preds, x = Y.test, ymin = ll.lower, ymax = ll.upper,color = ll.cover)) + 
