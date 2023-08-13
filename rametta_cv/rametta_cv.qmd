@@ -1,0 +1,172 @@
+---
+title: CV
+format:
+  quarto-cv-pdf: default
+author: Jack T. Rametta 
+date: last-modified
+address: "466 Kerr Hall · 200 California Avenue · Davis CA 95816"
+email: jtrametta@ucdavis.edu
+fontsize: 11pt
+github: CetiAlphaFive # github account
+orcid: 0000-0002-9841-146X # orcid identifier
+web: jackrametta.com
+fontawesome: yes
+nocite: '@*'
+bibliography_peer: peer_bib.bib
+bibliography_other: other_bib.bib
+csl: apa-cv.csl
+---
+
+# Employment
+
+The University of California, Davis \hfill 2019 - Present
+
+-   *PhD Candidate, TA/GSR, Department of Political Science*
+
+Inter-university Consortium for Political and Social Research (ICPSR) \hfill 2022 - Present
+
+-   *TA: Machine Learning for the Social Sciences*
+
+The Bipartisan Policy Center \hfill 2017 - 2019
+
+-   *Research Analyst, Economic Policy and National Security Projects*
+
+# Education
+
+The University of California Davis. PhD in Political Science. \hfill 2019 - Present
+
+-   *Fields: Methodology and American Politics.*
+
+The George Washington University. B.A. Economics and Political Science. \hfill 2013 - 2016
+
+-   *Concentration: Public Policy.* *Special Honors in Political Science & American Political Science Honors Society.*
+
+# Academic Research
+
+**Dissertation Project: The Lingering Effects of the Contract with America on Congressional Capacity**
+
+-   *In-Progress*
+
+**Methods Projects**
+
+The Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller)
+
+-   *Under Review.*
+
+Machine Learning for Subgroup Analysis: Powerful and Dangerous (with Sam Fuller)
+
+-   *Working Paper, 2023. A version of this project was presented at MPSA 2023.*
+
+Omnibus, Cross-Validated Variable Importance Scores (with Sam Fuller)
+
+-   *Working Paper, 2022.*
+
+**Substantive Projects**
+
+Affect or Ideology?: The Heterogeneous Effects of Political Cues on Policy Support (with Nicolás de la Cerda and Sam Fuller)
+
+-   *Under Review. A version of this project was presented at WPSA 2023.*
+
+Hearts and Minds: Locating Voters in Affective-Ideological Space (with Christopher D. Hare and Sam Fuller)
+
+-   *Working Paper, 2023. A version of this project was presented at MPSA 2023.*
+
+# Teaching
+
+Below is a list of courses I've assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.
+
+**Graduate Courses**
+
+*The University of Michigan*
+
+-   ICPSR 2023: Machine Learning for Social Sciences (Summer: 2023, Christopher D. Hare)
+
+-   ICPSR 2022: Machine Learning for Social Sciences (Summer: 2022, Christopher D. Hare)
+
+*The University of California, Davis*
+
+-   POL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)
+
+-   POL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)
+
+-   POL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)
+
+**Undergraduate Courses**
+
+-   POL 001: Introduction to American Politics Spring 2023 (S: 2023, Scott MacKenzie)
+
+-   POL 051: The Scientific Study of Politics (Research Methods) (W: 2023, McCage Griffiths)
+
+-   POL 051: The Scientific Study of Politics (Research Methods) (F: 2022, Juan Tellez)
+
+-   POL 001: Introduction to American Politics Spring 2021 (S: 2021, Ben Highton)
+
+-   POL 114: Quantitative Analysis of Political Data (W: 2021, Ben Highton)
+
+-   POL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)
+
+-   POL 147B: British Politics (S: 2020, James F. Adams)
+
+-   POL 012A: Politics and Sports (W: 2020, Ethan Scheiner)
+
+**Graduate Student Researcher Experience**
+
+-   Professor Ryan Hübert. Formal Model of Prosecutors and Discrimination. 2021
+
+-   Professor Ryan Hübert. Political Appointments and Outcomes in Federal District Courts. 2020
+
+# Software
+
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment, simple imbalance across treatment arms, or attrition in panel experimental data. Associated working paper is Rametta and Fuller (2023).
+
+# Association Meetings
+
+Midwest Political Science Association Annual Meeting \hfill 2022
+
+Western Political Science Association Annual Meeting \hfill 2022
+
+# Non-Academic Writing
+
+Prior to graduate school, I worked in the public policy space. Over the course of several years as a policy analyst, I authored and coauthored a variety of works on a wide variety of federal policy topics. Mainly, my work focused on the federal budget, social insurance, public finance, and the federal debt limit. Some publications from this period are listed below.
+
+-   ["Debt Limit Analysis: Everything You Need to Know in 30 Slides"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/07/Debt-Limit-Analysis-Everything-You-Need-to-Know-in-30-Slides.pdf) (with Shai Akabas and Kody Carmody) 2019. Bipartisan Policy Center.
+
+-   ["Putting America Back On Track: A Bipartisan Approach To Fiscal Policy Solutions"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf) (with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim Shaw) 2019. Peter G. Peterson Institute.
+
+-   ["Personnel Reform Lives, But Don't Call It 'Force Of The Future'"](https://warontherocks.com/2018/08/personnel-reform-lives-but-dont-call-it-force-of-the-future/) (with Blaise Misztal and Mary Farrell) 2018. War on the Rocks.
+
+-   ["Supplying the Manpower America's National Security Strategy Demands"](https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf) (with Blaise Misztal) 2019. U.S. Index of Military Strength Topical Essay. The Heritage Foundation.
+
+-   ["Chartbook: What is the Long-Term Fiscal Outlook for the United States?"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/What-is-the-Long-Term-Fiscal-Outlook-for-the-United-States.pdf) 2018. The Bipartisan Policy Center.
+
+-    ["A Guide to the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf) (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2018. Bipartisan Policy Center.
+
+-   ["A Preview of the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Preview-2018-Trustees-Report.pdf) (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2018. Bipartisan Policy Center.
+
+-   ["A Guide to the 2017 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Economy-A-Guide-to-the-2017-Social-Security-and-Medicare-Trustees-Reports.pdf) (BPC staff author with G. William Hoagland, Shai Akabas, and Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2017. Bipartisan Policy Center.
+
+-   ["2017 Debt Limit Analysis"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2021/07/Debt-Limit-Daily-Presenation-8.23.17.pdf) (with Shai Akabas and Tim Shaw) 2017. Bipartisan Policy Center.
+
+-   ["Building a F.A.S.T. Force: A Flexible Personnel System for a Modern Military. Recommendations from the Task Force on Defense Personnel"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Building-A-FAST-Force.pdf) (contributor) 2017. Bipartisan Policy Center.
+
+-   ["Defense Personnel Systems: The Hidden Threat to a High-Performance Force"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Systems.pdf) (contributor) 2017. Bipartisan Policy Center.
+
+-   ["The Building Blocks of a Ready Military: People, Funding, Tempo"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Military-Readiness.pdf) (staff author with Lisel Loy, Steve Bell, Blaise Misztal et al., lead authors Leon Panetta, Jim Jones, Kathy Roth-Douquet, and Jim Talent) 2017. Bipartisan Policy Center.
+
+-   ["The Military Compensation Conundrum: Rising Costs, Declining Budgets, and a Stressed Force Caught in the Middle"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Compensation.pdf) (staff author with Lisel Loy, Steve Bell, Blaise Misztal et al, lead authors Leon Panetta, Jim Jones, Kathy Roth-Douquet, and Jim Talent) 2017. Bipartisan Policy Center.
+
+-   ["Chartbook: Social Security & Medicare Explained: Top 10 Questions & Answers."](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Social-Security-and-Medicare-Explained-2019.pdf) (Lead author/designer with Kody Carmody) 2019. Bipartisan Policy Center.
+
+-   ["When Will Federal Deficits Hit \$1 Trillion Next? Probably Sooner than Expected"](https://bipartisanpolicy.org/blog/when-will-federal-deficits-hit-1-trillion-next/) (with Steve Bell and Tim Shaw) 2017. Bipartisan Policy Center.
+
+-   ["Harvey Raises Stakes on Debt Limit Debate"](https://bipartisanpolicy.org/blog/harvey-raises-stakes-on-debt-limit-debate/) (with Shai Akabas and Tim Shaw) 2017. Bipartisan Policy Center.
+
+-   ["The Financial Future of Social Security and Medicare"](https://bipartisanpolicy.org/blog/the-financial-future-of-social-security-and-medicare/) (with Tim Shaw) 2017. Bipartisan Policy Center.
+
+# Other Skills
+
+\LaTeX, `R`, `python`, Stata, Mathematica
+
+# References
+
+Available upon request.
