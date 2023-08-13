@@ -11,6 +11,7 @@ citation:
   url: https://cetialphafive.github.io/jrametta/posts/2023-08-12-conformal/
 categories: [conformal, ML]
 bibliography: references.bib
+image: conformal.preview.png
 draft: false
 ---
 
