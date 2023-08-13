@@ -131,7 +131,7 @@ ll.plot <- plot.df %>%
            ggthemes::theme_few()+ 
            scale_color_manual(values = c("firebrick1","dodgerblue")) + 
            guides(color=guide_legend(title="Cover Truth? (Blue = Yes)")) + 
-           annotate("text", x = 20, y = 5, label = "Coverage = .28",
+           annotate("text", x = 20, y = 5, label = "Coverage == .28",
            parse = TRUE)
 # llf plot with conformal bands 
 ll.plot.c <- plot.df %>% 
