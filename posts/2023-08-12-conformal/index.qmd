@@ -19,7 +19,7 @@ This post briefly demonstrates how to generate conformal uncertainty bands/inter
 
 For the purpose of this demo, we'll use a modified version of the data generating process (DGP) from [@friedman1991multivariate], namely:
 
-$$y=10 \sin (\pi x 1 x 2)+20(x 3-0.5)^2+10 x 4+5 x 5+e$$where $e \sim N(0,1)$. In addition to the five covariates that are related to the outcome, there are also 25 noise covariates unrelated to the outcome (all $\sin N(0,1)$). This particular DGP as proved challenging for the Gaussian confidence intervals constructed using the standard local linear forest method (see the Monte Carlo simulations presented in [@friedberg2020local], equation 7).
+$$y=10 \sin (\pi x 1 x 2)+20(x 3-0.5)^2+10 x 4+5 x 5+e$$where $e \sim N(0,1)$. In addition to the five covariates that are related to the outcome, there are also 25 noise covariates unrelated to the outcome (all $\sim N(0,1)$). This particular DGP has proved challenging for the Gaussian confidence intervals constructed using the standard local linear forest method (see the Monte Carlo simulations presented in [@friedberg2020local], equation 7).
 
 DGP simulated below:
 
