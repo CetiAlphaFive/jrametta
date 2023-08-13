@@ -8,9 +8,9 @@
 
 <meta name="author" content="Jack T. Rametta">
 <meta name="dcterms.date" content="2023-08-12">
-<meta name="description" content="Generating conformal uncertainty bands for local linear forest">
+<meta name="description" content="Generating conformal uncertainty bands for local linear regression forests">
 
-<title>Jack T. Rametta - Conformal Local Linear Regression Forest</title>
+<title>Jack T. Rametta - Conformalized Local Linear Forests</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,88 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -64,13 +146,14 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Jack T. Rametta - Conformal Local Linear Regression Forest">
-<meta property="og:description" content="Generating conformal uncertainty bands for local linear forest">
+<meta property="og:title" content="Jack T. Rametta - Conformalized Local Linear Forests">
+<meta property="og:description" content="Generating conformal uncertainty bands for local linear regression forests">
 <meta property="og:site-name" content="Jack T. Rametta">
-<meta name="twitter:title" content="Jack T. Rametta - Conformal Local Linear Regression Forest">
-<meta name="twitter:description" content="Generating conformal uncertainty bands for local linear forest">
+<meta name="twitter:title" content="Jack T. Rametta - Conformalized Local Linear Forests">
+<meta name="twitter:description" content="Generating conformal uncertainty bands for local linear regression forests">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -141,10 +224,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Conformal Local Linear Regression Forest</h1>
+      <h1 class="title">Conformalized Local Linear Forests</h1>
                   <div>
         <div class="description">
-          <p>Generating conformal uncertainty bands for local linear forest</p>
+          <p>Generating conformal uncertainty bands for local linear regression forests</p>
         </div>
       </div>
                           <div class="quarto-categories">
@@ -187,19 +270,157 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>This post briefly demonstrates how to generate conformal uncertainty bands/intervals in <code>R</code> employing the <a href="https://lihualei71.github.io/cfcausal/index.html"><code>cfcausal</code></a> package wrapped around the <a href="https://grf-labs.github.io/grf/articles/llf.html">local linear forest estimator</a> from the <a href="https://grf-labs.github.io/grf/index.html"><code>grf</code></a> package. I don’t spend much time here explaining how conformal intervals are constructed, for that see <span class="citation" data-cites="lei2018distribution">(<a href="#ref-lei2018distribution" role="doc-biblioref">Lei et al. 2018</a>)</span> and <span class="citation" data-cites="samii2019">(<a href="#ref-samii2019" role="doc-biblioref">Samii 2019</a>)</span>.</p>
+<p>For the purpose of this demo, we’ll use a modified version of the data generating process (DGP) from <span class="citation" data-cites="friedman1991multivariate">(<a href="#ref-friedman1991multivariate" role="doc-biblioref">Friedman 1991</a>)</span>, namely:</p>
+<p><span class="math display">\[y=10 \sin (\pi x 1 x 2)+20(x 3-0.5)^2+10 x 4+5 x 5+e\]</span>where <span class="math inline">\(e \sim N(0,1)\)</span>. In addition to the five covariates that are related to the outcome, there are also 25 noise covariates unrelated to the outcome (all <span class="math inline">\(\sin N(0,1)\)</span>). This particular DGP as proved challenging for the Gaussian confidence intervals constructed using the standard local linear forest method (see the Monte Carlo simulations presented in <span class="citation" data-cites="friedberg2020local">(<a href="#ref-friedberg2020local" role="doc-biblioref">Friedberg et al. 2020</a>)</span>, equation 7).</p>
+<p>DGP simulated below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Packages (apologies, this is dependency heavy script!)  </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(<span class="st">"mlbench"</span>,<span class="st">"grf"</span>,<span class="st">"cfcausal"</span>,<span class="st">"caret"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>               <span class="st">"reshape2"</span>,<span class="st">"glmnet"</span>,<span class="st">"tidyverse"</span>, <span class="st">"ggthemes"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>               <span class="st">"ggdist"</span>,<span class="st">"ggpubr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed for reproducibility </span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1995</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate the DGP</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co">#20 additional predictor vars </span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">500</span> <span class="co">#sample size  </span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>junk <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(n <span class="sc">*</span> p), n, p) <span class="co">#junk predictors </span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> mlbench<span class="sc">::</span><span class="fu">mlbench.friedman1</span>(n) <span class="co">#friedman MARs DGP...</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">y =</span> data<span class="sc">$</span>y, <span class="at">x =</span> data<span class="sc">$</span>x,junk) <span class="co">#...adding more junk</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Split train/test set</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>trainIndex <span class="ot">&lt;-</span> caret<span class="sc">::</span><span class="fu">createDataPartition</span>(data<span class="sc">$</span>y, <span class="at">p=</span><span class="fl">0.7</span>, <span class="at">list =</span> <span class="cn">FALSE</span>) <span class="co">#70/30 split </span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>train <span class="ot">&lt;-</span> data[trainIndex,]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> data[<span class="sc">-</span>trainIndex,]</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Convenience objects </span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>Y <span class="ot">&lt;-</span> train<span class="sc">$</span>y</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>Y.test <span class="ot">&lt;-</span> test<span class="sc">$</span>y</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> train[,<span class="sc">-</span><span class="dv">1</span>]</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>X.test <span class="ot">&lt;-</span> test[,<span class="sc">-</span><span class="dv">1</span>]</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now we can move on to training the local linear forest, we’ll enable the local linear split feature and use cross-validated lasso to select the correction features.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># local linear regression forest with LL splits enabled </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>c.forest.ll <span class="ot">&lt;-</span> grf<span class="sc">::</span><span class="fu">ll_regression_forest</span>(<span class="at">X =</span> <span class="fu">as.matrix</span>(X), <span class="at">Y =</span> Y, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                                    <span class="co">#tune.parameters = "all", #can't have this with ll splits, IRL you'd want to do a custom tuning loop </span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">enable.ll.split =</span> <span class="cn">TRUE</span>, <span class="at">ll.split.weight.penalty =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">num.trees =</span> <span class="dv">4000</span>, <span class="co">#upping from default for stable variance estimates </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">seed =</span> <span class="dv">1995</span>) </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Select covariates for local linear correction </span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>lasso.mod  <span class="ot">&lt;-</span> glmnet<span class="sc">::</span><span class="fu">cv.glmnet</span>(<span class="fu">as.matrix</span>(X), Y, <span class="at">alpha =</span> <span class="dv">1</span>,  <span class="at">nfolds =</span> <span class="dv">20</span>) <span class="co">#cross-validated lasso </span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>lasso.coef <span class="ot">&lt;-</span> <span class="fu">predict</span>(lasso.mod, <span class="at">type =</span> <span class="st">"nonzero"</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>selected   <span class="ot">&lt;-</span> lasso.coef[,<span class="dv">1</span>] </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># out-of-sample preds, could also look at oob preds (leave out the testing set and use X instead)</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>preds.ll <span class="ot">&lt;-</span> <span class="fu">predict</span>(c.forest.ll,X.test,<span class="at">estimate.variance =</span> <span class="cn">TRUE</span>,<span class="at">linear.correction.variables =</span> selected)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># data frame for plots later, adding built-in grf uncertainty intervals </span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>plot.df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">ll.preds   =</span> preds.ll<span class="sc">$</span>predictions,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                      <span class="at">ll.upper   =</span> preds.ll<span class="sc">$</span>predictions <span class="sc">+</span> <span class="fl">1.96</span><span class="sc">*</span><span class="fu">sqrt</span>(preds.ll<span class="sc">$</span>variance.estimates), <span class="co">#grf 95% confidence intervals</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                      <span class="at">ll.lower   =</span> preds.ll<span class="sc">$</span>predictions <span class="sc">-</span> <span class="fl">1.96</span><span class="sc">*</span><span class="fu">sqrt</span>(preds.ll<span class="sc">$</span>variance.estimates),</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">Y =</span> Y.test)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># column to indicate whether the uncertainty band contains the true value (for plotting)</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>plot.df<span class="sc">$</span>ll.cover   <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(<span class="fu">ifelse</span>(Y.test <span class="sc">&gt;=</span> plot.df<span class="sc">$</span>ll.lower <span class="sc">&amp;</span> Y.test <span class="sc">&lt;=</span> plot.df<span class="sc">$</span>ll.upper,<span class="dv">1</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In order to generate the conformal intervals, we first need to setup a function that will estimate the local linear forest model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setup the llf function to plugin to cfcausal, same settings and seed as above</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>llRF <span class="ot">&lt;-</span> <span class="cf">function</span>(Y, X, Xtest, ...){</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  fit <span class="ot">&lt;-</span> grf<span class="sc">::</span><span class="fu">ll_regression_forest</span>(X, Y,  <span class="at">enable.ll.split =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">ll.split.weight.penalty =</span> <span class="cn">TRUE</span>,<span class="at">num.trees =</span> <span class="dv">4000</span>,<span class="at">seed =</span> <span class="dv">1995</span>,...)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Same selection procedure </span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  lasso.mod <span class="ot">&lt;-</span> glmnet<span class="sc">::</span><span class="fu">cv.glmnet</span>(<span class="fu">as.matrix</span>(X), Y, <span class="at">alpha =</span> <span class="dv">1</span>,  <span class="at">nfolds =</span> <span class="dv">20</span>) </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  lasso.coef <span class="ot">&lt;-</span> <span class="fu">predict</span>(lasso.mod, <span class="at">type =</span> <span class="st">"nonzero"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  selected <span class="ot">&lt;-</span> lasso.coef[,<span class="dv">1</span>] </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># out-of sample preds</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  res <span class="ot">&lt;-</span> <span class="fu">predict</span>(c.forest.ll,Xtest,<span class="at">estimate.variance =</span> <span class="cn">FALSE</span>,<span class="at">linear.correction.variables =</span> selected) <span class="co">#turn off grf variance estimates </span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># </span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  res <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(res<span class="sc">$</span>predictions)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(res)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can then feed that function into the <code>cfcausal::conformal</code> function to generate unweighted standard conformal intervals.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setup the conformal prediction function plugging in our llf estimator </span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>c.test <span class="ot">&lt;-</span> cfcausal<span class="sc">::</span><span class="fu">conformal</span>(<span class="at">X =</span> X,<span class="at">Y =</span> Y, <span class="at">type =</span> <span class="st">"mean"</span>, <span class="at">side =</span> <span class="st">"two"</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                              <span class="at">wtfun =</span> <span class="cn">NULL</span>, <span class="co">#unweighted </span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">outfun =</span> llRF, <span class="co">#our custom output function</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">useCV =</span> <span class="cn">FALSE</span>) <span class="co"># Note: we're using split conformal here, you could alternatively use CV+ by setting useCV = FALSE. </span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>ll.preds.conformal <span class="ot">&lt;-</span> <span class="fu">predict</span>(c.test,X.test,<span class="at">alpha =</span> .<span class="dv">025</span>) <span class="co">#generate the uncertainty bands, here we're .025</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Save out the results </span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>plot.df<span class="sc">$</span>ll.upper.c <span class="ot">&lt;-</span> ll.preds.conformal<span class="sc">$</span>upper</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>plot.df<span class="sc">$</span>ll.lower.c <span class="ot">&lt;-</span> ll.preds.conformal<span class="sc">$</span>lower</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Column for whether truth is covered or not in a given instance, for plotting </span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>plot.df<span class="sc">$</span>ll.cover.c <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(<span class="fu">ifelse</span>(Y.test <span class="sc">&gt;=</span> plot.df<span class="sc">$</span>ll.lower.c <span class="sc">&amp;</span> Y.test <span class="sc">&lt;=</span> plot.df<span class="sc">$</span>ll.upper.c,<span class="dv">1</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now we can plot a comparison between the local linear forest model predictions wrapped in the standard Gaussian and conformal intervals (both aiming for 95% coverage).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># llf plot with grf uncertainty bands </span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>ll.plot <span class="ot">&lt;-</span> plot.df <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>           <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> ll.preds, <span class="at">x =</span> Y.test, <span class="at">ymin =</span> ll.lower, <span class="at">ymax =</span> ll.upper,<span class="at">color =</span> ll.cover)) <span class="sc">+</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>           <span class="fu">geom_pointinterval</span>(<span class="at">alpha =</span> .<span class="dv">5</span>,<span class="at">shape =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>           <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">30</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>           <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">30</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>           <span class="fu">geom_abline</span>(<span class="at">linewidth =</span> .<span class="dv">75</span>, <span class="at">intercept =</span> <span class="dv">0</span>,<span class="at">slope =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>           <span class="fu">ylab</span>(<span class="st">"LLF Predictions (Y), 95% Confidence Intervals"</span>) <span class="sc">+</span> </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>           <span class="fu">xlab</span>(<span class="st">"Y (Real, Test Set)"</span>) <span class="sc">+</span> </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>           <span class="fu">ggtitle</span>(<span class="st">"Local Linear Forests"</span>) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>           ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()<span class="sc">+</span> </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>           <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"firebrick1"</span>,<span class="st">"dodgerblue"</span>)) <span class="sc">+</span> </span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>           <span class="fu">guides</span>(<span class="at">color=</span><span class="fu">guide_legend</span>(<span class="at">title=</span><span class="st">"Cover Truth? (Blue = Yes)"</span>))</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># llf plot with conformal bands </span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>ll.plot.c <span class="ot">&lt;-</span> plot.df <span class="sc">%&gt;%</span> </span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>             <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> ll.preds, <span class="at">x =</span> Y.test, <span class="at">ymin =</span> ll.lower.c, <span class="at">ymax =</span> ll.upper.c,<span class="at">color =</span> ll.cover.c)) <span class="sc">+</span> </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>             <span class="fu">geom_pointinterval</span>(<span class="at">alpha =</span> .<span class="dv">5</span>,<span class="at">shape =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>             <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">30</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>             <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">30</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>             <span class="fu">geom_abline</span>(<span class="at">linewidth =</span> .<span class="dv">75</span>, <span class="at">intercept =</span> <span class="dv">0</span>,<span class="at">slope =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>             <span class="fu">ylab</span>(<span class="st">"LLF Predictions (Y), 95% Conformal Intervals"</span>) <span class="sc">+</span> </span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>             <span class="fu">xlab</span>(<span class="st">"Y (Real, Test Set)"</span>) <span class="sc">+</span> </span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>             <span class="fu">ggtitle</span>(<span class="st">"LL Forests w/ Conformal Bands"</span>) <span class="sc">+</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>             ggthemes<span class="sc">::</span><span class="fu">theme_few</span>()<span class="sc">+</span> </span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>             <span class="fu">guides</span>(<span class="at">color=</span><span class="fu">guide_legend</span>(<span class="at">title=</span><span class="st">"Cover Truth? (Blue = Yes)"</span>)) <span class="sc">+</span> </span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>             <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"firebrick1"</span>,<span class="st">"dodgerblue"</span>))</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>ggpubr<span class="sc">::</span><span class="fu">ggarrange</span>(ll.plot,ll.plot.c,<span class="at">nrow =</span> <span class="dv">1</span>,<span class="at">common.legend =</span> <span class="cn">TRUE</span>,<span class="at">legend =</span> <span class="st">"bottom"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/comparison plots-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>As the figure makes clear, the conformal bands achieve a much better coverage rate relative to the Gaussian confidence bands. Indeed, in this particular example the conformal approach reaches exactly the desired 95% coverage, while the Gaussian confidence bands achieve only 28%.</p>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{t.rametta2023,
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-friedberg2020local" class="csl-entry" role="doc-biblioentry">
+Friedberg, Rina, Julie Tibshirani, Susan Athey, and Stefan Wager. 2020. <span>“Local Linear Forests.”</span> <em>Journal of Computational and Graphical Statistics</em> 30 (2): 503–17.
+</div>
+<div id="ref-friedman1991multivariate" class="csl-entry" role="doc-biblioentry">
+Friedman, Jerome H. 1991. <span>“Multivariate Adaptive Regression Splines.”</span> <em>The Annals of Statistics</em> 19 (1): 1–67.
+</div>
+<div id="ref-lei2018distribution" class="csl-entry" role="doc-biblioentry">
+Lei, Jing, Max G’Sell, Alessandro Rinaldo, Ryan J Tibshirani, and Larry Wasserman. 2018. <span>“Distribution-Free Predictive Inference for Regression.”</span> <em>Journal of the American Statistical Association</em> 113 (523): 1094–1111.
+</div>
+<div id="ref-samii2019" class="csl-entry" role="doc-biblioentry">
+Samii, Cyrus. 2019. <span>“Conformal Inference Tutorial.”</span> 2019. <a href="https://cdsamii.github.io/cds-demos/conformal/conformal-tutorial.html">https://cdsamii.github.io/cds-demos/conformal/conformal-tutorial.html</a>.
+</div>
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{t.rametta2023,
   author = {Jack T. Rametta},
-  title = {Conformal {Local} {Linear} {Regression} {Forest}},
+  title = {Conformalized {Local} {Linear} {Forests}},
   date = {2023-08-12},
   url = {https://cetialphafive.github.io/jrametta/posts/2023-08-12-conformal/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-t.rametta2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Jack T. Rametta. 2023. <span>“Conformal Local Linear Regression
-Forest.”</span> August 12, 2023. <a href="https://cetialphafive.github.io/jrametta/posts/2023-08-12-conformal/">https://cetialphafive.github.io/jrametta/posts/2023-08-12-conformal/</a>.
+Jack T. Rametta. 2023. <span>“Conformalized Local Linear
+Forests.”</span> August 12, 2023. <a href="https://cetialphafive.github.io/jrametta/posts/2023-08-12-conformal/">https://cetialphafive.github.io/jrametta/posts/2023-08-12-conformal/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
