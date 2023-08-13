@@ -15,7 +15,7 @@ website:
       - research.qmd
       - teaching.qmd
       - posts.qmd
-      - rametta_cv/cv.qmd
+      - rametta_cv/rametta_cv.qmd
     right:
       - icon: github
         text: Github
