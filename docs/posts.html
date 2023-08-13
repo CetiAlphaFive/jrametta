@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jack T. Rametta">
 
-<title>Jack T. Rametta - Teaching</title>
+<title>Jack T. Rametta - Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,14 +63,42 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Jack T. Rametta - Teaching">
-<meta property="og:description" content="Below is a list of courses I’ve assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.">
+<meta property="og:title" content="Jack T. Rametta - Blog">
 <meta property="og:site-name" content="Jack T. Rametta">
-<meta name="twitter:title" content="Jack T. Rametta - Teaching">
-<meta name="twitter:description" content="Below is a list of courses I’ve assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.">
+<meta name="twitter:title" content="Jack T. Rametta - Blog">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -96,11 +127,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page">
+    <a class="nav-link" href="./teaching.html">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html">
+    <a class="nav-link active" href="./posts.html" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -140,19 +171,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jack T. Rametta </p>
+          </div>
+  </div>
     
   
     
@@ -161,34 +198,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Below is a list of courses I’ve assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.</p>
-<p><u><strong>Graduate Courses</strong></u></p>
-<p><em>The University of Michigan</em></p>
-<ul>
-<li><p>ICPSR 2023: Machine Learning for Social Sciences (Summer: 2023, Christopher D. Hare)</p></li>
-<li><p>ICPSR 2022: Machine Learning for Social Sciences (Summer: 2022, Christopher D. Hare)</p></li>
-</ul>
-<p><em>The University of California, Davis</em></p>
-<ul>
-<li><p>POL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)</p></li>
-<li><p>POL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)</p></li>
-<li><p>POL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)</p></li>
-</ul>
-<p><u><strong>Undergraduate Courses</strong></u></p>
-<ul>
-<li><p>POL 001: Introduction to American Politics Spring 2023 (S: 2023, Scott MacKenzie)</p></li>
-<li><p>POL 051: The Scientific Study of Politics (Research Methods) (W: 2023, McCage Griffiths)</p></li>
-<li><p>POL 051: The Scientific Study of Politics (Research Methods) (F: 2022, Juan Tellez)</p></li>
-<li><p>POL 001: Introduction to American Politics Spring 2021 (S: 2021, Ben Highton)</p></li>
-<li><p>POL 114: Quantitative Analysis of Political Data (W: 2021, Ben Highton)</p></li>
-<li><p>POL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)</p></li>
-<li><p>POL 147B: British Politics (S: 2020, James F. Adams)</p></li>
-<li><p>POL 012A: Politics and Sports (W: 2020, Ethan Scheiner)</p></li>
-</ul>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
