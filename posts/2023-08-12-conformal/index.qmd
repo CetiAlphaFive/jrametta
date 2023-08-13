@@ -23,7 +23,7 @@ $$y=10 \sin (\pi x 1 x 2)+20(x 3-0.5)^2+10 x 4+5 x 5+e$$where $e \sim N(0,1)$. I
 DGP simulated below:
 
 ```{r, setup}
-# Packages (apologies, this is dependency heavy script!)  
+# Packages (apologies, this is a dependency heavy script!)  
 pacman::p_load("mlbench","grf","cfcausal","caret",
                "reshape2","glmnet","tidyverse", "ggthemes",
                "ggdist","ggpubr")
@@ -115,7 +115,7 @@ plot.df$ll.lower.c <- ll.preds.conformal$lower
 plot.df$ll.cover.c <- as.factor(ifelse(Y.test >= plot.df$ll.lower.c & Y.test <= plot.df$ll.upper.c,1,0))
 ```
 
-Now we can plot a comparison between the local linear forest model predictions wrapped in the standard Gaussian and conformal intervals (both aiming for 95% coverage).
+Now we can plot a comparison between the local linear forest model predictions wrapped in the standard Gaussian and conformal intervals (both aiming for 95% coverage). The y-axis here is model predictions and associated uncertainty bands, the X axis are the true values for y in the testing set.
 
 ```{r, comparison plots,dpi=300}
 # llf plot with grf uncertainty bands 
@@ -130,7 +130,9 @@ ll.plot <- plot.df %>%
            ggtitle("Local Linear Forests") +
            ggthemes::theme_few()+ 
            scale_color_manual(values = c("firebrick1","dodgerblue")) + 
-           guides(color=guide_legend(title="Cover Truth? (Blue = Yes)"))
+           guides(color=guide_legend(title="Cover Truth? (Blue = Yes)")) + 
+           annotate("text", x = 20, y = 5, label = "Coverage = .28",
+           parse = TRUE)
 # llf plot with conformal bands 
 ll.plot.c <- plot.df %>% 
              ggplot(aes(y = ll.preds, x = Y.test, ymin = ll.lower.c, ymax = ll.upper.c,color = ll.cover.c)) + 
@@ -143,7 +145,9 @@ ll.plot.c <- plot.df %>%
              ggtitle("LL Forests w/ Conformal Bands") +
              ggthemes::theme_few()+ 
              guides(color=guide_legend(title="Cover Truth? (Blue = Yes)")) + 
-             scale_color_manual(values = c("firebrick1","dodgerblue"))
+             scale_color_manual(values = c("firebrick1","dodgerblue")) + 
+           annotate("text", x = 20, y = 5, label = "Coverage == .95",
+           parse = TRUE)
 # 
 ggpubr::ggarrange(ll.plot,ll.plot.c,nrow = 1,common.legend = TRUE,legend = "bottom") 
 ```
