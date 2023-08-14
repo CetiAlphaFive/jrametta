@@ -6,7 +6,7 @@ website:
   title: "Jack T. Rametta"
   open-graph: true
   twitter-card: true
-  site-url: www.jackrametta.com 
+  site-url: https://cetialphafive.github.io/jrametta
   navbar:
     background: primary
     search: true
