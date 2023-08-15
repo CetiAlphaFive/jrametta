@@ -34,7 +34,7 @@ website:
 format:
   html:
     theme: 
-      light: sandstone
+      light: [sandstone, theme-light.scss]
       dark: [sandstone, theme-dark.scss]
     css: styles.css
     toc: true
