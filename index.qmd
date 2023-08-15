@@ -1,9 +1,20 @@
-Hello there!
+---
+title: "Jack T. Rametta"
+editor: visual
+---
 
-I'm a PhD candidate in [Political Science](https://ps.ucdavis.edu/) at the [University of California, Davis](https://www.ucdavis.edu/) with subfields in methods and American politics.
+<div>
+
+::: {style="float: left; position: relative; top: 0px; padding: 30px;"}
+![](images/jack-rametta.jpg){width="200"}
+:::
+
+Hello there! I'm a PhD candidate in [Political Science](https://ps.ucdavis.edu/) at the [University of California, Davis](https://www.ucdavis.edu/) with subfields in methods and American politics.
 
 I employ causally oriented machine learning methods to study American political institutions and public policy. My dissertation research focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics.
 
 I'm also interested in the development and application of new methods, as well as accompanying software tools, for difficult social science problems. I have several projects in-progress in this vein with co-authors.
 
 Before graduate school, I was an economic policy research analyst at the [Bipartisan Policy Center](https://bipartisanpolicy.org/). At BPC, I contributed to research on the [federal budget](https://www.pgpf.org/sites/default/files/PGPF-2019-Solutions-Initiative.pdf), [debt limit](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Debt-Limit-Analysis-Everything-You-Need-to-Know-March-2019.pdf), [Social Security and Medicare financing](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf), and [defense personnel reform](https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf).
+
+</div>
