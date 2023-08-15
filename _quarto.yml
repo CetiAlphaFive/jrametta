@@ -37,8 +37,8 @@ format:
     css: styles.css
     toc: true
 
-body-footer: | 
-  "All content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)""
+page-footer: 
+  left: "All content by Jack T. Rametta, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)"
 
 execute:
   freeze: auto  # re-render only when source changes
