@@ -1,7 +1,3 @@
----
-title: "Jack T. Rametta"
----
-
 Hello there!
 
 I'm a PhD candidate in [Political Science](https://ps.ucdavis.edu/) at the [University of California, Davis](https://www.ucdavis.edu/) with subfields in methods and American politics.
