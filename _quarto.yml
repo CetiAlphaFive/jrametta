@@ -5,9 +5,11 @@ project:
 website:
   title: "Jack T. Rametta"
   open-graph: true
+  favicon: spacedock_fav.png
   twitter-card: true
   site-url: https://cetialphafive.github.io/jrametta
   navbar:
+    logo: spacedock_fav.png
     search: true
     left:
       - text: Home
