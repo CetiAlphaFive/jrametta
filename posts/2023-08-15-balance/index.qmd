@@ -1,0 +1,30 @@
+---
+title: "Detecting Data Falsification with Machine Learning"
+description: |
+  A simple, fast, and powerful tool for detecting data falsification in experimental designs.  
+author:
+  - name: Jack T. Rametta 
+    url: https://jackrametta.com
+    orcid: 0000-0002-9841-146X
+date: 2023-08-15
+citation: 
+  url: https://cetialphafive.github.io/jrametta/posts/2023-08-12-balance/
+categories: [experiments, ML, causal inference]
+bibliography: references.bib
+#image: conformal.preview.png
+draft: true
+---
+
+Fradulent academic research is an unfortunate, persistent issue. [Recent](https://datacolada.org/109) [cases](https://datacolada.org/110) [of data](https://datacolada.org/111) [falsification](https://datacolada.org/112) uncovered by the sleuths at Data Colada have resurfaced the problem,
+
+Can we come up with a tool for detecting fraud that doesn't require advanced sleuthing skills?
+
+Is there something that can be done to deter fraud?
+
+A simple observation: many instances of data falsification involve contaminating treatment assignment with some other measured variable. For instance, in Shu, Mazar, Gino, Ariely, and Bazerman (2012), a pretreatment covariate deterministically predicts treatment assignment. Indeed, this contamination was so drastic that it caused future replicators
+
+ndefined the treatment assignment is systematically related
+
+This tool was developed with the original intention of detecting accidental, or chance, imbalance in experimental designs, but it works just as well for detecting intentional
+
+Simple tools for detecting fraud that could be employed at any stage of the review, or replication, process can disincentivize
