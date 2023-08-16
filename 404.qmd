@@ -1,0 +1,6 @@
+---
+title: "404: Page Not Found"
+editor: visual
+---
+
+![](images/youtube-video-gif.gif)
