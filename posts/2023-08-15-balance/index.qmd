@@ -6,24 +6,30 @@ author:
   - name: Jack T. Rametta 
     url: https://jackrametta.com
     orcid: 0000-0002-9841-146X
-date: 2023-08-15
+date: 2023-08-16
 citation: 
   url: https://cetialphafive.github.io/jrametta/posts/2023-08-12-balance/
-categories: [experiments, ML, causal inference]
+categories: [experiments, ML, causal inference, MLbalance]
 bibliography: references.bib
 #image: conformal.preview.png
 draft: true
 ---
 
-Fradulent academic research is an unfortunate, persistent issue. [Recent](https://datacolada.org/109) [cases](https://datacolada.org/110) [of data](https://datacolada.org/111) [falsification](https://datacolada.org/112) uncovered by the sleuths at Data Colada have resurfaced the problem,
+Fraudulent academic research is an unfortunate, persistent issue.
 
-Can we come up with a tool for detecting fraud that doesn't require advanced sleuthing skills?
+For example, there are several [recent](https://datacolada.org/109) [cases](https://datacolada.org/110) [of data](https://datacolada.org/111) [falsification](https://datacolada.org/112) from a Harvard psychologist who I, uh, won't name here (please excuse my cowardice, I enjoy not being involved in litigation). These cases of falsification were uncovered by the sleuths at [Data Colada](https://datacolada.org/), who desire serious credit for their investigative work, and for weathering the legal flack.
 
-Is there something that can be done to deter fraud?
+What these cases leave me wondering is **what can we do about it?**
 
-A simple observation: many instances of data falsification involve contaminating treatment assignment with some other measured variable. For instance, in Shu, Mazar, Gino, Ariely, and Bazerman (2012), a pretreatment covariate deterministically predicts treatment assignment. Indeed, this contamination was so drastic that it caused future replicators
+One part of the solution is making fraud easier to detect. To that end, we need tools for fraud detection that don't require Colada level forensic skills.[^1]
 
-ndefined the treatment assignment is systematically related
+[^1]: Seriously, I was a hardcore excel user for the first several years of my career and I had no idea you could use CalcChain files like that! 
+
+
+
+In the rest of this post I outline what my co-author Sam Fuller and I call the Balance Permutation Test.
+
+This test leverages a common feature of falsified experimental data: the treatment assignment isn't exogenous (as it of course should be!). Put another way, in many cases of falsified experimental data, treatment assignment can be deterministically predicted using other measured covariates. So what we propose is simple: try to model treatment assignment as a function of covariates measured in the experiment
 
 This tool was developed with the original intention of detecting accidental, or chance, imbalance in experimental designs, but it works just as well for detecting intentional
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jack T. Rametta">
-<meta name="dcterms.date" content="2023-08-15">
+<meta name="dcterms.date" content="2023-08-16">
 <meta name="description" content="A simple, fast, and powerful tool for detecting data falsification in experimental designs.">
 
 <title>Jack T. Rametta - Detecting Data Falsification with Machine Learning</title>
@@ -159,6 +159,7 @@ ul.task-list li input[type="checkbox"] {
                 <div class="quarto-category">experiments</div>
                 <div class="quarto-category">ML</div>
                 <div class="quarto-category">causal inference</div>
+                <div class="quarto-category">MLbalance</div>
               </div>
                   </div>
   </div>
@@ -176,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 15, 2023</p>
+        <p class="date">August 16, 2023</p>
       </div>
     </div>
     
@@ -196,26 +197,33 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Fradulent academic research is an unfortunate, persistent issue. <a href="https://datacolada.org/109">Recent</a> <a href="https://datacolada.org/110">cases</a> <a href="https://datacolada.org/111">of data</a> <a href="https://datacolada.org/112">falsification</a> uncovered by the sleuths at Data Colada have resurfaced the problem,</p>
-<p>Can we come up with a tool for detecting fraud that doesn’t require advanced sleuthing skills?</p>
-<p>Is there something that can be done to deter fraud?</p>
-<p>A simple observation: many instances of data falsification involve contaminating treatment assignment with some other measured variable. For instance, in Shu, Mazar, Gino, Ariely, and Bazerman (2012), a pretreatment covariate deterministically predicts treatment assignment. Indeed, this contamination was so drastic that it caused future replicators</p>
-<p>ndefined the treatment assignment is systematically related</p>
+<p>Fraudulent academic research is an unfortunate, persistent issue.</p>
+<p>For example, there are several <a href="https://datacolada.org/109">recent</a> <a href="https://datacolada.org/110">cases</a> <a href="https://datacolada.org/111">of data</a> <a href="https://datacolada.org/112">falsification</a> from a Harvard psychologist who I, uh, won’t name here (please excuse my cowardice, I enjoy not being involved in litigation). These cases of falsification were uncovered by the sleuths at <a href="https://datacolada.org/">Data Colada</a>, who desire serious credit for their investigative work, and for weathering the legal flack.</p>
+<p>What these cases leave me wondering is <strong>what can we do about it?</strong></p>
+<p>One part of the solution is making fraud easier to detect. To that end, we need tools for fraud detection that don’t require Colada level forensic skills.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>In the rest of this post I outline what my co-author Sam Fuller and I call the Balance Permutation Test.</p>
+<p>This test leverages a common feature of falsified experimental data: the treatment assignment isn’t exogenous (as it of course should be!). Put another way, in many cases of falsified experimental data, treatment assignment can be deterministically predicted using other measured covariates. So what we propose is simple: try to model treatment assignment as a function of covariates measured in the experiment</p>
 <p>This tool was developed with the original intention of detecting accidental, or chance, imbalance in experimental designs, but it works just as well for detecting intentional</p>
 <p>Simple tools for detecting fraud that could be employed at any stage of the review, or replication, process can disincentivize</p>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{t.rametta2023,
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Seriously, I was a hardcore excel user for the first several years of my career and I had no idea you could use CalcChain files like that!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{t.rametta2023,
   author = {Jack T. Rametta},
   title = {Detecting {Data} {Falsification} with {Machine} {Learning}},
-  date = {2023-08-15},
+  date = {2023-08-16},
   url = {https://cetialphafive.github.io/jrametta/posts/2023-08-12-balance/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-t.rametta2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
 Jack T. Rametta. 2023. <span>“Detecting Data Falsification with Machine
-Learning.”</span> August 15, 2023. <a href="https://cetialphafive.github.io/jrametta/posts/2023-08-12-balance/">https://cetialphafive.github.io/jrametta/posts/2023-08-12-balance/</a>.
+Learning.”</span> August 16, 2023. <a href="https://cetialphafive.github.io/jrametta/posts/2023-08-12-balance/">https://cetialphafive.github.io/jrametta/posts/2023-08-12-balance/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
