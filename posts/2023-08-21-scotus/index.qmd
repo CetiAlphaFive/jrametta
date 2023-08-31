@@ -1,0 +1,16 @@
+---
+title: "A Fast Track for Congress to Review SCOTUS Decisions?"
+description: |
+  A discussion of the Supreme Court Review Act and miscellaneous institutional design considerations 
+author:
+  - name: Jack T. Rametta 
+    url: https://jackrametta.com
+    orcid: 0000-0002-9841-146X
+date: 2023-08-21
+citation: 
+  url: https://cetialphafive.github.io/jrametta/posts/2023-08-21-scotus/
+categories: [experiments, ML, causal inference, MLbalance]
+bibliography: references.bib
+#image: conformal.preview.png
+draft: true
+---
