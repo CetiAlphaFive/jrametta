@@ -7,7 +7,7 @@ website:
   open-graph: true
   favicon: spacedock_fav.png
   twitter-card: true
-  site-url: "https://cetialphafive.github.io/jrametta"
+  site-url: "https://jackrametta.com"
   navbar:
     logo: spacedock_fav.png
     search: true
