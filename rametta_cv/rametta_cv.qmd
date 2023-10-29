@@ -4,7 +4,7 @@ format:
   quarto-cv-pdf: default
 author: Jack T. Rametta 
 date: last-modified
-address: "466 Kerr Hall · 200 California Avenue · Davis CA 95816"
+address: "566 Kerr Hall · 200 California Avenue · Davis CA 95816"
 email: jtrametta@ucdavis.edu
 fontsize: 11pt
 github: CetiAlphaFive # github account
@@ -139,7 +139,7 @@ Prior to graduate school, I worked in the public policy space. Over the course o
 
 -   ["Chartbook: What is the Long-Term Fiscal Outlook for the United States?"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/What-is-the-Long-Term-Fiscal-Outlook-for-the-United-States.pdf) 2018. The Bipartisan Policy Center.
 
--    ["A Guide to the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf) (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2018. Bipartisan Policy Center.
+-   ["A Guide to the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf) (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2018. Bipartisan Policy Center.
 
 -   ["A Preview of the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Preview-2018-Trustees-Report.pdf) (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2018. Bipartisan Policy Center.
 
