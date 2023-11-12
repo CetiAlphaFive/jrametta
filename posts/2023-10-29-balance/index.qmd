@@ -1,0 +1,24 @@
+---
+title: "The Balance Permutation Test: A Step-By-Step Guide"
+description: |
+  A fast, powerful tool for detecting covariate imbalance and failures of randomization in experiments.  
+author:
+  - name: Jack T. Rametta 
+    url: https://jackrametta.com
+    orcid: 0000-0002-9841-146X
+date: 2023-10-29
+citation: 
+  url: https://cetialphafive.github.io/jrametta/posts/2023-10-29-balance/
+categories: [experiments, ML, causal inference, MLbalance]
+bibliography: references.bib
+#image: conformal.preview.png
+draft: true
+---
+
+The intention of balance tables, and tests, is good: randomization *can* fail! We should verify that the identifying assumptions under experimental designs are true. But univariates balance tables and tests are, at best, weak tests for randomization failure or covariate imbalance. These t 
+
+In the rest of this post I outline what my co-author Sam Fuller and I call the Balance Permutation Test.
+
+This test leverages a common feature of falsified experimental data: the treatment assignment isn't exogenous (as it of course should be!). Put another way, in many cases of falsified experimental data, treatment assignment can be deterministically predicted using other measured covariates. So what we propose is simple: try to model treatment assignment as a function of covariates measured in the experiment.
+
+This tool was developed with the original intention of detecting incidental covariate imbalance in experimental designs, but works just as well for detecting intentional data manipulation.

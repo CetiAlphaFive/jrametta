@@ -33,11 +33,11 @@ The Bipartisan Policy Center \hfill 2017 - 2019
 
 # Education
 
-The University of California Davis. PhD in Political Science. \hfill 2019 - Present
+The University of California Davis. PhD in Political Science \hfill 2019 - Present
 
 -   *Fields: Methodology and American Politics.*
 
-The George Washington University. B.A. Economics and Political Science. \hfill 2013 - 2016
+The George Washington University. B.A. Economics and Political Science \hfill 2013 - 2016
 
 -   *Concentration: Public Policy.* *Special Honors in Political Science & American Political Science Honors Society.*
 
@@ -70,6 +70,12 @@ Affect or Ideology?: The Heterogeneous Effects of Political Cues on Policy Suppo
 Hearts and Minds: Locating Voters in Affective-Ideological Space (with Christopher D. Hare and Sam Fuller)
 
 -   *Working Paper, 2023. A version of this project was presented at MPSA 2023.*
+
+Why Play by the Rules? Legislative Delegation to Scorekeepers in the Context of Electoral
+Competition 
+
+-   *Resting Paper, 2021.* 
+
 
 # Teaching
 
@@ -117,7 +123,7 @@ Below is a list of courses I've assisted in teaching at the graduate and undergr
 
 # Software
 
-[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment, simple imbalance across treatment arms, or attrition in panel experimental data. Associated working paper is Rametta and Fuller (2023).
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment, covariate imbalance across treatment arms, or attrition in panel experimental data. Associated working paper is Rametta and Fuller (2023).
 
 # Association Meetings
 
@@ -135,7 +141,7 @@ Prior to graduate school, I worked in the public policy space. Over the course o
 
 -   ["Personnel Reform Lives, But Don't Call It 'Force Of The Future'"](https://warontherocks.com/2018/08/personnel-reform-lives-but-dont-call-it-force-of-the-future/) (with Blaise Misztal and Mary Farrell) 2018. War on the Rocks.
 
--   ["Supplying the Manpower America's National Security Strategy Demands"](https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf) (with Blaise Misztal) 2019. U.S. Index of Military Strength Topical Essay. The Heritage Foundation.
+-   ["Supplying the Manpower America's National Security Strategy Demands"](https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf) (with Blaise Misztal) 2019. U.S. Index of Military Strength Topical Essay. 
 
 -   ["Chartbook: What is the Long-Term Fiscal Outlook for the United States?"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/What-is-the-Long-Term-Fiscal-Outlook-for-the-United-States.pdf) 2018. The Bipartisan Policy Center.
 
@@ -165,7 +171,7 @@ Prior to graduate school, I worked in the public policy space. Over the course o
 
 # Other Skills
 
-\LaTeX, `R`, `python`, Stata, Mathematica
+Computing: `R`, `python`, `STATA`, Mathematica, \LaTeX, some graphic design and Adobe Suite experience
 
 # References
 
