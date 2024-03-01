@@ -1,0 +1,541 @@
+% CV ----
+
+
+\documentclass[
+  11pt,
+]
+{article}
+
+\usepackage{ebgaramond-maths}
+%\usepackage[T1]{fontenc}
+%\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+
+
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+
+
+
+
+% 
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% TODO: Add custom LaTeX header directives here
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+
+% Now begins the stuff that I added.
+% ----------------------------------
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large\bf}
+\subsectionfont{\rmfamily\mdseries\normalsize\scshape}
+
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+% Make parskips rather than indent with lists.
+\usepackage{parskip}
+% \usepackage{titlesec}
+% \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{12pt plus 2pt minus 2pt}
+% \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{12pt plus 2pt minus 2pt}
+
+% Use fontawesome. Note: you'll need TeXLive 2015. Update.
+\usepackage{fontawesome}
+
+% Fancyhdr, as I tend to do with these personal documents.
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\scriptsize  Jack T. Rametta - CV - \apstylekinda\today}
+\rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
+
+% Always load hyperref last.
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+
+\hypersetup{unicode=true,
+            pdftitle={Jack T. Rametta:  CV (Curriculum Vitae)},
+            pdfauthor={Jack T. Rametta},
+            colorlinks=true,
+            linkcolor=blue,
+            citecolor=blue,
+            urlcolor=blue,
+            breaklinks=true, bookmarks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+% Make AP style (kinda) dates for the updated/today field
+
+\usepackage{datetime}
+\newdateformat{apstylekinda}{%
+  \shortmonthname[\THEMONTH]. \THEDAY, \THEYEAR}
+
+% \emph{Updated:} \apstylekinda\today
+% ^ removed from that front bar.
+
+\usepackage{orcidlink}
+%\usepackage{academicons}
+%\definecolor{orcidlogocol}{HTML}{A6CE39}
+% \newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\textcolor[HTML]{A6CE39}{\aiOrcid}}}
+
+\begin{document}
+
+
+\centerline{\huge \bf Jack T. Rametta}
+
+\vspace{2 mm}
+
+\hrule
+
+\vspace{2 mm}
+
+
+\moveleft.5\hoffset\centerline{566 Kerr Hall · 200 California Avenue ·
+Davis CA 95816}
+\moveleft.5\hoffset\centerline{ \faEnvelopeO \hspace{1 mm} \href{mailto:}{\tt jtrametta@ucdavis.edu} \hspace{1 mm}  \faGithub \hspace{1 mm} \href{http://github.com/CetiAlphaFive}{\tt CetiAlphaFive} \hspace{1 mm}     \orcidlink{0000-0002-9841-146X} \hspace{.5 mm} \href{https://orcid.org/0000-0002-9841-146X}{\tt 0000-0002-9841-146X} \hspace{1 mm}  \faGlobe \hspace{1 mm} \href{http://jackrametta.com}{\tt jackrametta.com}   }
+
+
+
+\vspace{2 mm}
+
+\hrule
+
+
+
+\hypertarget{employment}{%
+\section{Employment}\label{employment}}
+
+The University of California, Davis \hfill 2019 - Present
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{PhD Candidate, TA/GSR, Department of Political Science}
+\end{itemize}
+
+Inter-university Consortium for Political and Social Research (ICPSR)
+\hfill 2022 - 2023
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{TA: Machine Learning for the Social Sciences}
+\end{itemize}
+
+The Bipartisan Policy Center \hfill 2017 - 2019
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Research Analyst, Economic Policy and National Security
+  Projects}
+\end{itemize}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+The University of California Davis. PhD in Political Science \hfill 2019
+- Present
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Fields: Methodology and American Politics.}
+\end{itemize}
+
+The George Washington University. B.A. Economics and Political Science
+\hfill 2013 - 2016
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Concentration: Public Policy.} \emph{Special Honors in Political
+  Science \& American Political Science Honors Society.}
+\end{itemize}
+
+\hypertarget{academic-research}{%
+\section{Academic Research}\label{academic-research}}
+
+\textbf{Dissertation Project: The Lingering Effects of the Contract with
+America on Congressional Capacity}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{In-Progress}
+\end{itemize}
+
+\textbf{Methods Projects}
+
+Advanced Machine Learning for Experiments in the Social Sciences (with
+Christopher D. Hare and Sam Fuller)
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Advance Contract, Cambridge Elements: Experimental Political
+  Science. Expected 2024-2025.}
+\end{itemize}
+
+The Balance Permutation Test: A Machine Learning Replacement for Balance
+Tables (with Sam Fuller)
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Under Review.}
+\end{itemize}
+
+Machine Learning for Subgroup Analysis: Powerful and Dangerous (with Sam
+Fuller)
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Working Paper, 2023. A version of this project was presented at
+  MPSA 2023.}
+\end{itemize}
+
+Omnibus, Cross-Validated Variable Importance Scores (with Sam Fuller)
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Working Paper, 2022.}
+\end{itemize}
+
+\textbf{Substantive Projects}
+
+Affect, Not Ideology?: The Heterogeneous Effects of Political Cues on
+Policy Support (with Nicolás de la Cerda and Sam Fuller)
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Under Review. A version of this project was presented at WPSA
+  2023.}
+\end{itemize}
+
+Hearts and Minds: Locating Voters in Affective-Ideological Space (with
+Christopher D. Hare and Sam Fuller)
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Working Paper, 2023. A version of this project was presented at
+  MPSA 2023.}
+\end{itemize}
+
+Why Play by the Rules? Legislative Delegation to Scorekeepers in the
+Context of Electoral Competition
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Resting Paper, 2021.}
+\end{itemize}
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+Below is a list of courses I've assisted in teaching at the graduate and
+undergraduate levels. Associated instructor of record listed in the
+parentheses where applicable.
+
+\textbf{Graduate Courses}
+
+\emph{The University of Michigan}
+
+\begin{itemize}
+\item
+  ICPSR 2023: Machine Learning for Social Sciences (Summer: 2023,
+  Christopher D. Hare)
+\item
+  ICPSR 2022: Machine Learning for Social Sciences (Summer: 2022,
+  Christopher D. Hare)
+\end{itemize}
+
+\emph{The University of California, Davis}
+
+\begin{itemize}
+\item
+  POL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022,
+  Lauren Peritz)
+\item
+  POL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022,
+  Christopher D. Hare)
+\item
+  POL 211: Research Methods: Probability, Statistics, Design (F: 2021,
+  Adrienne Hosek)
+\end{itemize}
+
+\textbf{Undergraduate Courses}
+
+\begin{itemize}
+\item
+  POL 051: The Scientific Study of Politics (Research Methods) (W: 2024,
+  Christopher D. Hare)
+\item
+  POL 051: The Scientific Study of Politics (Research Methods) (F: 2023,
+  Juan Tellez)
+\item
+  POL 001: Introduction to American Politics Spring 2023 (S: 2023, Scott
+  MacKenzie)
+\item
+  POL 051: The Scientific Study of Politics (Research Methods) (W: 2023,
+  McCage Griffiths)
+\item
+  POL 051: The Scientific Study of Politics (Research Methods) (F: 2022,
+  Juan Tellez)
+\item
+  POL 001: Introduction to American Politics Spring 2021 (S: 2021, Ben
+  Highton)
+\item
+  POL 114: Quantitative Analysis of Political Data (W: 2021, Ben
+  Highton)
+\item
+  POL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)
+\item
+  POL 147B: British Politics (S: 2020, James F. Adams)
+\item
+  POL 012A: Politics and Sports (W: 2020, Ethan Scheiner)
+\end{itemize}
+
+\textbf{Graduate Student Researcher Experience}
+
+\begin{itemize}
+\item
+  Professor Ryan Hübert. Formal Model of Prosecutors and Discrimination.
+  2021
+\item
+  Professor Ryan Hübert. Political Appointments and Outcomes in Federal
+  District Courts. 2020
+\end{itemize}
+
+\hypertarget{software}{%
+\section{Software}\label{software}}
+
+\href{https://github.com/CetiAlphaFive/MLbalance}{\textbf{MLbalance:}}
+Implements a machine learning balance test, the balance permutation
+test, for experimental data. This test is designed to detect failures of
+random assignment or covariate imbalance across treatment arms in
+experimental data. Associated working paper is Rametta and Fuller
+(2024).
+
+\hypertarget{association-meetings}{%
+\section{Association Meetings}\label{association-meetings}}
+
+Midwest Political Science Association Annual Meeting \hfill 2022
+
+Western Political Science Association Annual Meeting \hfill 2022
+
+\hypertarget{non-academic-writing}{%
+\section{Non-Academic Writing}\label{non-academic-writing}}
+
+Prior to graduate school, I worked in the public policy space. Over the
+course of several years as a policy analyst, I authored and coauthored a
+variety of works on a wide variety of federal policy topics. Mainly, my
+work focused on the federal budget, social insurance, public finance,
+and the federal debt limit. Some publications from this period are
+listed below.
+
+\begin{itemize}
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/07/Debt-Limit-Analysis-Everything-You-Need-to-Know-in-30-Slides.pdf}{``Debt
+  Limit Analysis: Everything You Need to Know in 30 Slides''} (with Shai
+  Akabas and Kody Carmody) 2019. Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf}{``Putting
+  America Back On Track: A Bipartisan Approach To Fiscal Policy
+  Solutions''} (with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim
+  Shaw) 2019. Peter G. Peterson Institute.
+\item
+  \href{https://warontherocks.com/2018/08/personnel-reform-lives-but-dont-call-it-force-of-the-future/}{``Personnel
+  Reform Lives, But Don't Call It `Force Of The Future'\,''} (with
+  Blaise Misztal and Mary Farrell) 2018. War on the Rocks.
+\item
+  \href{https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf}{``Supplying
+  the Manpower America's National Security Strategy Demands''} (with
+  Blaise Misztal) 2019. U.S. Index of Military Strength Topical Essay.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/What-is-the-Long-Term-Fiscal-Outlook-for-the-United-States.pdf}{``Chartbook:
+  What is the Long-Term Fiscal Outlook for the United States?''} 2018.
+  The Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf}{``A
+  Guide to the 2018 Social Security and Medicare Trustees' Reports''}
+  (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III
+  and Robert D. Reischauer) 2018. Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Preview-2018-Trustees-Report.pdf}{``A
+  Preview of the 2018 Social Security and Medicare Trustees' Reports''}
+  (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III
+  and Robert D. Reischauer) 2018. Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Economy-A-Guide-to-the-2017-Social-Security-and-Medicare-Trustees-Reports.pdf}{``A
+  Guide to the 2017 Social Security and Medicare Trustees' Reports''}
+  (BPC staff author with G. William Hoagland, Shai Akabas, and Tim Shaw,
+  lead authors Charles P. Blahous III and Robert D. Reischauer) 2017.
+  Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2021/07/Debt-Limit-Daily-Presenation-8.23.17.pdf}{``2017
+  Debt Limit Analysis''} (with Shai Akabas and Tim Shaw) 2017.
+  Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Building-A-FAST-Force.pdf}{``Building
+  a F.A.S.T. Force: A Flexible Personnel System for a Modern Military.
+  Recommendations from the Task Force on Defense Personnel''}
+  (contributor) 2017. Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Systems.pdf}{``Defense
+  Personnel Systems: The Hidden Threat to a High-Performance Force''}
+  (contributor) 2017. Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Military-Readiness.pdf}{``The
+  Building Blocks of a Ready Military: People, Funding, Tempo''} (staff
+  author with Lisel Loy, Steve Bell, Blaise Misztal et al., lead authors
+  Leon Panetta, Jim Jones, Kathy Roth-Douquet, and Jim Talent) 2017.
+  Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Compensation.pdf}{``The
+  Military Compensation Conundrum: Rising Costs, Declining Budgets, and
+  a Stressed Force Caught in the Middle''} (staff author with Lisel Loy,
+  Steve Bell, Blaise Misztal et al, lead authors Leon Panetta, Jim
+  Jones, Kathy Roth-Douquet, and Jim Talent) 2017. Bipartisan Policy
+  Center.
+\item
+  \href{https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Social-Security-and-Medicare-Explained-2019.pdf}{``Chartbook:
+  Social Security \& Medicare Explained: Top 10 Questions \& Answers.''}
+  (Lead author/designer with Kody Carmody) 2019. Bipartisan Policy
+  Center.
+\item
+  \href{https://bipartisanpolicy.org/blog/when-will-federal-deficits-hit-1-trillion-next/}{``When
+  Will Federal Deficits Hit \$1 Trillion Next? Probably Sooner than
+  Expected''} (with Steve Bell and Tim Shaw) 2017. Bipartisan Policy
+  Center.
+\item
+  \href{https://bipartisanpolicy.org/blog/harvey-raises-stakes-on-debt-limit-debate/}{``Harvey
+  Raises Stakes on Debt Limit Debate''} (with Shai Akabas and Tim Shaw)
+  2017. Bipartisan Policy Center.
+\item
+  \href{https://bipartisanpolicy.org/blog/the-financial-future-of-social-security-and-medicare/}{``The
+  Financial Future of Social Security and Medicare''} (with Tim Shaw)
+  2017. Bipartisan Policy Center.
+\end{itemize}
+
+\hypertarget{other-skills}{%
+\section{Other Skills}\label{other-skills}}
+
+Computing: \texttt{R}, \texttt{python}, \texttt{STATA}, Mathematica,
+\LaTeX, some graphic design and Adobe Suite experience
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+Available upon request.
+
+\end{document}
