@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "correlation_interactive.knit.html",
-    "href": "correlation_interactive.knit.html",
-    "title": "Old Faithful",
-    "section": "",
-    "text": "Shiny applications not supported in static R Markdown documents\n\n\npreserveac1b56d77312204b"
-  },
-  {
-    "objectID": "correlation_interactive.html",
-    "href": "correlation_interactive.html",
-    "title": "Old Faithful",
-    "section": "",
-    "text": "Shiny applications not supported in static R Markdown documents"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Jack T. Rametta",
@@ -46,7 +32,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Dissertation Project\nThe Lingering Effects of the Contract with America on Congressional Capacity\nMy dissertation focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics. To this end, I compile two novel datasets encompassing the universe of public reports from the Congressional Research Service and the Government Accountability Office. With these datasets, I am able to derive high resolution images of the effects of the Contract with America on Congressional oversight and policymaking capacity across a wide range of substantive domains and federal agencies. These data also provide a venue to test longstanding theories of inter-branch and legislative-bureaucratic relations.\nMethods Projects\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller)\nUnder Review.\nMachine Learning for Subgroup Analysis: Powerful and Dangerous (with Sam Fuller)\nWorking Paper, 2023. A version of this project was presented at MPSA 2023.\nOmnibus, Cross-Validated Variable Importance Scores (with Sam Fuller)\nWorking Paper, 2022.\nSubstantive Projects\nAffect or Ideology?: The Heterogeneous Effects of Political Cues on Policy Support (with Nicolás de la Cerda and Sam Fuller)\nUnder Review. A version of this project was presented at WPSA 2023.\nHearts and Minds: Locating Voters in Affective-Ideological Space (with Christopher D. Hare and Sam Fuller)\nWorking Paper, 2023. A version of this project was presented at MPSA 2023."
+    "text": "Dissertation Project\nThe Lingering Effects of the Contract with America on Congressional Capacity\nMy dissertation focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics. To this end, I compile two novel datasets encompassing the universe of public reports from the Congressional Research Service and the Government Accountability Office. With these datasets, I am able to derive high resolution images of the effects of the Contract with America on Congressional oversight and policymaking capacity across a wide range of substantive domains and federal agencies. These data also provide a venue to test longstanding theories of inter-branch and legislative-bureaucratic relations.\nMethods Projects\nAdvanced Machine Learning for Experiments in the Social Sciences (with Christopher D. Hare and Sam Fuller)\nAdvance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller)\nUnder Review.\nMachine Learning for Subgroup Analysis: Powerful and Dangerous (with Sam Fuller)\nWorking Paper, 2023. A version of this project was presented at MPSA 2023.\nOmnibus, Cross-Validated Variable Importance Scores (with Sam Fuller)\nWorking Paper, 2022.\nSubstantive Projects\nAffect or Ideology?: The Heterogeneous Effects of Political Cues on Policy Support (with Nicolás de la Cerda and Sam Fuller)\nR&R Political Behavior. A version of this project was presented at WPSA 2023.\nHearts and Minds: Locating Voters in Affective-Ideological Space (with Christopher D. Hare and Sam Fuller)\nWorking Paper, 2023. A version of this project was presented at MPSA 2023."
   },
   {
     "objectID": "teaching.html",

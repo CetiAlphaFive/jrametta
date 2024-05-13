@@ -11,6 +11,10 @@ My dissertation focuses on Congressional oversight and policymaking capacity, as
 
 [**Methods Projects**]{.underline}
 
+**Advanced Machine Learning for Experiments in the Social Sciences** (with Christopher D. Hare and Sam Fuller)
+
+*Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025.*
+
 **The Balance Permutation Test: A Machine Learning Replacement for Balance Tables** (with Sam Fuller)
 
 *Under Review.*
@@ -26,7 +30,7 @@ My dissertation focuses on Congressional oversight and policymaking capacity, as
 [**Substantive Projects**]{.underline}
 
 **Affect or Ideology?: The Heterogeneous Effects of Political Cues on Policy Support** (with Nicolás de la Cerda and Sam Fuller)\
-*Under Review. A version of this project was presented at WPSA 2023.*
+*R&R Political Behavior. A version of this project was presented at WPSA 2023.*
 
 **Hearts and Minds: Locating Voters in Affective-Ideological Space** (with Christopher D. Hare and Sam Fuller)
 
