@@ -7,8 +7,8 @@ date: last-modified
 address: "566 Kerr Hall · 200 California Avenue · Davis CA 95816"
 email: jtrametta@ucdavis.edu
 fontsize: 11pt
-github: CetiAlphaFive # github account
-orcid: 0000-0002-9841-146X # orcid identifier
+github: CetiAlphaFive 
+orcid: 0000-0002-9841-146X 
 web: jackrametta.com
 fontawesome: yes
 nocite: '@*'
@@ -17,81 +17,60 @@ bibliography_other: other_bib.bib
 csl: apa-cv.csl
 ---
 
-# Employment
+## Education
 
-The University of California, Davis \hfill 2019 - Present
+-   **Ph.D. in Political Science**, The University of California Davis  \hfill 2019 - 2025 (Expected)
 
--   *PhD Candidate, TA/GSR, Department of Political Science*
+-   Dissertation: *The Downfall of the Legislative State: Congressional Capacity before and after the Republican Revolution*
 
-Inter-university Consortium for Political and Social Research (ICPSR) \hfill 2022 - 2023
+-   Fields: American Politics and Methodology 
 
--   *TA: Machine Learning for the Social Sciences*
+-   **B.A. Economics and Political Science**, The George Washington University  \hfill 2013 - 2016
 
-The Bipartisan Policy Center \hfill 2017 - 2019
+-   Special Honors in Political Science & American Political Science Honors Society
 
--   *Research Analyst, Economic Policy and National Security Projects*
+## Research Interests 
 
-# Education
+-   *Substantive:* American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy    
 
-The University of California Davis. PhD in Political Science \hfill 2019 - Present
+-   *Methods:* causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis 
 
--   *Fields: Methodology and American Politics.*
+## Forthcoming Research
 
-The George Washington University. B.A. Economics and Political Science \hfill 2013 - 2016
+-   Advanced Machine Learning for Experiments in the Social Sciences (with Christopher D. Hare and Sam Fuller)
 
--   *Concentration: Public Policy.* *Special Honors in Political Science & American Political Science Honors Society.*
+-   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025.*
 
-# Academic Research
+## Research under Review
 
-**Dissertation Project: The Lingering Effects of the Contract with America on Congressional Capacity**
+-   [Did the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports](https://osf.io/prqd9/). *Under Review. Presented at MPSA 2024.* 
 
--   *In-Progress*
+-   [Affect, Not Ideology?: The Heterogeneous Effects of Political Cues on Policy Support](https://osf.io/preprints/osf/4k38a) (with Nicolás de la Cerda and Sam Fuller). *Revise and Resubmit, Political Behavior. Presented at WPSA 2023.* 
 
-**Methods Projects**
+-   [The Balance Permutation Test: A Machine Learning Replacement for Balance Tables](https://osf.io/xcwt9)(with Sam Fuller). *Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.* 
 
-Advanced Machine Learning for Experiments in the Social Sciences (with Christopher D. Hare and Sam Fuller)
+## Selected Research in Preparation
 
--  *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025.*
+-   Causal Forest and Double Machine Learning for Political Science (with Sam Fuller). *A version of this project was presented at MPSA 2023.*
 
-The Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller)
+-   [The Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019)](https://osf.io/preprints/osf/hwzsu) (with Sam Fuller). *A version of this project was presented at MPSA 2024.*
 
--   *Under Review.*
+-   How Robust are Subgroup Analyses in Political Science? Insights from Dozens of Replications (with 
+Giulia Venturini, Richard L. Kornrumpf, and Sam Fuller)
 
-Machine Learning for Subgroup Analysis: Powerful and Dangerous (with Sam Fuller)
+-   Why Play by the Rules? Legislative Delegation to Scorekeepers in the Context of Electoral Competition
 
--   *Working Paper, 2023. A version of this project was presented at MPSA 2023.*
+## Teaching
 
-Omnibus, Cross-Validated Variable Importance Scores (with Sam Fuller)
-
--   *Working Paper, 2022.*
-
-**Substantive Projects**
-
-Affect, Not Ideology?: The Heterogeneous Effects of Political Cues on Policy Support (with Nicolás de la Cerda and Sam Fuller)
-
--   *Under Review. A version of this project was presented at WPSA 2023.*
-
-Hearts and Minds: Locating Voters in Affective-Ideological Space (with Christopher D. Hare and Sam Fuller)
-
--   *Working Paper, 2023. A version of this project was presented at MPSA 2023.*
-
-Why Play by the Rules? Legislative Delegation to Scorekeepers in the Context of Electoral Competition
-
--   *Resting Paper, 2021.*
-
-# Teaching
-
-Below is a list of courses I've assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.
+Instructor(s) of record listed in the parentheses where applicable.
 
 **Graduate Courses**
 
-*The University of Michigan*
+Inter-university Consortium for Political and Social Research at the University of Michigan
 
--   ICPSR 2023: Machine Learning for Social Sciences (Summer: 2023, Christopher D. Hare)
+-   ICPSR 2022-2024: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
 
--   ICPSR 2022: Machine Learning for Social Sciences (Summer: 2022, Christopher D. Hare)
-
-*The University of California, Davis*
+The University of California, Davis
 
 -   POL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)
 
@@ -101,19 +80,13 @@ Below is a list of courses I've assisted in teaching at the graduate and undergr
 
 **Undergraduate Courses**
 
--   POL 051: The Scientific Study of Politics (Research Methods) (W: 2024, Christopher D. Hare)
+-   POL 109: Public Policy and the Governmental Process (S: 2024)
 
--   POL 051: The Scientific Study of Politics (Research Methods) (F: 2023, Juan Tellez)
+-   POL 051: The Scientific Study of Politics (Research Methods in R) (F/W: 2022-2024, Juan Tellez, McCage Griffiths, Christopher D. Hare)
 
--   POL 001: Introduction to American Politics Spring 2023 (S: 2023, Scott MacKenzie)
+-   POL 001: Introduction to American Politics Spring 2023 (S: 2021 & 2023, Ben Highton & Scott MacKenzie)
 
--   POL 051: The Scientific Study of Politics (Research Methods) (W: 2023, McCage Griffiths)
-
--   POL 051: The Scientific Study of Politics (Research Methods) (F: 2022, Juan Tellez)
-
--   POL 001: Introduction to American Politics Spring 2021 (S: 2021, Ben Highton)
-
--   POL 114: Quantitative Analysis of Political Data (W: 2021, Ben Highton)
+-   POL 114: Quantitative Analysis of Political Data (Research Methods in STATA) (W: 2021, Ben Highton)
 
 -   POL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)
 
@@ -121,29 +94,35 @@ Below is a list of courses I've assisted in teaching at the graduate and undergr
 
 -   POL 012A: Politics and Sports (W: 2020, Ethan Scheiner)
 
-**Graduate Student Researcher Experience**
+## Software
+
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment or covariate imbalance using boosted random forests and permutation inference. Associated working paper is Rametta and Fuller (2024).
+
+[**MLCause:**](https://github.com/MLCause) A package family in development for the application of machine learning to causal inference. Packages associated with the Cambridge Elements contract as well as other workings papers.
+
+[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Associated working paper is Rametta (2024).
+
+## Association Meetings
+
+-   Midwest Political Science Association Annual Meeting \hfill 2024
+
+-   Midwest Political Science Association Annual Meeting \hfill 2023
+
+-   Western Political Science Association Annual Meeting \hfill 2023
+
+## Graduate Student Researcher Experience
 
 -   Professor Ryan Hübert. Formal Model of Prosecutors and Discrimination. 2021
 
 -   Professor Ryan Hübert. Political Appointments and Outcomes in Federal District Courts. 2020
 
-# Software
+## Selected Policy Writing
 
-[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment or covariate imbalance across treatment arms in  experimental data. Associated working paper is Rametta and Fuller (2024).
-
-# Association Meetings
-
-Midwest Political Science Association Annual Meeting \hfill 2022
-
-Western Political Science Association Annual Meeting \hfill 2022
-
-# Non-Academic Writing
-
-Prior to graduate school, I worked in the public policy space. Over the course of several years as a policy analyst, I authored and coauthored a variety of works on a wide variety of federal policy topics. Mainly, my work focused on the federal budget, social insurance, public finance, and the federal debt limit. Some publications from this period are listed below.
-
--   ["Debt Limit Analysis: Everything You Need to Know in 30 Slides"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/07/Debt-Limit-Analysis-Everything-You-Need-to-Know-in-30-Slides.pdf) (with Shai Akabas and Kody Carmody) 2019. Bipartisan Policy Center.
+Prior to graduate school, I worked in the public policy space. Over several years as a policy analyst, I (co)authored work on the federal budget, social insurance, public finance, and the federal debt limit among other topics. Some of these publications are listed below.
 
 -   ["Putting America Back On Track: A Bipartisan Approach To Fiscal Policy Solutions"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf) (with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim Shaw) 2019. Peter G. Peterson Institute.
+
+-   ["Debt Limit Analysis: Everything You Need to Know in 30 Slides"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/07/Debt-Limit-Analysis-Everything-You-Need-to-Know-in-30-Slides.pdf) (with Shai Akabas and Kody Carmody) 2019. Bipartisan Policy Center.
 
 -   ["Personnel Reform Lives, But Don't Call It 'Force Of The Future'"](https://warontherocks.com/2018/08/personnel-reform-lives-but-dont-call-it-force-of-the-future/) (with Blaise Misztal and Mary Farrell) 2018. War on the Rocks.
 
@@ -169,16 +148,25 @@ Prior to graduate school, I worked in the public policy space. Over the course o
 
 -   ["Chartbook: Social Security & Medicare Explained: Top 10 Questions & Answers."](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Social-Security-and-Medicare-Explained-2019.pdf) (Lead author/designer with Kody Carmody) 2019. Bipartisan Policy Center.
 
--   ["When Will Federal Deficits Hit \$1 Trillion Next? Probably Sooner than Expected"](https://bipartisanpolicy.org/blog/when-will-federal-deficits-hit-1-trillion-next/) (with Steve Bell and Tim Shaw) 2017. Bipartisan Policy Center.
+-   ["When Will Federal Deficits Hit \$1 Trillion Next? Probably Sooner than Expected"](https://bipartisanpolicy.org/blog/when-will-federal-deficits-hit-1-trillion-next/) (with Steve Bell and Tim Shaw) 2017. Bipartisan Policy Center. [^1]
 
 -   ["Harvey Raises Stakes on Debt Limit Debate"](https://bipartisanpolicy.org/blog/harvey-raises-stakes-on-debt-limit-debate/) (with Shai Akabas and Tim Shaw) 2017. Bipartisan Policy Center.
 
 -   ["The Financial Future of Social Security and Medicare"](https://bipartisanpolicy.org/blog/the-financial-future-of-social-security-and-medicare/) (with Tim Shaw) 2017. Bipartisan Policy Center.
 
-# Other Skills
+## Other Skills
 
-Computing: `R`, `python`, `STATA`, Mathematica, \LaTeX, some graphic design and Adobe Suite experience
+Computing: `R`, `python`, `STATA`, Mathematica, \LaTeX, cluster computing    
 
-# References
+## References
 
-Available upon request.
+-   **Ryan Hübert**, Associate Professor of Computational Social Science, Department of Methodology, London School of Economics and Political Science
+
+-   **Christopher D. Hare**, Associate Professor of Political Science, University of California, Davis
+
+-   **Erik J. Engstrom**, Professor of Political Science, University of California, Davis
+
+[^1]: For what it's worth, we were [right about this](https://www.cbo.gov/publication/60039#:~:text=The%20Budget%20Outlook-,Deficits,to%20%242.8%20trillion%20by%202034).  
+
+
+
