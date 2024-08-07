@@ -35,9 +35,9 @@ csl: apa-cv.csl
 
 -   *Methods:* causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis 
 
-## Forthcoming Research
+## Book Project
 
--   Advanced Machine Learning for Experiments in the Social Sciences (with Christopher D. Hare and Sam Fuller)
+-   [Advanced Machine Learning for Experiments in the Social Sciences](https://osf.io/tc8gf/?view_only=b0931348167844c1a15026f00537fb58) (with Christopher D. Hare and Sam Fuller)
 
 -   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025.*
 
