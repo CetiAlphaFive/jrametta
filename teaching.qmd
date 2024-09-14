@@ -7,11 +7,9 @@ Below is a list of courses I've assisted in teaching at the graduate and undergr
 
 [**Graduate Courses**]{.underline}
 
-*The University of Michigan*
+*Inter-university Consortium for Political and Social Research at the University of Michigan*
 
--   ICPSR 2023: Machine Learning for Social Sciences (Summer: 2023, Christopher D. Hare)
-
--   ICPSR 2022: Machine Learning for Social Sciences (Summer: 2022, Christopher D. Hare)
+-   ICPSR 2022-2024: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
 
 *The University of California, Davis*
 
@@ -23,15 +21,13 @@ Below is a list of courses I've assisted in teaching at the graduate and undergr
 
 [**Undergraduate Courses**]{.underline}
 
--   POL 001: Introduction to American Politics Spring 2023 (S: 2023, Scott MacKenzie)
+-   POL 109: Public Policy and the Governmental Process (S: 2024)
 
--   POL 051: The Scientific Study of Politics (Research Methods) (W: 2023, McCage Griffiths)
+-   POL 051: The Scientific Study of Politics (Research Methods in R) (F/W: 2022-2024, Juan Tellez, McCage Griffiths, Christopher D. Hare)
 
--   POL 051: The Scientific Study of Politics (Research Methods) (F: 2022, Juan Tellez)
+-   POL 001: Introduction to American Politics (S: 2021 & 2023, Ben Highton & Scott MacKenzie)
 
--   POL 001: Introduction to American Politics Spring 2021 (S: 2021, Ben Highton)
-
--   POL 114: Quantitative Analysis of Political Data (W: 2021, Ben Highton)
+-   POL 114: Quantitative Analysis of Political Data (Research Methods in STATA) (W: 2021, Ben Highton)
 
 -   POL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)
 
