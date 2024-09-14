@@ -60,6 +60,41 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Dissertation Project\nThe Lingering Effects of the Contract with America on Congressional Capacity\nMy dissertation focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics. To this end, I compile two novel datasets encompassing the universe of public reports from the Congressional Research Service and the Government Accountability Office. With these datasets, I am able to derive high resolution images of the effects of the Contract with America on Congressional oversight and policymaking capacity across a wide range of substantive domains and federal agencies. These data also provide a venue to test longstanding theories of inter-branch and legislative-bureaucratic relations.\nMethods Projects\nAdvanced Machine Learning for Experiments in the Social Sciences (with Christopher D. Hare and Sam Fuller)\nAdvance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller)\nUnder Review.\nMachine Learning for Subgroup Analysis: Powerful and Dangerous (with Sam Fuller)\nWorking Paper, 2023. A version of this project was presented at MPSA 2023.\nOmnibus, Cross-Validated Variable Importance Scores (with Sam Fuller)\nWorking Paper, 2022.\nSubstantive Projects\nAffect or Ideology?: The Heterogeneous Effects of Political Cues on Policy Support (with Nicolás de la Cerda and Sam Fuller)\nR&R Political Behavior. A version of this project was presented at WPSA 2023.\nHearts and Minds: Locating Voters in Affective-Ideological Space (with Christopher D. Hare and Sam Fuller)\nWorking Paper, 2023. A version of this project was presented at MPSA 2023."
+    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
+  },
+  {
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "Research",
+    "section": "",
+    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
+  },
+  {
+    "objectID": "research.html#dissertation-the-downfall-of-the-legislative-state-congressional-capacity-before-and-after-the-republican-revolution",
+    "href": "research.html#dissertation-the-downfall-of-the-legislative-state-congressional-capacity-before-and-after-the-republican-revolution",
+    "title": "Research",
+    "section": "Dissertation: The Downfall of the Legislative State: Congressional Capacity before and after the Republican Revolution",
+    "text": "Dissertation: The Downfall of the Legislative State: Congressional Capacity before and after the Republican Revolution\nMy dissertation focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics. To this end, I compile two novel datasets encompassing the universe of public reports from the Congressional Research Service and the Government Accountability Office. With these datasets, I am able to derive high resolution images of the effects of the Contract with America on Congressional oversight and policymaking capacity across a wide range of substantive domains and federal agencies. These data also provide a venue to test longstanding theories of inter-branch and legislative-bureaucratic relations."
+  },
+  {
+    "objectID": "research.html#book-project",
+    "href": "research.html#book-project",
+    "title": "Research",
+    "section": "Book Project",
+    "text": "Book Project\n\nAdvanced Machine Learning for Experiments in the Social Sciences (with Christopher D. Hare and Sam Fuller)\nAdvance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025."
+  },
+  {
+    "objectID": "research.html#research-under-review",
+    "href": "research.html#research-under-review",
+    "title": "Research",
+    "section": "Research under Review",
+    "text": "Research under Review\n\nDid the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports. Under Review. Presented at MPSA 2024.\nAffect, Not Ideology?: The Heterogeneous Effects of Political Cues on Policy Support (with Nicolás de la Cerda and Sam Fuller). Revise and Resubmit, Political Behavior. Presented at WPSA 2023.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables(with Sam Fuller). Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024."
+  },
+  {
+    "objectID": "research.html#selected-research-in-preparation",
+    "href": "research.html#selected-research-in-preparation",
+    "title": "Research",
+    "section": "Selected Research in Preparation",
+    "text": "Selected Research in Preparation\n\nCausal Forest and Double Machine Learning for Political Science (with Sam Fuller). Presented at MPSA 2023 & APSA 2024.\nThe Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019) (with Sam Fuller). Presented at MPSA 2024.\nHow Robust are Subgroup Analyses in Political Science? Insights from Dozens of Replications (with Giulia Venturini, Richard L. Kornrumpf, and Sam Fuller)\nWhy Play by the Rules? Legislative Delegation to Scorekeepers in the Context of Electoral Competition"
   }
 ]
