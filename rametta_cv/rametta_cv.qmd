@@ -1,11 +1,14 @@
 ---
 title: CV
 format:
-  quarto-cv-pdf: default
+  quarto-cv-pdf:
+    pdf-engine: lualatex
+    latex-tinytex: false
+    latex-auto-install: false
 author: Jack T. Rametta 
 date: last-modified
-address: "566 Kerr Hall · 200 California Avenue · Davis CA 95816"
-email: jtrametta@ucdavis.edu
+address: "850 16th Street NW · Washington · District of Columbia, 20006"
+email: jtrametta@reaganfoundation.org
 fontsize: 11pt
 github: CetiAlphaFive 
 orcid: 0000-0002-9841-146X 
@@ -17,11 +20,19 @@ bibliography_other: other_bib.bib
 csl: apa-cv.csl
 ---
 
+## Academic Appointments
+
+-   **Postdoctoral Fellow**, Ronald Reagan Presidential Foundation & Institute \hfill 2025-Present
+
+-   **Instructor**, Inter-university Consortium for Political & Social Research, University of Michigan \hfill 2025-Present
+
 ## Education
 
--   **Ph.D. in Political Science**, The University of California Davis \hfill 2019 - 2025 (Expected)
+-   **Ph.D. in Political Science**, The University of California Davis \hfill 2019 - 2025
 
--   Dissertation: *The Downfall of the Legislative State: Congressional Capacity before and after the Republican Revolution*
+-   Dissertation: *The Legislative State and the Republican Revolution: A Causal Machine Learning Approach*
+
+-   Committee: Christopher D. Hare (chair), Ryan Hübert, Erik J. Engstrom, Lauren Peritz, and Scott MacKenzie
 
 -   Fields: American Politics and Methodology
 
@@ -33,31 +44,37 @@ csl: apa-cv.csl
 
 -   *Substantive:* American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy
 
--   *Methods:* causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis
+-   *Methods:* causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, measurement, game theory, text analysis
+
+## Publications
+
+-   [Affect, Not Ideology: The Heterogeneous Effects of Political Cues on Policy Support](https://osf.io/preprints/osf/4k38a). Coauthored with Nicolás de la Cerda and Sam Fuller. *2025 Political Behavior. Presented at WPSA 2023.*
 
 ## Book Project
 
--   [Advanced Machine Learning for Experiments in the Social Sciences](https://osf.io/tc8gf/?view_only=b0931348167844c1a15026f00537fb58) (with Christopher D. Hare and Sam Fuller)
+-   [Advanced Machine Learning for Experiments in the Social Sciences](https://osf.io/tc8gf/?view_only=b0931348167844c1a15026f00537fb58) Coauthored with Christopher D. Hare and Sam Fuller.
 
--   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025.*
+-   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2025-2026.*
 
 ## Research under Review
 
 -   [Did the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports](https://osf.io/prqd9/). *Under Review. Presented at MPSA 2024.*
 
--   [Affect, Not Ideology?: The Heterogeneous Effects of Political Cues on Policy Support](https://osf.io/preprints/osf/4k38a) (with Nicolás de la Cerda and Sam Fuller). *Revise and Resubmit, Political Behavior. Presented at WPSA 2023.*
+-   [The Balance Permutation Test: A Machine Learning Replacement for Balance Tables](https://osf.io/xcwt9) (with Sam Fuller). *Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.*
 
--   [The Balance Permutation Test: A Machine Learning Replacement for Balance Tables](https://osf.io/xcwt9)(with Sam Fuller). *Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.*
+-   [Causal Forest and Double Machine Learning for Political Science](https://osf.io/nm9de/) (with Sam Fuller). *Presented at MPSA 2023, APSA 2024*
 
 ## Selected Research in Preparation
 
--   Causal Forest and Double Machine Learning for Political Science (with Sam Fuller). *Presented at MPSA 2023 & APSA 2024.*
+-   Populism and the Political Economy of Congressional Professionalization
+
+-   Something's Wrong with the Kids: The Ubiquitous Relationship between Youth and Support for Political Violence. (with Sam Fuller and Alexa Federice). *Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025*
+
+-   One King to Rule Them All? TabPFNs for Predictive and Causal Tasks in the Social Sciences
+
+-   Fast and Improved (Ordered) Optimal Classification (with Christopher D. Hare).
 
 -   [The Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019)](https://osf.io/preprints/osf/hwzsu) (with Sam Fuller). *Presented at MPSA 2024.*
-
--   How Robust are Subgroup Analyses in Political Science? Insights from Dozens of Replications (with Giulia Venturini, Richard L. Kornrumpf, and Sam Fuller)
-
--   Why Play by the Rules? Legislative Delegation to Scorekeepers in the Context of Electoral Competition
 
 ## Teaching
 
@@ -66,6 +83,8 @@ Instructor(s) of record listed in the parentheses where applicable.
 **Graduate Courses**
 
 Inter-university Consortium for Political and Social Research at the University of Michigan
+
+-   ICPSR 2025: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)
 
 -   ICPSR 2022-2024: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
 
@@ -95,21 +114,23 @@ The University of California, Davis
 
 ## Software
 
-[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment or covariate imbalance using boosted random forests and permutation inference. Associated working paper is Rametta and Fuller (2024).
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment or covariate imbalance using boosted random forests and permutation inference. Associated working paper is Rametta and Fuller (2025).
 
 [**MLCause:**](https://github.com/MLCause) A package family in development for the application of machine learning to causal inference. Packages associated with the Cambridge Elements contract as well as other workings papers.
 
-[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Associated working paper is Rametta (2024).
+[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Associated working paper is Rametta (2025).
 
 ## Association Meetings
 
--   American Political Science Association Annual Meeting \hfill 2024
+-   American Political Science Association Annual Meeting \hfill 2024, 2025
 
--   Midwest Political Science Association Annual Meeting \hfill 2024
-
--   Midwest Political Science Association Annual Meeting \hfill 2023
+-   Midwest Political Science Association Annual Meeting \hfill 2023, 2024
 
 -   Western Political Science Association Annual Meeting \hfill 2023
+
+## Discipline Service
+
+*Referee:* Political Behavior, Journal of Public Policy.
 
 ## Graduate Student Researcher Experience
 
@@ -163,8 +184,10 @@ Computing: `R`, `python`, `STATA`, Mathematica, \LaTeX, cluster computing
 
 ## References
 
+-   **Christopher D. Hare (chair)**, Associate Professor of Political Science, University of California, Davis
+
 -   **Ryan Hübert**, Associate Professor of Computational Social Science, Department of Methodology, London School of Economics and Political Science
 
--   **Christopher D. Hare**, Associate Professor of Political Science, University of California, Davis
+-   **Lauren Peritz**, Associate Professor of Political Science, University of California, Davis
 
 -   **Erik J. Engstrom**, Professor of Political Science, University of California, Davis

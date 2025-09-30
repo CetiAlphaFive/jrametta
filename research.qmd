@@ -9,11 +9,9 @@ editor: visual
 
 -   *Methods:* causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis
 
-
 ## Dissertation: The Downfall of the Legislative State: Congressional Capacity before and after the Republican Revolution
 
 My dissertation focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics. To this end, I compile two novel datasets encompassing the universe of public reports from the Congressional Research Service and the Government Accountability Office. With these datasets, I am able to derive high resolution images of the effects of the Contract with America on Congressional oversight and policymaking capacity across a wide range of substantive domains and federal agencies. These data also provide a venue to test longstanding theories of inter-branch and legislative-bureaucratic relations.
-
 
 ## Book Project
 

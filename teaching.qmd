@@ -8,8 +8,9 @@ Below is a list of courses I've assisted in teaching at the graduate and undergr
 [**Graduate Courses**]{.underline}
 
 *Inter-university Consortium for Political and Social Research at the University of Michigan*
+-   ICPSR 2025: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)
 
--   ICPSR 2022-2024: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
+-   ICPSR 2022-2025: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
 
 *The University of California, Davis*
 
