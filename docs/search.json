@@ -4,21 +4,63 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Below is a list of courses I’ve assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.\nGraduate Courses\nInter-university Consortium for Political and Social Research at the University of Michigan\n\nICPSR 2022-2024: Machine Learning for Social Sciences (Summer: Christopher D. Hare)\n\nThe University of California, Davis\n\nPOL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)\nPOL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)\nPOL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)\n\nUndergraduate Courses\n\nPOL 109: Public Policy and the Governmental Process (S: 2024)\nPOL 051: The Scientific Study of Politics (Research Methods in R) (F/W: 2022-2024, Juan Tellez, McCage Griffiths, Christopher D. Hare)\nPOL 001: Introduction to American Politics (S: 2021 & 2023, Ben Highton & Scott MacKenzie)\nPOL 114: Quantitative Analysis of Political Data (Research Methods in STATA) (W: 2021, Ben Highton)\nPOL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)\nPOL 147B: British Politics (S: 2020, James F. Adams)\nPOL 012A: Politics and Sports (W: 2020, Ethan Scheiner)"
+    "text": "Below is a list of courses I’ve assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.\nGraduate Courses\nInter-university Consortium for Political and Social Research at the University of Michigan - ICPSR 2025: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)\n\nICPSR 2022-2025: Machine Learning for Social Sciences (Summer: Christopher D. Hare)\n\nThe University of California, Davis\n\nPOL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)\nPOL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)\nPOL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)\n\nUndergraduate Courses\n\nPOL 109: Public Policy and the Governmental Process (S: 2024)\nPOL 051: The Scientific Study of Politics (Research Methods in R) (F/W: 2022-2024, Juan Tellez, McCage Griffiths, Christopher D. Hare)\nPOL 001: Introduction to American Politics (S: 2021 & 2023, Ben Highton & Scott MacKenzie)\nPOL 114: Quantitative Analysis of Political Data (Research Methods in STATA) (W: 2021, Ben Highton)\nPOL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)\nPOL 147B: British Politics (S: 2020, James F. Adams)\nPOL 012A: Politics and Sports (W: 2020, Ethan Scheiner)"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
+  },
+  {
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "Research",
+    "section": "",
+    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
+  },
+  {
+    "objectID": "research.html#dissertation-the-legislative-state-and-the-republican-revolution-a-causal-machine-learning-approach",
+    "href": "research.html#dissertation-the-legislative-state-and-the-republican-revolution-a-causal-machine-learning-approach",
+    "title": "Research",
+    "section": "Dissertation: The Legislative State and the Republican Revolution: A Causal Machine Learning Approach",
+    "text": "Dissertation: The Legislative State and the Republican Revolution: A Causal Machine Learning Approach\nIn my dissertation research, I interrogate the effects of the Republican Revolution of 1994 on Congressional oversight capacity using a combination of traditional causal inference methods and causal machine learning approaches. The venue for this investigation is a novel dataset that comprises the universe of published and publicly available material from the Government Accountability Office (GAO), Congress’ understudied “watchdog” oversight and auditing agency. Through my investigation I reveal the deleterious effects of the Republican Revolution on oversight capacity at GAO. In the first chapter, I explore the effects of the Republican Revolution in terms of several different dependent variables of interest. In the second chapter, I explore heterogeneity in these main effects using a novel causal machine learning estimation procedure. Finally, in the third chapter, I explore the broader applicability of causal machine learning methods in the social sciences in light of recent debates. My results contribute to a growing literature that is skeptical of Congress’ ability to effectively oversee the executive branch. This dissertation also contributes to a growing literature that applies blackbox predictive algorithms for inference."
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\n\nAffect, Not Ideology: The Heterogeneous Effects of Political Cues on Policy Support. Coauthored with Nicolás de la Cerda and Sam Fuller. 2025 Political Behavior. Presented at WPSA 2023."
+  },
+  {
+    "objectID": "research.html#book-project",
+    "href": "research.html#book-project",
+    "title": "Research",
+    "section": "Book Project",
+    "text": "Book Project\n\nAdvanced Machine Learning for Experiments in the Social Sciences Coauthored with Christopher D. Hare and Sam Fuller.\nAdvance Contract, Cambridge Elements: Experimental Political Science. Expected 2025-2026."
+  },
+  {
+    "objectID": "research.html#research-under-review",
+    "href": "research.html#research-under-review",
+    "title": "Research",
+    "section": "Research under Review",
+    "text": "Research under Review\n\nDid the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports. Under Review. Presented at MPSA 2024.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller). Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.\nCausal Forest and Double Machine Learning for Political Science (with Sam Fuller). Presented at MPSA 2023, APSA 2024"
+  },
+  {
+    "objectID": "research.html#selected-research-in-preparation",
+    "href": "research.html#selected-research-in-preparation",
+    "title": "Research",
+    "section": "Selected Research in Preparation",
+    "text": "Selected Research in Preparation\n\nPopulism and the Political Economy of Congressional Professionalization\nSomething’s Wrong with the Kids: The Ubiquitous Relationship between Youth and Support for Political Violence (with Sam Fuller and Alexa Federice). Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025\nOne King to Rule Them All? TabPFNs for Predictive and Causal Tasks in the Social Sciences\nFast and Improved (Ordered) Optimal Classification (with Christopher D. Hare)\nThe Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019) (with Sam Fuller). Presented at MPSA 2024."
   },
   {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "Blog Posts",
     "section": "",
-    "text": "Conformalized Local Linear Forests\n\n\n\n\n\n\nconformal\n\n\nML\n\n\n\nGenerating conformal uncertainty bands for local linear regression forests \n\n\n\n\n\nAug 12, 2023\n\n\nJack T. Rametta\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jack T. Rametta",
-    "section": "",
-    "text": "Hello there! I’m a PhD candidate in Political Science at the University of California, Davis with subfields in methods and American politics.\nI employ causally oriented machine learning methods to study American political institutions and public policy. My dissertation research focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics.\nI’m also interested in the development and application of new methods, as well as accompanying software tools, for difficult social science problems. I have several projects in-progress in this vein with co-authors.\nBefore graduate school, I was an economic policy research analyst at the Bipartisan Policy Center. At BPC, I contributed to research on the federal budget, debt limit, Social Security and Medicare financing, and defense personnel reform."
+    "text": "Conformalized Local Linear Forests\n\n\n\nconformal\n\nML\n\n\n\nGenerating conformal uncertainty bands for local linear regression forests\n\n\n\n\n\nAug 12, 2023\n\n\nJack T. Rametta\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-08-12-conformal/index.html",
@@ -56,45 +98,10 @@
     "text": "If you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.\nTo do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the “copyright” line and a pointer to where the full notice is found.\n&lt;one line to give the program's name and a brief idea of what it does.&gt;\nCopyright (C) &lt;year&gt;  &lt;name of author&gt;\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.\nAlso add information on how to contact you by electronic and paper mail.\nIf the program does terminal interaction, make it output a short notice like this when it starts in an interactive mode:\n&lt;program&gt;  Copyright (C) &lt;year&gt;  &lt;name of author&gt;\nThis program comes with ABSOLUTELY NO WARRANTY; for details type 'show w'.\nThis is free software, and you are welcome to redistribute it\nunder certain conditions; type 'show c' for details.\nThe hypothetical commands show w and show c should show the appropriate parts of the General Public License. Of course, your program’s commands might be different; for a GUI interface, you would use an “about box”.\nYou should also get your employer (if you work as a programmer) or school, if any, to sign a “copyright disclaimer” for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see &lt;http://www.gnu.org/licenses/&gt;.\nThe GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read &lt;http://www.gnu.org/philosophy/why-not-lgpl.html&gt;."
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jack T. Rametta",
     "section": "",
-    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
-  },
-  {
-    "objectID": "research.html#research-interests",
-    "href": "research.html#research-interests",
-    "title": "Research",
-    "section": "",
-    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
-  },
-  {
-    "objectID": "research.html#dissertation-the-downfall-of-the-legislative-state-congressional-capacity-before-and-after-the-republican-revolution",
-    "href": "research.html#dissertation-the-downfall-of-the-legislative-state-congressional-capacity-before-and-after-the-republican-revolution",
-    "title": "Research",
-    "section": "Dissertation: The Downfall of the Legislative State: Congressional Capacity before and after the Republican Revolution",
-    "text": "Dissertation: The Downfall of the Legislative State: Congressional Capacity before and after the Republican Revolution\nMy dissertation focuses on Congressional oversight and policymaking capacity, as well as inter-branch politics. To this end, I compile two novel datasets encompassing the universe of public reports from the Congressional Research Service and the Government Accountability Office. With these datasets, I am able to derive high resolution images of the effects of the Contract with America on Congressional oversight and policymaking capacity across a wide range of substantive domains and federal agencies. These data also provide a venue to test longstanding theories of inter-branch and legislative-bureaucratic relations."
-  },
-  {
-    "objectID": "research.html#book-project",
-    "href": "research.html#book-project",
-    "title": "Research",
-    "section": "Book Project",
-    "text": "Book Project\n\nAdvanced Machine Learning for Experiments in the Social Sciences (with Christopher D. Hare and Sam Fuller)\nAdvance Contract, Cambridge Elements: Experimental Political Science. Expected 2024-2025."
-  },
-  {
-    "objectID": "research.html#research-under-review",
-    "href": "research.html#research-under-review",
-    "title": "Research",
-    "section": "Research under Review",
-    "text": "Research under Review\n\nDid the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports. Under Review. Presented at MPSA 2024.\nAffect, Not Ideology?: The Heterogeneous Effects of Political Cues on Policy Support (with Nicolás de la Cerda and Sam Fuller). Revise and Resubmit, Political Behavior. Presented at WPSA 2023.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables(with Sam Fuller). Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024."
-  },
-  {
-    "objectID": "research.html#selected-research-in-preparation",
-    "href": "research.html#selected-research-in-preparation",
-    "title": "Research",
-    "section": "Selected Research in Preparation",
-    "text": "Selected Research in Preparation\n\nCausal Forest and Double Machine Learning for Political Science (with Sam Fuller). Presented at MPSA 2023 & APSA 2024.\nThe Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019) (with Sam Fuller). Presented at MPSA 2024.\nHow Robust are Subgroup Analyses in Political Science? Insights from Dozens of Replications (with Giulia Venturini, Richard L. Kornrumpf, and Sam Fuller)\nWhy Play by the Rules? Legislative Delegation to Scorekeepers in the Context of Electoral Competition"
+    "text": "Hello there! I’m a Postdoctoral Fellow at the Ronald Reagan Presidential Foundation and Institute in Washington D.C. having recently completed a PhD in Political Science at the University of California, Davis with subfields in methods and American politics.\nIn my research, I employ causally oriented machine learning methods to study American political institutions, political behavior, and public policy. My substantive research agenda focuses on Congressional capacity, oversight, and policymaking. Methodologically, I am interested in the development and application of new methods, as well as accompanying software tools, for difficult social science problems. I have several projects in-progress in this vein with co-authors, and recently taught a graduate-level topical workshop on causal machine learning methods at the Inter-university Consortium for Political & Social Research (ICPSR) at the University of Michigan.\nBefore graduate school, I was an economic policy research analyst at the Bipartisan Policy Center. At BPC, I contributed to research on the federal budget, debt limit, Social Security and Medicare financing, and defense personnel reform."
   }
 ]

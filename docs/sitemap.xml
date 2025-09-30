@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jackrametta.com/teaching.html</loc>
-    <lastmod>2024-09-14T21:36:34.441Z</lastmod>
+    <lastmod>2025-09-30T18:16:20.676Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jackrametta.com/research.html</loc>
+    <lastmod>2025-09-30T18:15:30.808Z</lastmod>
   </url>
   <url>
     <loc>https://jackrametta.com/posts.html</loc>
     <lastmod>2023-08-17T19:16:11.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jackrametta.com/index.html</loc>
-    <lastmod>2024-05-13T18:11:46.595Z</lastmod>
   </url>
   <url>
     <loc>https://jackrametta.com/posts/2023-08-12-conformal/index.html</loc>
@@ -21,7 +21,7 @@
     <lastmod>2023-05-30T13:54:18.000Z</lastmod>
   </url>
   <url>
-    <loc>https://jackrametta.com/research.html</loc>
-    <lastmod>2024-09-14T21:42:18.118Z</lastmod>
+    <loc>https://jackrametta.com/index.html</loc>
+    <lastmod>2025-09-30T18:22:43.582Z</lastmod>
   </url>
 </urlset>
