@@ -8,7 +8,7 @@ format:
 author: Jack T. Rametta 
 date: last-modified
 address: "850 16th Street NW · Washington · District of Columbia, 20006"
-email: jtrametta@reaganfoundation.org
+email: jtrametta@gmail.com
 fontsize: 11pt
 github: CetiAlphaFive 
 orcid: 0000-0002-9841-146X 
