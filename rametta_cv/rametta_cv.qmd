@@ -54,7 +54,7 @@ csl: apa-cv.csl
 
 -   [Advanced Machine Learning for Experiments in the Social Sciences](https://osf.io/tc8gf/?view_only=b0931348167844c1a15026f00537fb58) Coauthored with Christopher D. Hare and Sam Fuller.
 
--   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2025-2026.*
+-   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2026-2027.*
 
 ## Research under Review
 
@@ -70,7 +70,9 @@ csl: apa-cv.csl
 
 -   Something's Wrong with the Kids: The Ubiquitous Relationship between Youth and Support for Political Violence. (with Sam Fuller and Alexa Federice). *Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025*
 
--   One King to Rule Them All? TabPFNs for Predictive and Causal Tasks in the Social Sciences
+-   Rational Voting in the Age of Ideological Polarization \& Responsible Parties: Examining Presidential Elections from 1972--2024. (with Carlos Algara and Sam Fuller).
+
+-   Are Random Forests "Good Enough"? Exploring the Utility of Prior-Data Fitted Networks for Predictive and Causal Tasks
 
 -   Fast and Improved (Ordered) Optimal Classification (with Christopher D. Hare).
 
@@ -84,9 +86,9 @@ Instructor(s) of record listed in the parentheses where applicable.
 
 Inter-university Consortium for Political and Social Research at the University of Michigan
 
--   ICPSR 2025: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)
+-   ICPSR 2025-2026: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)
 
--   ICPSR 2022-2024: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
+-   ICPSR 2022-2025: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
 
 The University of California, Davis
 
@@ -114,7 +116,7 @@ The University of California, Davis
 
 ## Software
 
-[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a machine learning balance test, the balance permutation test, for experimental data. This test is designed to detect failures of random assignment or covariate imbalance using boosted random forests and permutation inference. Associated working paper is Rametta and Fuller (2025).
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a suite of machine learning balance tests for experimental and observational data. This test is designed to detect failures of random assignment or covariate imbalance using machine learning and permutation inference. Associated working paper is Rametta and Fuller (2026).
 
 [**MLCause:**](https://github.com/MLCause) A package family in development for the application of machine learning to causal inference. Packages associated with the Cambridge Elements contract as well as other workings papers.
 
@@ -125,6 +127,8 @@ The University of California, Davis
 -   American Political Science Association Annual Meeting \hfill 2024, 2025
 
 -   Midwest Political Science Association Annual Meeting \hfill 2023, 2024
+
+-   Southwest Political Science Association Annual Meeting \hfill 2026
 
 -   Western Political Science Association Annual Meeting \hfill 2023
 
@@ -138,9 +142,11 @@ The University of California, Davis
 
 -   Professor Ryan Hübert. Political Appointments and Outcomes in Federal District Courts. 2020
 
-## Selected Policy Writing
+## Public Writing
 
-Prior to graduate school, I worked in the public policy space. Over several years as a policy analyst, I (co)authored work on the federal budget, social insurance, public finance, and the federal debt limit among other topics. Some of these publications are listed below.
+-   ["250 Years of Faction and Polarization in Congress"](https://jackrametta.com/faction) Forthcoming. 
+
+-   ["Would Secrecy Make Congress Do Its Job?"](https://lawliberty.org/would-secrecy-make-congress-do-its-job/) 2025. Law and Liberty.
 
 -   ["Putting America Back On Track: A Bipartisan Approach To Fiscal Policy Solutions"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf) (with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim Shaw) 2019. Peter G. Peterson Institute.
 
