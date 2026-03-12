@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog Posts – Jack T. Rametta</title>
+<title>claude – Jack T. Rametta</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./spacedock_fav.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -75,77 +108,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Blog Posts – Jack T. Rametta">
-<meta property="og:image" content="https://jackrametta.com/posts/2023-08-12-conformal/conformal.preview.png">
+<meta property="og:title" content="Jack T. Rametta">
 <meta property="og:site_name" content="Jack T. Rametta">
-<meta property="og:image:height" content="2500">
-<meta property="og:image:width" content="2500">
-<meta name="twitter:title" content="Blog Posts – Jack T. Rametta">
-<meta name="twitter:image" content="https://jackrametta.com/posts/2023-08-12-conformal/conformal.preview.png">
-<meta name="twitter:image-height" content="2500">
-<meta name="twitter:image-width" content="2500">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jack T. Rametta">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -344,7 +313,7 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="./posts.html"> 
 <span class="menu-text">Blog Posts</span></a>
   </li>  
   <li class="nav-item">
@@ -386,72 +355,161 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29uZm9ybWFs">conformal <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TUw=">ML <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#claude.md-personal-website-jackrametta.com" id="toc-claude.md-personal-website-jackrametta.com" class="nav-link active" data-scroll-target="#claude.md-personal-website-jackrametta.com">CLAUDE.md — Personal Website (jackrametta.com)</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#stack-build" id="toc-stack-build" class="nav-link" data-scroll-target="#stack-build">Stack &amp; Build</a></li>
+  <li><a href="#site-structure" id="toc-site-structure" class="nav-link" data-scroll-target="#site-structure">Site Structure</a></li>
+  <li><a href="#key-directories" id="toc-key-directories" class="nav-link" data-scroll-target="#key-directories">Key Directories</a></li>
+  <li><a href="#conventions" id="toc-conventions" class="nav-link" data-scroll-target="#conventions">Conventions</a></li>
+  <li><a href="#building" id="toc-building" class="nav-link" data-scroll-target="#building">Building</a></li>
+  <li><a href="#domain-dns" id="toc-domain-dns" class="nav-link" data-scroll-target="#domain-dns">Domain &amp; DNS</a></li>
+  <li><a href="#chief-of-staff-integration" id="toc-chief-of-staff-integration" class="nav-link" data-scroll-target="#chief-of-staff-integration">Chief of Staff Integration</a>
+  <ul class="collapse">
+  <li><a href="#update-cos-command" id="toc-update-cos-command" class="nav-link" data-scroll-target="#update-cos-command">“update COS” command</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog Posts</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 
+<section id="claude.md-personal-website-jackrametta.com" class="level1">
+<h1>CLAUDE.md — Personal Website (jackrametta.com)</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Jack Rametta’s personal academic website. Quarto-based, hosted at <code>jackrametta.com</code>.</p>
+</section>
+<section id="stack-build" class="level2">
+<h2 class="anchored" data-anchor-id="stack-build">Stack &amp; Build</h2>
+<ul>
+<li><strong>Framework:</strong> Quarto (<code>_quarto.yml</code>)</li>
+<li><strong>Output:</strong> Static HTML to <code>docs/</code> (GitHub Pages or similar)</li>
+<li><strong>Themes:</strong> Sandstone base with custom light (<code>theme-light.scss</code>) and dark (<code>theme-dark.scss</code>) SCSS</li>
+<li><strong>CSS:</strong> <code>styles.css</code> for additional overrides</li>
+<li><strong>Freeze:</strong> <code>execute: freeze: auto</code> — only re-renders when source changes</li>
+<li><strong>Favicon:</strong> <code>spacedock_fav.png</code></li>
+</ul>
+</section>
+<section id="site-structure" class="level2">
+<h2 class="anchored" data-anchor-id="site-structure">Site Structure</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 31%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Page</th>
+<th>File</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Home</td>
+<td><code>index.qmd</code></td>
+<td>Bio / landing page</td>
+</tr>
+<tr class="even">
+<td>Research</td>
+<td><code>research.qmd</code></td>
+<td>Pubs, working papers, book project</td>
+</tr>
+<tr class="odd">
+<td>Teaching</td>
+<td><code>teaching.qmd</code></td>
+<td>Course list (grad + undergrad)</td>
+</tr>
+<tr class="even">
+<td>Blog</td>
+<td><code>posts.qmd</code></td>
+<td>Listing page; posts live in <code>posts/</code> subdirectory</td>
+</tr>
+<tr class="odd">
+<td>CV</td>
+<td><code>rametta_cv/rametta_cv.qmd</code></td>
+<td>Quarto CV with bib files (<code>peer_bib.bib</code>, <code>other_bib.bib</code>)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-directories" class="level2">
+<h2 class="anchored" data-anchor-id="key-directories">Key Directories</h2>
+<ul>
+<li><code>images/</code> — site images</li>
+<li><code>posts/</code> — blog post subdirectories (one post so far: conformal prediction, 2023)</li>
+<li><code>rametta_cv/</code> — CV source files and bibliography</li>
+<li><code>_extensions/</code> — Quarto extensions</li>
+<li><code>_freeze/</code> — frozen computation cache</li>
+<li><code>_site/</code> — intermediate build output</li>
+<li><code>docs/</code> — final rendered site (deploy target)</li>
+<li><code>renv/</code> + <code>renv.lock</code> — R environment management</li>
+</ul>
+</section>
+<section id="conventions" class="level2">
+<h2 class="anchored" data-anchor-id="conventions">Conventions</h2>
+<ul>
+<li>Pages use <code>editor: visual</code> in YAML front matter</li>
+<li>Dark theme: <code>#181818</code> bg, white text, <code>#ff5112</code> links, <code>#ff4400</code> navbar</li>
+<li>Keep pages concise and scannable</li>
+<li>Research page should stay in sync with active papers in the CoS state file</li>
+<li>CV has its own bib files — update those when new publications land</li>
+</ul>
+</section>
+<section id="building" class="level2">
+<h2 class="anchored" data-anchor-id="building">Building</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render the full site</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview locally</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="domain-dns" class="level2">
+<h2 class="anchored" data-anchor-id="domain-dns">Domain &amp; DNS</h2>
+<ul>
+<li><strong>Domain:</strong> <code>jackrametta.com</code></li>
+<li><strong>CNAME:</strong> <code>CNAME</code> file in project root</li>
+</ul>
+<hr>
+</section>
+<section id="chief-of-staff-integration" class="level2">
+<h2 class="anchored" data-anchor-id="chief-of-staff-integration">Chief of Staff Integration</h2>
+<p>The canonical project tracker lives at <code>~/Dropbox/chief_of_staff/CHIEF_OF_STAFF.md</code>.</p>
+<section id="update-cos-command" class="level3">
+<h3 class="anchored" data-anchor-id="update-cos-command">“update COS” command</h3>
+<p>When Jack says <strong>“update COS”</strong> at the end of a session:</p>
+<ol type="1">
+<li>Write a brief status update (2-4 lines max) summarizing:
+<ul>
+<li>What was accomplished this session</li>
+<li>What changed (status shifts, blockers added/removed)</li>
+<li>What the next action is</li>
+</ul></li>
+<li>Append it to the <code>## Raw Updates</code> section at the bottom of <code>~/Dropbox/chief_of_staff/CHIEF_OF_STAFF.md</code> using this format:</li>
+</ol>
+<pre><code>[YYYY-MM-DD] [Personal Website] — Accomplished: [what]. Changed: [what]. Next: [what].</code></pre>
+<ol start="3" type="1">
+<li>Confirm to Jack that the update was appended.</li>
+</ol>
+<p><strong>Do not</strong> read, parse, or reorganize the rest of the state file. Just append. The CoS agent handles integration.</p>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Y29uZm9ybWFsJTJDTUw=" data-listing-date-sort="1691812800000" data-listing-file-modified-sort="1692299771000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1597">
-<div class="thumbnail"><a href="./posts/2023-08-12-conformal/index.html" class="no-external">
 
-<img loading="lazy" src="./posts/2023-08-12-conformal/conformal.preview.png" class="thumbnail-image">
+</section>
+</section>
+</section>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2023-08-12-conformal/index.html" class="no-external">Conformalized Local Linear Forests</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29uZm9ybWFs'); return false;">conformal</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TUw='); return false;">ML</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2023-08-12-conformal/index.html" class="no-external">
-<p>Generating conformal uncertainty bands for local linear regression forests</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2023-08-12-conformal/index.html" class="no-external">
-<div class="listing-date">
-Aug 12, 2023
-</div>
-<div class="listing-author">
-Jack T. Rametta
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
