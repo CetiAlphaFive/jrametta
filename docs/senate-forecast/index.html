@@ -514,8 +514,8 @@
       three forward-looking drift layers: national GCB drift (fat-tailed <i>t</i>-distribution),
       regional correlated drift, and state-level idiosyncratic drift. Drift magnitudes are
       time-dependent, scaling by &radic;(months&nbsp;to&nbsp;election&nbsp;/&nbsp;8).
-      Parameters are optimized via 8-cycle historical backtest (2010&ndash;2024), minimizing
-      Winkler score conditional on &ge;90% CI coverage (Winkler: 40.5, CI90: 91%).
+      Parameters are optimized via leave-one-cycle-out cross-validation on 8 historical
+      cycles (2010&ndash;2024), minimizing Winkler score conditional on &ge;90% CI coverage.
     </p>
     <p style="margin-top:8px">
       Prediction intervals are constructed using split conformal inference on backtest
@@ -536,20 +536,12 @@
     <ul>
       <li><b>Senate polls:</b> <a href="https://www.nytimes.com/interactive/2026/us/elections/polls-senate.html">New York Times / 538 polling database</a></li>
       <li><b>Generic ballot:</b> <a href="https://www.natesilver.net/p/silver-bulletin-polling-averages-for">Silver Bulletin GCB model</a> (daily estimate)</li>
-      <li><b>Historical polls (backtest):</b> NYT Upshot leo-senate-model (2010&ndash;2014), 538 pollster-ratings raw_polls (2010&ndash;2016), 538 historical Senate polls (2018&ndash;2024)</li>
-      <li><b>Fundamentals:</b> Presidential election results (MIT Election Lab), BLS unemployment data, Gallup presidential approval</li>
+      <li><b>Historical polls (backtest):</b> NYT Upshot (2010&ndash;2012), RealClearPolitics (2014&ndash;2016), 538 historical Senate polls (2018&ndash;2024)</li>
+      <li><b>Fundamentals:</b> Presidential election results (MIT Election Lab), FRED unemployment data, Silver Bulletin presidential approval</li>
     </ul>
 
-    <h3>Code</h3>
-    <p>
-      Source code, backtest results, and methodology documentation available at
-      <a href="https://github.com/CetiAlphaFive/forecasting">github.com/CetiAlphaFive/forecasting</a>.
-      The model uses R + <a href="https://mc-stan.org/">Stan</a> (via cmdstanr); the dashboard is static HTML + D3.js with pre-computed scenario data.
-    </p>
-
     <div class="footer-credit">
-      Built by <a href="https://github.com/CetiAlphaFive">Jack T. Rametta</a>
-      with assistance from <a href="https://claude.ai/code">Claude Code</a>.
+      Built by Jack T. Rametta and Christopher D. Hare.
     </div>
   </div>
 </div>
