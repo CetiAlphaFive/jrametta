@@ -4,21 +4,21 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Below is a list of courses I’ve assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.\nGraduate Courses\nInter-university Consortium for Political and Social Research at the University of Michigan - ICPSR 2025-2026: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)\n\nICPSR 2022-2025: Machine Learning for Social Sciences (Summer: Christopher D. Hare)\n\nThe University of California, Davis\n\nPOL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)\nPOL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)\nPOL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)\n\nUndergraduate Courses\n\nPOL 109: Public Policy and the Governmental Process (S: 2024)\nPOL 051: The Scientific Study of Politics (Research Methods in R) (F/W: 2022-2024, Juan Tellez, McCage Griffiths, Christopher D. Hare)\nPOL 001: Introduction to American Politics (S: 2021 & 2023, Ben Highton & Scott MacKenzie)\nPOL 114: Quantitative Analysis of Political Data (Research Methods in STATA) (W: 2021, Ben Highton)\nPOL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)\nPOL 147B: British Politics (S: 2020, James F. Adams)\nPOL 012A: Politics and Sports (W: 2020, Ethan Scheiner)"
+    "text": "Below is a list of courses I’ve assisted in teaching at the graduate and undergraduate levels. Associated instructor of record listed in the parentheses where applicable.\nGraduate Courses\nInter-university Consortium for Political and Social Research at the University of Michigan\n\nICPSR 2025-2026: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)\nICPSR 2022-2025: Machine Learning for Social Sciences (Summer: Christopher D. Hare)\n\nThe University of California, Davis\n\nPOL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)\nPOL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)\nPOL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)\n\nUndergraduate Courses\n\nPOL 109: Public Policy and the Governmental Process (S: 2024)\nPOL 051: The Scientific Study of Politics (Research Methods in R) (F/W: 2022-2024, Juan Tellez, McCage Griffiths, Christopher D. Hare)\nPOL 001: Introduction to American Politics (S: 2021 & 2023, Ben Highton & Scott MacKenzie)\nPOL 114: Quantitative Analysis of Political Data (Research Methods in STATA) (W: 2021, Ben Highton)\nPOL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)\nPOL 147B: British Politics (S: 2020, James F. Adams)\nPOL 012A: Politics and Sports (W: 2020, Ethan Scheiner)"
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
+    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, measurement, game theory, text analysis"
   },
   {
     "objectID": "research.html#research-interests",
     "href": "research.html#research-interests",
     "title": "Research",
     "section": "",
-    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis"
+    "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, measurement, game theory, text analysis"
   },
   {
     "objectID": "research.html#dissertation-the-legislative-state-and-the-republican-revolution-a-causal-machine-learning-approach",
@@ -46,14 +46,14 @@
     "href": "research.html#research-under-review",
     "title": "Research",
     "section": "Research under Review",
-    "text": "Research under Review\n\nDid the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports. Under Review. Presented at MPSA 2024.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller). Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.\nCausal Forest and Double Machine Learning for Political Science (with Sam Fuller). Presented at MPSA 2023, APSA 2024"
+    "text": "Research under Review\n\nDid the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports. Under Review. Presented at MPSA 2024.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller). Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.\nWhat Predicts Support for Political Violence? Results from a Machine Learning Meta-Reanalysis (with Sam Fuller and Alexa Federice). Under Review. Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025\nCausal Forest and Double Machine Learning for Political Science (with Sam Fuller). Presented at MPSA 2023, APSA 2024"
   },
   {
     "objectID": "research.html#selected-research-in-preparation",
     "href": "research.html#selected-research-in-preparation",
     "title": "Research",
     "section": "Selected Research in Preparation",
-    "text": "Selected Research in Preparation\n\nPopulism and the Political Economy of Congressional Professionalization\nSomething’s Wrong with the Kids: The Ubiquitous Relationship between Youth and Support for Political Violence (with Sam Fuller and Alexa Federice). Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025\nOne King to Rule Them All? TabPFNs for Predictive and Causal Tasks in the Social Sciences\nFast and Improved (Ordered) Optimal Classification (with Christopher D. Hare)\nThe Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019) (with Sam Fuller). Presented at MPSA 2024."
+    "text": "Selected Research in Preparation\n\nPopulism and the Political Economy of Congressional Professionalization\nRational Voting in the Age of Ideological Polarization & Responsible Parties: Examining Presidential Elections from 1972–2024. (with Carlos Algara and Sam Fuller).\nAre Random Forests “Good Enough”? Exploring the Utility of Prior-Data Fitted Networks for Predictive and Causal Tasks\nFast and Improved (Ordered) Optimal Classification (with Christopher D. Hare).\nThe Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019) (with Sam Fuller). Presented at MPSA 2024."
   },
   {
     "objectID": "software.html",

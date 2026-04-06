@@ -5,9 +5,7 @@ editor: visual
 
 ## Research Interests
 
--   *Substantive:* American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy
-
--   *Methods:* causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, game theory, text analysis
+{{< include _includes/research-interests.md >}}
 
 ## Dissertation: *The Legislative State and the Republican Revolution: A Causal Machine Learning Approach*
 
@@ -15,43 +13,28 @@ In my dissertation research, I interrogate the effects of the Republican Revolut
 oversight capacity using a combination of traditional causal inference methods and causal machine
 learning approaches. The venue for this investigation is a novel dataset that comprises the universe
 of published and publicly available material from the Government Accountability Office (GAO),
-Congress’ understudied “watchdog” oversight and auditing agency. Through my investigation I
+Congress' understudied "watchdog" oversight and auditing agency. Through my investigation I
 reveal the deleterious effects of the Republican Revolution on oversight capacity at GAO. In the first
 chapter, I explore the effects of the Republican Revolution in terms of several different dependent
 variables of interest. In the second chapter, I explore heterogeneity in these main effects using a
 novel causal machine learning estimation procedure. Finally, in the third chapter, I explore the
 broader applicability of causal machine learning methods in the social sciences in light of recent
-debates. My results contribute to a growing literature that is skeptical of Congress’ ability to
+debates. My results contribute to a growing literature that is skeptical of Congress' ability to
 effectively oversee the executive branch. This dissertation also contributes to a growing literature
 that applies blackbox predictive algorithms for inference.
 
 ## Publications
 
--   [Affect, Not Ideology: The Heterogeneous Effects of Political Cues on Policy Support](https://osf.io/preprints/osf/4k38a). Coauthored with Nicolás de la Cerda and Sam Fuller. *2025 Political Behavior. Presented at WPSA 2023.*
+{{< include _includes/publications.md >}}
 
 ## Book Project
 
--   [Advanced Machine Learning for Experiments in the Social Sciences](https://osf.io/tc8gf/?view_only=b0931348167844c1a15026f00537fb58) Coauthored with Christopher D. Hare and Sam Fuller.
-
--   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2026-2027.*
+{{< include _includes/book-project.md >}}
 
 ## Research under Review
 
--   [Did the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports](https://osf.io/prqd9/). *Under Review. Presented at MPSA 2024.*
-
--   [The Balance Permutation Test: A Machine Learning Replacement for Balance Tables](https://osf.io/xcwt9) (with Sam Fuller). *Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.*
-
--   [Causal Forest and Double Machine Learning for Political Science](https://osf.io/nm9de/) (with Sam Fuller). *Presented at MPSA 2023, APSA 2024*
+{{< include _includes/research-under-review.md >}}
 
 ## Selected Research in Preparation
 
--   Populism and the Political Economy of Congressional Professionalization
-
--   Something's Wrong with the Kids: The Ubiquitous Relationship between Youth and Support for Political Violence (with Sam Fuller and Alexa Federice). *Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025*
-
--   One King to Rule Them All? TabPFNs for Predictive and Causal Tasks in the Social Sciences
-
--   Fast and Improved (Ordered) Optimal Classification (with Christopher D. Hare)
-
--   [The Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019)](https://osf.io/preprints/osf/hwzsu) (with Sam Fuller). *Presented at MPSA 2024.*
-
+{{< include _includes/research-in-preparation.md >}}

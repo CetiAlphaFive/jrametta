@@ -42,41 +42,23 @@ csl: apa-cv.csl
 
 ## Research Interests
 
--   *Substantive:* American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy
-
--   *Methods:* causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, measurement, game theory, text analysis
+{{< include ../_includes/research-interests.md >}}
 
 ## Publications
 
--   [Affect, Not Ideology: The Heterogeneous Effects of Political Cues on Policy Support](https://osf.io/preprints/osf/4k38a). Coauthored with Nicolás de la Cerda and Sam Fuller. *2025 Political Behavior. Presented at WPSA 2023.*
+{{< include ../_includes/publications.md >}}
 
 ## Book Project
 
--   [Advanced Machine Learning for Experiments in the Social Sciences](https://osf.io/tc8gf/?view_only=b0931348167844c1a15026f00537fb58) Coauthored with Christopher D. Hare and Sam Fuller.
-
--   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2026-2027.*
+{{< include ../_includes/book-project.md >}}
 
 ## Research under Review
 
--   [Did the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports](https://osf.io/prqd9/). *Under Review. Presented at MPSA 2024.*
-
--   [The Balance Permutation Test: A Machine Learning Replacement for Balance Tables](https://osf.io/xcwt9) (with Sam Fuller). *Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.*
-
--   [Causal Forest and Double Machine Learning for Political Science](https://osf.io/nm9de/) (with Sam Fuller). *Presented at MPSA 2023, APSA 2024*
+{{< include ../_includes/research-under-review.md >}}
 
 ## Selected Research in Preparation
 
--   Populism and the Political Economy of Congressional Professionalization
-
--   Something's Wrong with the Kids: The Ubiquitous Relationship between Youth and Support for Political Violence. (with Sam Fuller and Alexa Federice). *Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025*
-
--   Rational Voting in the Age of Ideological Polarization \& Responsible Parties: Examining Presidential Elections from 1972--2024. (with Carlos Algara and Sam Fuller).
-
--   Are Random Forests "Good Enough"? Exploring the Utility of Prior-Data Fitted Networks for Predictive and Causal Tasks
-
--   Fast and Improved (Ordered) Optimal Classification (with Christopher D. Hare).
-
--   [The Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019)](https://osf.io/preprints/osf/hwzsu) (with Sam Fuller). *Presented at MPSA 2024.*
+{{< include ../_includes/research-in-preparation.md >}}
 
 ## Teaching
 
@@ -84,35 +66,11 @@ Instructor(s) of record listed in the parentheses where applicable.
 
 **Graduate Courses**
 
-Inter-university Consortium for Political and Social Research at the University of Michigan
-
--   ICPSR 2025-2026: Causal Machine Learning for Observational and Experimental Data (Summer: Co-Instructor with Sam Fuller)
-
--   ICPSR 2022-2025: Machine Learning for Social Sciences (Summer: Christopher D. Hare)
-
-The University of California, Davis
-
--   POL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)
-
--   POL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)
-
--   POL 211: Research Methods: Probability, Statistics, Design (F: 2021, Adrienne Hosek)
+{{< include ../_includes/teaching-graduate.md >}}
 
 **Undergraduate Courses**
 
--   POL 109: Public Policy and the Governmental Process (S: 2024)
-
--   POL 051: The Scientific Study of Politics (Research Methods in R) (F/W: 2022-2024, Juan Tellez, McCage Griffiths, Christopher D. Hare)
-
--   POL 001: Introduction to American Politics Spring 2023 (S: 2021 & 2023, Ben Highton & Scott MacKenzie)
-
--   POL 114: Quantitative Analysis of Political Data (Research Methods in STATA) (W: 2021, Ben Highton)
-
--   POL 110: The Strategy of Politics (Game Theory) (F: 2020, Ryan Hübert)
-
--   POL 147B: British Politics (S: 2020, James F. Adams)
-
--   POL 012A: Politics and Sports (W: 2020, Ethan Scheiner)
+{{< include ../_includes/teaching-undergraduate.md >}}
 
 ## Software
 

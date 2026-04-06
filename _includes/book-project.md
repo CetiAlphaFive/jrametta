@@ -1,0 +1,3 @@
+-   [Advanced Machine Learning for Experiments in the Social Sciences](https://osf.io/tc8gf/?view_only=b0931348167844c1a15026f00537fb58) Coauthored with Christopher D. Hare and Sam Fuller.
+
+-   *Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2026-2027.*
