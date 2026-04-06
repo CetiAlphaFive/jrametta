@@ -21,13 +21,6 @@
     "text": "Substantive: American political institutions, Congressional policymaking & oversight capacity, legislative support agencies, political behavior, ideology and public policy\nMethods: causal inference and causal machine learning, Monte Carlo methods, predictive modeling, design-based inference, experiments, measurement, game theory, text analysis"
   },
   {
-    "objectID": "research.html#dissertation-the-legislative-state-and-the-republican-revolution-a-causal-machine-learning-approach",
-    "href": "research.html#dissertation-the-legislative-state-and-the-republican-revolution-a-causal-machine-learning-approach",
-    "title": "Research",
-    "section": "Dissertation: The Legislative State and the Republican Revolution: A Causal Machine Learning Approach",
-    "text": "Dissertation: The Legislative State and the Republican Revolution: A Causal Machine Learning Approach\nIn my dissertation research, I interrogate the effects of the Republican Revolution of 1994 on Congressional oversight capacity using a combination of traditional causal inference methods and causal machine learning approaches. The venue for this investigation is a novel dataset that comprises the universe of published and publicly available material from the Government Accountability Office (GAO), Congress’ understudied “watchdog” oversight and auditing agency. Through my investigation I reveal the deleterious effects of the Republican Revolution on oversight capacity at GAO. In the first chapter, I explore the effects of the Republican Revolution in terms of several different dependent variables of interest. In the second chapter, I explore heterogeneity in these main effects using a novel causal machine learning estimation procedure. Finally, in the third chapter, I explore the broader applicability of causal machine learning methods in the social sciences in light of recent debates. My results contribute to a growing literature that is skeptical of Congress’ ability to effectively oversee the executive branch. This dissertation also contributes to a growing literature that applies blackbox predictive algorithms for inference."
-  },
-  {
     "objectID": "research.html#publications",
     "href": "research.html#publications",
     "title": "Research",
@@ -39,7 +32,7 @@
     "href": "research.html#book-project",
     "title": "Research",
     "section": "Book Project",
-    "text": "Book Project\n\nAdvanced Machine Learning for Experiments in the Social Sciences Coauthored with Christopher D. Hare and Sam Fuller.\nAdvance Contract, Cambridge Elements: Experimental Political Science. Expected 2026-2027."
+    "text": "Book Project\n\nAdvanced Machine Learning for Experiments in the Social Sciences. Coauthored with Christopher D. Hare and Sam Fuller. Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2026-2027."
   },
   {
     "objectID": "research.html#research-under-review",
