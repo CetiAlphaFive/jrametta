@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181 209" width="181" height="209">
+  <polygon points="90.5,1 180,53 180,157 90.5,209 1,157 1,53"
+           fill="#1a1a2e" stroke="#e94560" stroke-width="3"/>
+  <text x="90.5" y="100" text-anchor="middle" font-family="sans-serif"
+        font-size="20" font-weight="bold" fill="#e94560">Utopia</text>
+  <text x="90.5" y="128" text-anchor="middle" font-family="sans-serif"
+        font-size="20" font-weight="bold" fill="#e94560">Planitia</text>
+</svg>

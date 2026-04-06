@@ -16,6 +16,7 @@ website:
         file: index.qmd
       - research.qmd
       - teaching.qmd
+      - software.qmd
       - posts.qmd
       - rametta_cv/rametta_cv.qmd
     right:

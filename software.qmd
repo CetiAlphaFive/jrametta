@@ -1,0 +1,28 @@
+---
+title: "Software"
+editor: visual
+---
+
+::: pkg-entry
+[![](images/mlbalance_sticker.png)](https://github.com/CetiAlphaFive/MLbalance)
+
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) A suite of machine learning balance tests and estimation tools for experimental and observational data, including a fast implementation of the classification permutation test (Johann Gagnon-Bartsch and Yotam Shem-Tov, 2019). The purpose of this suite is to detect unintentional failures of random assignment, data fabrication, or simple covariate imbalance in random or, as-if random, experimental and observational designs. These tools are meant to work “off-the-shelf” but are also customizable for advanced users.
+:::
+
+::: pkg-entry
+[![](images/utopiaplanitia_sticker_placeholder.svg)](https://github.com/CetiAlphaFive/UtopiaPlanitia)
+
+[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) A package that provides leave-one-covariate-out (LOCO) variable importance, an omnibus suite of conditional average treament effect/heterogeneity tests, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. It also contains a simple LOCO wrapper for `ranger` model objects. This package serves as a staging area for functions in active development, use at your own risk. 
+:::
+
+::: pkg-entry
+[![](images/gao_sticker.png)](https://github.com/CetiAlphaFive/gao)
+
+[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Associated working paper is Rametta (2026).
+:::
+
+::: pkg-entry
+[![](images/mlcause_sticker_placeholder.svg)](https://github.com/MLCause)
+
+[**MLCause:**](https://github.com/MLCause) A package family in development for the application of machine learning to causal inference. Packages associated with the Cambridge Elements contract as well as other working papers. 
+:::

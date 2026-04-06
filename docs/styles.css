@@ -1,1 +1,43 @@
 /* css styles */
+
+.headshot {
+  float: right;
+  width: 12em;
+  margin: 0 0 1em 1.5em;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.hex-stickers {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.hex-stickers img {
+  height: 120px;
+  transition: opacity 0.2s ease;
+}
+
+.hex-stickers img:hover {
+  opacity: 0.75;
+}
+
+.pkg-entry {
+  overflow: auto;
+  margin-bottom: 1.5em;
+}
+
+.pkg-entry img {
+  float: right;
+  height: 120px;
+  width: auto;
+  margin: 0 0 0.5em 1em;
+  transition: opacity 0.2s ease;
+}
+
+.pkg-entry img:hover {
+  opacity: 0.75;
+}
