@@ -78,6 +78,8 @@ Instructor(s) of record listed in the parentheses where applicable.
 
 [**MLCause:**](https://github.com/MLCause) A package family in development for the application of machine learning to causal inference. Packages associated with the Cambridge Elements contract as well as other workings papers.
 
+[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) A package that provides leave-one-covariate-out (LOCO) variable importance, an omnibus suite of conditional average treatment effect/heterogeneity tests, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. It also contains a simple LOCO wrapper for `ranger` model objects.
+
 [**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Associated working paper is Rametta (2025).
 
 ## Association Meetings
