@@ -10,7 +10,7 @@ editor: visual
 :::
 
 ::: pkg-entry
-[![](images/utopiaplanitia_sticker_placeholder.svg)](https://github.com/CetiAlphaFive/UtopiaPlanitia)
+[![](images/utopiaplanitia_sticker.png)](https://github.com/CetiAlphaFive/UtopiaPlanitia)
 
 [**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) A package that provides leave-one-covariate-out (LOCO) variable importance, an omnibus suite of conditional average treament effect/heterogeneity tests, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. It also contains a simple LOCO wrapper for `ranger` model objects. This package serves as a staging area for functions in active development, use at your own risk. 
 :::
