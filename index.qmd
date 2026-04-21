@@ -2,7 +2,19 @@
 editor: visual
 ---
 
+::: headshot-col
 ![](images/headshot.png){.headshot}
+
+<a href="senate-forecast/index.html" class="forecast-btn" title="2026 Senate Forecast — live model">
+  <svg class="forecast-btn-map" viewBox="0 0 100 55" aria-hidden="true">
+    <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="1.6 5.6" stroke-linecap="round"/>
+    <path d="M 18 50 A 32 32 0 0 1 82 50" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="1.6 5" stroke-linecap="round"/>
+    <path d="M 26 50 A 24 24 0 0 1 74 50" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="1.6 4.4" stroke-linecap="round"/>
+    <path d="M 34 50 A 16 16 0 0 1 66 50" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="1.6 3.6" stroke-linecap="round"/>
+  </svg>
+  <span class="forecast-btn-label">2026 Senate Forecast →</span>
+</a>
+:::
 
 Hello there! I'm a political scientist and postdoctoral fellow at the Ronald Reagan Presidential Foundation and Institute in Washington D.C.
 
