@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - senate-forecast/**
+    - files/**
 
 website:
   title: "Jack T. Rametta"
@@ -20,6 +21,7 @@ website:
       - teaching.qmd
       - software.qmd
       - posts.qmd
+      - music.qmd
       - rametta_cv/rametta_cv.qmd
     right:
       - icon: github
