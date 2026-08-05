@@ -20,10 +20,10 @@ website:
       - research.qmd
       - teaching.qmd
       - software.qmd
-      - posts.qmd
-      - music.qmd
+      # - posts.qmd
       - rametta_cv/rametta_cv.qmd
     right:
+      - music.qmd
       - icon: github
         text: Github
         href: https://github.com/CetiAlphaFive
