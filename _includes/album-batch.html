@@ -33,6 +33,25 @@
       // Diagnostics for the standalone draw tests; unused by the page.
       lastReshuffled: false,
       lastCarried: 0,
+      // Move indices 0..k-1 to the front of the pool, in order, so the very
+      // first draw(k) returns exactly the tiles the pre-JS CSS rule already
+      // painted (.album-tile:nth-child(n+9) { display: none }) and the page
+      // does not swap to an unrelated batch on load. The pool stays a
+      // permutation of 0..n-1, so those indices are consumed by that draw like
+      // any other: still no duplicate, still nothing skipped. Nothing is lost
+      // to determinism here, since the R chunk shuffles album order before
+      // emitting the tiles, so DOM positions 0..k-1 differ per render.
+      seedFront: function (k) {
+        var lead = [];
+        var rest = [];
+        var i;
+        for (i = 0; i < pool.length; i++) {
+          if (pool[i] < k) lead.push(pool[i]);
+          else rest.push(pool[i]);
+        }
+        lead.sort(function (a, b) { return a - b; });
+        pool = lead.concat(rest);
+      },
       draw: function (size) {
         var batch = pool.splice(0, size);
         api.lastReshuffled = false;
@@ -76,6 +95,7 @@
   if (tiles.length < BATCH) return;  // too few to batch: leave the full wall alone
 
   var pool = createPool(tiles.length);
+  pool.seedFront(BATCH);
   var current = pool.draw(BATCH);
   var next = pool.draw(BATCH);
 
