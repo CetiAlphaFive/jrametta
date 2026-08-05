@@ -1,24 +1,201 @@
 # Music page data — edit albums + playlist URL here.
-# Each album needs artist, title, tidal_url. cover_url is optional override.
-# Cover art auto-fetched from iTunes Search API and cached in images/albums/.
+# Each album needs artist and title. tidal_url is optional: when omitted the
+# page links to a Tidal search for "<artist> <title>". Set it explicitly to
+# point somewhere else (e.g. Bandcamp). cover_url is an optional art override.
 #
-# mockup_count: if > 0, ignore `albums:` list and pull that many random covers
-# from iTunes top-albums charts. Set to 0 (or remove) to use the real list.
+# Cover art is auto-fetched from the iTunes Search API and cached in
+# images/albums/<slug>.jpg, where slug = lowercased "<artist> <title>" with
+# every run of non-alphanumerics collapsed to "-". A cached file is reused as
+# is, so renaming an artist/title re-fetches under the new slug.
+#
+# mockup_count: if > 0, ignore the `albums:` list and pull that many random
+# covers from the iTunes top-albums charts. Set to 0 to use the real list.
 
 mockup_count: 0
 
-playlist_url: "https://tidal.com/browse/playlist/REPLACE_WITH_PLAYLIST_ID"
+# No real playlist yet. Leave empty to suppress the button; fill in a real
+# Tidal playlist URL and the CTA reappears automatically.
+playlist_url: ""
 playlist_label: "Mega-Shuffle Playlist on Tidal"
 
 albums:
-  - artist: "Radiohead"
-    title: "In Rainbows"
-    tidal_url: "https://tidal.com/browse/album/REPLACE"
+  - artist: "Ahmad Jamal"
+    title: "Blue Moon"
 
-  - artist: "Fiona Apple"
-    title: "Fetch the Bolt Cutters"
-    tidal_url: "https://tidal.com/browse/album/REPLACE"
+  - artist: "Art Tatum"
+    title: "The Complete Capitol Recordings of Art Tatum"
 
-  - artist: "Kendrick Lamar"
-    title: "To Pimp a Butterfly"
-    tidal_url: "https://tidal.com/browse/album/REPLACE"
+  - artist: "Avishai Cohen"
+    title: "Adama"
+
+  - artist: "Avishai Cohen"
+    title: "Brightlight"
+
+  - artist: "Avishai Cohen"
+    title: "Continuo"
+
+  - artist: "Avishai Cohen"
+    title: "Gently Disturbed"
+
+  - artist: "Charlie Parker"
+    title: "Charlie Parker on Dial: The Complete Sessions"
+
+  - artist: "Chick Corea"
+    title: "Friends"
+
+  - artist: "Chick Corea"
+    title: "My Spanish Heart"
+
+  - artist: "Chick Corea"
+    title: "Now He Sings, Now He Sobs"
+
+  - artist: "Chick Corea"
+    title: "Past, Present & Futures"
+
+  - artist: "Chick Corea"
+    title: "Return to Forever"
+
+  - artist: "Chick Corea"
+    title: "Trilogy 2"
+
+  - artist: "Chick Corea"
+    title: "Works"
+
+  - artist: "Chick Corea & Gary Burton"
+    title: "Crystal Silence"
+
+  - artist: "Chick Corea Elektric Band"
+    title: "Beneath the Mask"
+
+  - artist: "Chick Corea Elektric Band"
+    title: "Eye of the Beholder"
+
+  - artist: "Chick Corea Elektric Band"
+    title: "Inside Out"
+
+  - artist: "Chick Corea Elektric Band"
+    title: "The Chick Corea Elektric Band"
+
+  - artist: "Chris Potter"
+    title: "Circuits"
+
+  - artist: "Chris Potter"
+    title: "Follow the Red Line"
+
+  - artist: "Chris Potter"
+    title: "Sunrise Reprise"
+
+  - artist: "Clifford Brown & Max Roach"
+    title: "Clifford Brown and Max Roach"
+
+  - artist: "Cory Henry & The Funk Apostles"
+    title: "The Revival"
+
+  - artist: "Cory Wong & Metropole Orkest"
+    title: "Starship Syncopation"
+
+  - artist: "Freddie Hubbard"
+    title: "Red Clay"
+
+  - artist: "Gary Burton, Chick Corea, Pat Metheny, Roy Haynes & Dave Holland"
+    title: "Like Minds"
+
+  - artist: "Herbie Hancock"
+    title: "Head Hunters"
+
+  - artist: "Jaco Pastorius"
+    title: "Jaco Pastorius"
+
+  - artist: "Jeff Beck"
+    title: "Blow by Blow"
+
+  - artist: "Joe Henderson"
+    title: "Page One"
+
+  - artist: "John Coltrane"
+    title: "A Love Supreme"
+
+  - artist: "John Coltrane"
+    title: "Blue Train"
+
+  - artist: "John Coltrane & Johnny Hartman"
+    title: "John Coltrane and Johnny Hartman"
+
+  - artist: "Lee Morgan"
+    title: "Cornbread"
+
+  - artist: "Lee Morgan"
+    title: "The Sidewinder"
+
+  - artist: "Matteo Mancuso"
+    title: "Route 96"
+    tidal_url: "https://matteomancuso.bandcamp.com/album/route-96"
+
+  - artist: "Matteo Mancuso"
+    title: "The Journey"
+
+  - artist: "Maynard Ferguson"
+    title: "MF Horn"
+
+  - artist: "Maynard Ferguson"
+    title: "MF Horn 4 & 5: Live at Jimmy's"
+
+  - artist: "Maynard Ferguson"
+    title: "One More Trip to Birdland"
+
+  - artist: "Miles Davis"
+    title: "Kind of Blue"
+
+  - artist: "Miles Davis"
+    title: "Miles Ahead"
+
+  - artist: "Oscar Peterson"
+    title: "Plays the Duke Ellington Song Book"
+
+  - artist: "Oscar Peterson & Dizzy Gillespie"
+    title: "Oscar Peterson and Dizzy Gillespie"
+
+  - artist: "Oscar Peterson & Jon Faddis"
+    title: "Oscar Peterson and Jon Faddis"
+
+  - artist: "Oscar Peterson, Roy Hargrove & Ralph Moore"
+    title: "Oscar Peterson Meets Roy Hargrove and Ralph Moore"
+
+  - artist: "Pat Metheny Group"
+    title: "Offramp"
+
+  - artist: "Pat Metheny Group"
+    title: "Pat Metheny Group"
+
+  - artist: "RH Factor"
+    title: "Distractions"
+
+  - artist: "RH Factor"
+    title: "Hard Groove"
+
+  - artist: "Snarky Puppy"
+    title: "Sylva"
+
+  - artist: "Snarky Puppy"
+    title: "We Like It Here"
+
+  - artist: "Snarky Puppy & Metropole Orkest"
+    title: "Somni"
+
+  - artist: "Stan Getz"
+    title: "Getz at the Gate"
+
+  - artist: "Stan Getz & João Gilberto"
+    title: "Getz/Gilberto"
+
+  - artist: "Taylor Eigsti"
+    title: "Tree Falls"
+
+  - artist: "Wayne Bergeron"
+    title: "Plays Well With Others"
+
+  - artist: "Wayne Shorter"
+    title: "Speak No Evil"
+
+  - artist: "Weather Report"
+    title: "Heavy Weather"
