@@ -1,0 +1,140 @@
+<script>
+(function () {
+  'use strict';
+
+  var BATCH = 8;
+  var FADE_MS = 200;
+
+  // Shuffled index pool over 0..n-1, drawn without replacement.
+  //
+  // At the seam (fewer than `size` indices left) the remainder is taken first,
+  // the full set is reshuffled, every remainder member is moved to the BACK of
+  // the new pool, and the batch is topped up from the FRONT. Because the
+  // remainder sits behind position n - remainder.length, the top-up cannot
+  // collide with it: no duplicate inside a batch, and no index skipped, since
+  // every index of the old pool is displayed before the reshuffle lands.
+  function createPool(n, rand) {
+    var random = rand || Math.random;
+
+    function shuffled() {
+      var a = new Array(n);
+      var i, j, t;
+      for (i = 0; i < n; i++) a[i] = i;
+      for (i = n - 1; i > 0; i--) {
+        j = Math.floor(random() * (i + 1));
+        t = a[i]; a[i] = a[j]; a[j] = t;
+      }
+      return a;
+    }
+
+    var pool = shuffled();
+
+    var api = {
+      // Diagnostics for the standalone draw tests; unused by the page.
+      lastReshuffled: false,
+      lastCarried: 0,
+      draw: function (size) {
+        var batch = pool.splice(0, size);
+        api.lastReshuffled = false;
+        api.lastCarried = 0;
+        if (batch.length === size) return batch;
+
+        var carried = batch;
+        var i;
+        var isCarried = {};
+        for (i = 0; i < carried.length; i++) isCarried[carried[i]] = true;
+
+        var fresh = shuffled();
+        var front = [];
+        var back = [];
+        for (i = 0; i < fresh.length; i++) {
+          if (isCarried[fresh[i]]) back.push(fresh[i]);
+          else front.push(fresh[i]);
+        }
+        pool = front.concat(back);
+
+        api.lastReshuffled = true;
+        api.lastCarried = carried.length;
+        return carried.concat(pool.splice(0, size - carried.length));
+      }
+    };
+
+    return api;
+  }
+
+  if (typeof document === 'undefined') {
+    if (typeof module === 'object' && module.exports) {
+      module.exports = { createPool: createPool };
+    }
+    return;
+  }
+
+  var grid = document.querySelector('.album-grid');
+  if (!grid) return;
+
+  var tiles = Array.prototype.slice.call(grid.querySelectorAll('.album-tile'));
+  if (tiles.length < BATCH) return;  // too few to batch: leave the full wall alone
+
+  var pool = createPool(tiles.length);
+  var current = pool.draw(BATCH);
+  var next = pool.draw(BATCH);
+
+  function show(indices) {
+    var i;
+    for (i = 0; i < tiles.length; i++) tiles[i].classList.remove('is-shown');
+    for (i = 0; i < indices.length; i++) tiles[indices[i]].classList.add('is-shown');
+  }
+
+  // Hidden tiles are display:none and loading="lazy", so the browser will not
+  // fetch the next batch on its own; without this the first frame after a
+  // crossfade shows blank boxes.
+  function warm(indices) {
+    for (var i = 0; i < indices.length; i++) {
+      var img = tiles[indices[i]].querySelector('.album-cover');
+      if (!img) continue;
+      var pre = new Image();
+      pre.src = img.src;
+    }
+  }
+
+  // Mark the first batch before .ready, so there is no frame in which the grid
+  // is class-driven but nothing carries .is-shown.
+  show(current);
+  grid.classList.add('ready');
+  warm(next);
+
+  var button = document.querySelector('.album-shuffle');
+  if (!button) return;
+
+  var reduceMotion = window.matchMedia
+    ? window.matchMedia('(prefers-reduced-motion: reduce)')
+    : null;
+  var busy = false;
+
+  function advance() {
+    current = next;
+    show(current);
+    next = pool.draw(BATCH);
+    warm(next);
+  }
+
+  button.addEventListener('click', function () {
+    if (reduceMotion && reduceMotion.matches) {
+      advance();
+      return;
+    }
+    if (busy) return;  // absorb rapid clicks; the button itself never changes
+    busy = true;
+    grid.classList.add('is-fading');
+    // Timer, not transitionend: transitionend never fires when the transition
+    // has been suppressed.
+    window.setTimeout(function () {
+      advance();
+      grid.classList.remove('is-fading');
+      window.setTimeout(function () { busy = false; }, FADE_MS);
+    }, FADE_MS);
+  });
+
+  button.classList.add('is-active');
+})();
+</script>

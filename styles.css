@@ -111,14 +111,47 @@
 
 .album-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
   margin: 1.5em 0;
   width: 100%;
+  transition: opacity 200ms ease;
+}
+
+@media (min-width: 1200px) {
+  .album-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.album-grid.is-fading {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .album-grid {
+    transition: none;
+  }
 }
 
 .album-grid > p {
   display: contents;
+}
+
+/* Batching handoff. Before JS boots, tiles 9+ are hidden positionally, so the
+   tail is never painted. Once JS adds .ready the two regimes swap atomically
+   and visibility is driven entirely by .is-shown. With JS off, no rule matches
+   and the full wall renders exactly as it did before batching. */
+html.js .album-grid:not(.ready) .album-tile:nth-child(n+9) {
+  display: none;
+}
+
+html.js .album-grid.ready .album-tile {
+  display: none;
+}
+
+html.js .album-grid.ready .album-tile.is-shown {
+  display: block;
 }
 
 .album-tile {
@@ -141,4 +174,20 @@
   object-fit: cover;
   display: block;
   background: #222;
+}
+
+/* Reuses .tidal-cta, which was written for an <a>: neutralize the UA button
+   styles and restore the weight the shorthand resets. Revealed by JS only, so
+   a no-JS visitor never sees a control that cannot do anything. */
+.album-shuffle {
+  display: none;
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.album-shuffle.is-active {
+  display: block;
+  margin-inline: auto;
 }

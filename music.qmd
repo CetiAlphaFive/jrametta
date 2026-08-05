@@ -1,6 +1,10 @@
 ---
 title: "Music"
 editor: visual
+format:
+  html:
+    include-in-header: _includes/album-batch-head.html
+    include-after-body: _includes/album-batch.html
 ---
 
 A wall of albums I keep coming back to. Click any cover to open it on Tidal.
@@ -128,4 +132,8 @@ if (mockup_n > 0) {
 }
 
 cat('<div class="album-grid">', paste(tiles, collapse = ""), '</div>', sep = "")
+
+# Separate cat(), after the closing </div>: the button must not interrupt the
+# run of sibling tiles the nth-child(n+9) rule counts.
+cat('<button class="tidal-cta album-shuffle">Shuffle</button>')
 ```

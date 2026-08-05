@@ -1,0 +1,5 @@
+<!-- Synchronous: must run before body parse so the CSS handoff rules in
+     styles.css (html.js .album-grid:not(.ready) ...) apply during the first
+     paint. Deferring this, making it a module, or waiting for DOMContentLoaded
+     reintroduces the flash of all 60 covers this class exists to prevent. -->
+<script>document.documentElement.classList.add('js');</script>
