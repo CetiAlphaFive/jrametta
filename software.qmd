@@ -4,25 +4,33 @@ editor: visual
 ---
 
 ::: pkg-entry
-[![](images/mlbalance_sticker.png)](https://github.com/CetiAlphaFive/MLbalance)
-
-[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) A suite of machine learning balance tests and estimation tools for experimental and observational data, including a fast implementation of the classification permutation test (Johann Gagnon-Bartsch and Yotam Shem-Tov, 2019). The purpose of this suite is to detect unintentional failures of random assignment, data fabrication, or simple covariate imbalance in random or, as-if random, experimental and observational designs. These tools are meant to work “off-the-shelf” but are also customizable for advanced users.
-:::
-
-::: pkg-entry
 [![](images/utopiaplanitia_sticker.png)](https://github.com/CetiAlphaFive/UtopiaPlanitia)
 
-[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) A package that provides leave-one-covariate-out (LOCO) variable importance, an omnibus suite of conditional average treament effect/heterogeneity tests, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. It also contains a simple LOCO wrapper for `ranger` model objects. This package serves as a staging area for functions in active development, use at your own risk. 
+[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) An expansive package that provides a suite functions associated with causal machine learning. This includes: causal variable importance implementations (e.g. leave-one-covariate-out (LOCO) variable importance), an omnibus suite of treatment effect heterogeneity tests, implementations of alternative curve-fitting algorithms for popular causal machine learning methods, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package.
 :::
 
 ::: pkg-entry
 [![](images/gao_sticker.png)](https://github.com/CetiAlphaFive/gao)
 
-[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Associated working paper is Rametta (2026).
+[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Updated daily. Associated working paper is Rametta (2026).
 :::
 
 ::: pkg-entry
-[![](images/mlcause_sticker_placeholder.svg)](https://github.com/MLCause)
+**ocx:** Extended optimal classification (ocx) is an R package for nonparametric spatial-model scaling of binary and ordinal choice data via Optimal Classification (with Christopher D. Hare, Tzu-Ping Liu, and Keith T. Poole). It unifies and extends the previous `oc` and `ooc` packages in a fully compiled, threaded C++ engine with numerous added features.
+:::
 
-[**MLCause:**](https://github.com/MLCause) A package family in development for the application of machine learning to causal inference. Packages associated with the Cambridge Elements contract as well as other working papers. 
+::: pkg-entry
+[![](images/mlbalance_sticker.png)](https://github.com/CetiAlphaFive/MLbalance)
+
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a suite of machine learning balance tests for experimental and observational data. These tests are designed to detect failures of random assignment or covariate imbalance using machine learning and permutation inference. Associated working paper is Rametta and Fuller (2026).
+:::
+
+::: pkg-entry
+[**2026 Senate Forecast:**](/senate-forecast/) A live, Bayesian forecast of the 2026 U.S. Senate elections (with Christopher D. Hare). Companion working paper: Rametta and Hare (2026).
+:::
+
+::: pkg-entry
+[![](images/roadrunner_sticker.png)](https://github.com/CetiAlphaFive/roadrunner)
+
+[**roadrunner:**](https://github.com/CetiAlphaFive/roadrunner) Fast, low-dependency implementations of classical machine learning algorithms with C++ backends via `Rcpp` and `RcppParallel`. Includes multivariate adaptive regression splines, kernel regularized least squares, penalized linear discriminant analysis, and component-wise P-spline gradient boosting, plus `meep()`, a cross-fitted stacked ensemble built for double machine learning and causal-forest nuisance estimation.
 :::
