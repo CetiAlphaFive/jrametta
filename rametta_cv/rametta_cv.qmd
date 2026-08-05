@@ -22,13 +22,13 @@ csl: apa-cv.csl
 
 ## Academic Appointments
 
--   **Postdoctoral Fellow**, Ronald Reagan Presidential Foundation & Institute \hfill 2025-Present
+Postdoctoral Fellow, Ronald Reagan Presidential Foundation & Institute \hfill 2025-Present
 
--   **Instructor**, Inter-university Consortium for Political & Social Research, University of Michigan \hfill 2025-Present
+Instructor, Inter-university Consortium for Political & Social Research, University of Michigan \hfill 2025-Present
 
 ## Education
 
--   **Ph.D. in Political Science**, The University of California Davis \hfill 2019 - 2025
+Ph.D. in Political Science, The University of California Davis \hfill 2019 - 2025
 
 -   Dissertation: *The Legislative State and the Republican Revolution: A Causal Machine Learning Approach*
 
@@ -36,7 +36,7 @@ csl: apa-cv.csl
 
 -   Fields: American Politics and Methodology
 
--   **B.A. Economics and Political Science**, The George Washington University \hfill 2013 - 2016
+B.A. Economics and Political Science, The George Washington University \hfill 2013 - 2016
 
 -   Special Honors in Political Science & American Political Science Honors Society
 
@@ -48,13 +48,13 @@ csl: apa-cv.csl
 
 {{< include ../_includes/publications.md >}}
 
-## Book Project
-
-{{< include ../_includes/book-project.md >}}
-
 ## Research under Review
 
 {{< include ../_includes/research-under-review.md >}}
+
+## Book Project
+
+{{< include ../_includes/book-project.md >}}
 
 ## Selected Research in Preparation
 
@@ -74,73 +74,96 @@ Instructor(s) of record listed in the parentheses where applicable.
 
 ## Software
 
-[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a suite of machine learning balance tests for experimental and observational data. This test is designed to detect failures of random assignment or covariate imbalance using machine learning and permutation inference. Associated working paper is Rametta and Fuller (2026).
+[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) An expansive package that provides a suite functions associated with causal machine learning. This includes: causal variable importance implementations (e.g. leave-one-covariate-out (LOCO) variable importance), an omnibus suite of treatment effect heterogeneity tests, implementations of alternative curve-fitting algorithms for popular causal machine learning methods, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. 
 
-[**MLCause:**](https://github.com/MLCause) A package family in development for the application of machine learning to causal inference. Packages associated with the Cambridge Elements contract as well as other workings papers.
+[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Updated daily. Associated working paper is Rametta (2025).
 
-[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) A package that provides leave-one-covariate-out (LOCO) variable importance, an omnibus suite of conditional average treatment effect/heterogeneity tests, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. It also contains a simple LOCO wrapper for `ranger` model objects.
+**ocx:** Extended optimal classification (ocx) is an R package for nonparametric spatial-model scaling of binary and ordinal choice data via Optimal Classification (with Christopher D. Hare, Tzu-Ping Liu, and Keith T. Poole). It unifies and extends the previous `oc` and `ooc` packages in a fully compiled, threaded C++ engine with numerous added features.
 
-[**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Associated working paper is Rametta (2025).
+[**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a suite of machine learning balance tests for experimental and observational data. These tests are designed to detect failures of random assignment or covariate imbalance using machine learning and permutation inference. Associated working paper is Rametta and Fuller (2026).
+
+[**2026 Senate Forecast:**](https://jackrametta.com) A live, Bayesian forecast of the 2026 U.S. Senate elections (with Christopher D. Hare). Companion working paper: Rametta and Hare (2026).
 
 ## Association Meetings
 
--   American Political Science Association Annual Meeting \hfill 2024, 2025
+Co-Organizer, Pre-APSA Conference on Democracy and Political Violence, Harvard University \hfill 2026
 
--   Midwest Political Science Association Annual Meeting \hfill 2023, 2024
+American Political Science Association Annual Meeting \hfill 2024, 2025, 2026
 
--   Southwest Political Science Association Annual Meeting \hfill 2026
+Midwest Political Science Association Annual Meeting \hfill 2023, 2024, 2025
 
--   Western Political Science Association Annual Meeting \hfill 2023
+Southwest Political Science Association Annual Meeting \hfill 2026
+
+Western Political Science Association Annual Meeting \hfill 2023
 
 ## Discipline Service
 
-*Referee:* Political Behavior, Journal of Public Policy.
+*Referee:* Political Behavior, Journal of Public Policy, PS: Political Science and Policy.
 
 ## Graduate Student Researcher Experience
 
--   Professor Ryan Hübert. Formal Model of Prosecutors and Discrimination. 2021
+Professor Ryan Hübert. Formal Model of Prosecutors and Discrimination. 2021
 
--   Professor Ryan Hübert. Political Appointments and Outcomes in Federal District Courts. 2020
+Professor Ryan Hübert. Political Appointments and Outcomes in Federal District Courts. 2020
 
 ## Public Writing
 
--   ["250 Years of Faction and Polarization in Congress"](https://jackrametta.com/faction) Forthcoming. 
+["250 Years of Faction and Polarization in Congress"](https://jackrametta.com/files/polar250.pdf)  
+*Forthcoming*
 
--   ["Would Secrecy Make Congress Do Its Job?"](https://lawliberty.org/would-secrecy-make-congress-do-its-job/) 2025. Law and Liberty.
+["Would Secrecy Make Congress Do Its Job?"](https://lawliberty.org/would-secrecy-make-congress-do-its-job/)  
+*Law and Liberty, 2025*
 
--   ["Putting America Back On Track: A Bipartisan Approach To Fiscal Policy Solutions"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf) (with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim Shaw) 2019. Peter G. Peterson Institute.
+["Putting America Back On Track: A Bipartisan Approach To Fiscal Policy Solutions"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf)  
+*with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim Shaw · Peter G. Peterson Institute, 2019*
 
--   ["Debt Limit Analysis: Everything You Need to Know in 30 Slides"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/07/Debt-Limit-Analysis-Everything-You-Need-to-Know-in-30-Slides.pdf) (with Shai Akabas and Kody Carmody) 2019. Bipartisan Policy Center.
+["Debt Limit Analysis: Everything You Need to Know in 30 Slides"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/07/Debt-Limit-Analysis-Everything-You-Need-to-Know-in-30-Slides.pdf)  
+*with Shai Akabas and Kody Carmody · Bipartisan Policy Center, 2019*
 
--   ["Personnel Reform Lives, But Don't Call It 'Force Of The Future'"](https://warontherocks.com/2018/08/personnel-reform-lives-but-dont-call-it-force-of-the-future/) (with Blaise Misztal and Mary Farrell) 2018. War on the Rocks.
+["Personnel Reform Lives, But Don't Call It 'Force Of The Future'"](https://warontherocks.com/2018/08/personnel-reform-lives-but-dont-call-it-force-of-the-future/)  
+*with Blaise Misztal and Mary Farrell · War on the Rocks, 2018*
 
--   ["Supplying the Manpower America's National Security Strategy Demands"](https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf) (with Blaise Misztal) 2019. U.S. Index of Military Strength Topical Essay.
+["Supplying the Manpower America's National Security Strategy Demands"](https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf)  
+*with Blaise Misztal · U.S. Index of Military Strength Topical Essay, 2019*
 
--   ["Chartbook: What is the Long-Term Fiscal Outlook for the United States?"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/What-is-the-Long-Term-Fiscal-Outlook-for-the-United-States.pdf) 2018. The Bipartisan Policy Center.
+["Chartbook: What is the Long-Term Fiscal Outlook for the United States?"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/What-is-the-Long-Term-Fiscal-Outlook-for-the-United-States.pdf)  
+*Bipartisan Policy Center, 2018*
 
--   ["A Guide to the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf) (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2018. Bipartisan Policy Center.
+["A Guide to the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf)  
+*with Tim Shaw · Bipartisan Policy Center, 2018*
 
--   ["A Preview of the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Preview-2018-Trustees-Report.pdf) (BPC staff author with Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2018. Bipartisan Policy Center.
+["A Preview of the 2018 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Preview-2018-Trustees-Report.pdf)  
+*with Tim Shaw · Bipartisan Policy Center, 2018*
 
--   ["A Guide to the 2017 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Economy-A-Guide-to-the-2017-Social-Security-and-Medicare-Trustees-Reports.pdf) (BPC staff author with G. William Hoagland, Shai Akabas, and Tim Shaw, lead authors Charles P. Blahous III and Robert D. Reischauer) 2017. Bipartisan Policy Center.
+["A Guide to the 2017 Social Security and Medicare Trustees' Reports"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Economy-A-Guide-to-the-2017-Social-Security-and-Medicare-Trustees-Reports.pdf)  
+*with G. William Hoagland, Shai Akabas, and Tim Shaw · Bipartisan Policy Center, 2017*
 
--   ["2017 Debt Limit Analysis"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2021/07/Debt-Limit-Daily-Presenation-8.23.17.pdf) (with Shai Akabas and Tim Shaw) 2017. Bipartisan Policy Center.
+["2017 Debt Limit Analysis"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2021/07/Debt-Limit-Daily-Presenation-8.23.17.pdf)  
+*with Shai Akabas and Tim Shaw · Bipartisan Policy Center, 2017*
 
--   ["Building a F.A.S.T. Force: A Flexible Personnel System for a Modern Military. Recommendations from the Task Force on Defense Personnel"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Building-A-FAST-Force.pdf) (contributor) 2017. Bipartisan Policy Center.
+["Building a F.A.S.T. Force: A Flexible Personnel System for a Modern Military. Recommendations from the Task Force on Defense Personnel"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Building-A-FAST-Force.pdf)  
+*Bipartisan Policy Center, 2017*
 
--   ["Defense Personnel Systems: The Hidden Threat to a High-Performance Force"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Systems.pdf) (contributor) 2017. Bipartisan Policy Center.
+["Defense Personnel Systems: The Hidden Threat to a High-Performance Force"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Systems.pdf)  
+*Bipartisan Policy Center, 2017*
 
--   ["The Building Blocks of a Ready Military: People, Funding, Tempo"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Military-Readiness.pdf) (staff author with Lisel Loy, Steve Bell, Blaise Misztal et al., lead authors Leon Panetta, Jim Jones, Kathy Roth-Douquet, and Jim Talent) 2017. Bipartisan Policy Center.
+["The Building Blocks of a Ready Military: People, Funding, Tempo"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Military-Readiness.pdf)  
+*with Lisel Loy, Steve Bell, and Blaise Misztal · Bipartisan Policy Center, 2017*
 
--   ["The Military Compensation Conundrum: Rising Costs, Declining Budgets, and a Stressed Force Caught in the Middle"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Compensation.pdf) (staff author with Lisel Loy, Steve Bell, Blaise Misztal et al, lead authors Leon Panetta, Jim Jones, Kathy Roth-Douquet, and Jim Talent) 2017. Bipartisan Policy Center.
+["The Military Compensation Conundrum: Rising Costs, Declining Budgets, and a Stressed Force Caught in the Middle"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/BPC-Defense-Personnel-Compensation.pdf)  
+*with Lisel Loy, Steve Bell, and Blaise Misztal · Bipartisan Policy Center, 2017*
 
--   ["Chartbook: Social Security & Medicare Explained: Top 10 Questions & Answers."](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Social-Security-and-Medicare-Explained-2019.pdf) (Lead author/designer with Kody Carmody) 2019. Bipartisan Policy Center.
+["Chartbook: Social Security & Medicare Explained: Top 10 Questions & Answers."](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Social-Security-and-Medicare-Explained-2019.pdf)  
+*with Kody Carmody · Bipartisan Policy Center, 2019*
 
--   ["When Will Federal Deficits Hit \$1 Trillion Next? Probably Sooner than Expected"](https://bipartisanpolicy.org/blog/when-will-federal-deficits-hit-1-trillion-next/) (with Steve Bell and Tim Shaw) 2017. Bipartisan Policy Center. [^1]
+["When Will Federal Deficits Hit \$1 Trillion Next? Probably Sooner than Expected"](https://bipartisanpolicy.org/blog/when-will-federal-deficits-hit-1-trillion-next/)  
+*with Steve Bell and Tim Shaw · Bipartisan Policy Center, 2017* [^1]
 
--   ["Harvey Raises Stakes on Debt Limit Debate"](https://bipartisanpolicy.org/blog/harvey-raises-stakes-on-debt-limit-debate/) (with Shai Akabas and Tim Shaw) 2017. Bipartisan Policy Center.
+["Harvey Raises Stakes on Debt Limit Debate"](https://bipartisanpolicy.org/blog/harvey-raises-stakes-on-debt-limit-debate/)  
+*with Shai Akabas and Tim Shaw · Bipartisan Policy Center, 2017*
 
--   ["The Financial Future of Social Security and Medicare"](https://bipartisanpolicy.org/blog/the-financial-future-of-social-security-and-medicare/) (with Tim Shaw) 2017. Bipartisan Policy Center.
+["The Financial Future of Social Security and Medicare"](https://bipartisanpolicy.org/blog/the-financial-future-of-social-security-and-medicare/)  
+*with Tim Shaw · Bipartisan Policy Center, 2017*
 
 [^1]: For what it's worth, we were [right about this](https://www.cbo.gov/publication/60039#:~:text=The%20Budget%20Outlook-,Deficits,to%20%242.8%20trillion%20by%202034).
 
@@ -150,10 +173,10 @@ Computing: `R`, `python`, `STATA`, Mathematica, \LaTeX, cluster computing
 
 ## References
 
--   **Christopher D. Hare (chair)**, Associate Professor of Political Science, University of California, Davis
+**Christopher D. Hare (chair)**, Associate Professor of Political Science, University of California, Davis
 
--   **Ryan Hübert**, Associate Professor of Computational Social Science, Department of Methodology, London School of Economics and Political Science
+**Ryan Hübert**, Associate Professor of Computational Social Science, Department of Methodology, London School of Economics and Political Science
 
--   **Lauren Peritz**, Associate Professor of Political Science, University of California, Davis
+**Lauren Peritz**, Associate Professor of Political Science, University of California, Davis
 
--   **Erik J. Engstrom**, Professor of Political Science, University of California, Davis
+**Erik J. Engstrom**, Professor of Political Science, University of California, Davis

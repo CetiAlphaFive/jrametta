@@ -1,7 +1,16 @@
--   [Did the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports](https://osf.io/prqd9/). *Under Review. Presented at MPSA 2024.*
+[Hostile Principals and The Beginning of the End of the Legislative State](https://doi.org/10.31219/osf.io/7zk4p)  
+*MPSA 2024 · previously titled "Did the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports"*
 
--   [The Balance Permutation Test: A Machine Learning Replacement for Balance Tables](https://osf.io/xcwt9) (with Sam Fuller). *Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.*
+[Are Random Forests Still "Good Enough"? Tabular Prior-Data Fitted Networks for Predictive and Causal Tasks](https://doi.org/10.31235/osf.io/g29xc_v1)
 
--   [What Predicts Support for Political Violence? Results from a Machine Learning Meta-Reanalysis](https://doi.org/10.31235/osf.io/d968h_v2) (with Sam Fuller and Alexa Federice). *Under Review. Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025*
+[How Model Choice Obscures Forecast Uncertainty: The Rashomon Effect and the 2026 Senate](https://doi.org/10.31235/osf.io/e9kpv_v1)  
+*with Christopher D. Hare*
 
--   [Causal Forest and Double Machine Learning for Political Science](https://osf.io/nm9de/) (with Sam Fuller). *Presented at MPSA 2023, APSA 2024*
+[Leaving Money on the Table: A Monte-Carlo Study Comparing Causal Forest and Standard Regression Models for Experiments](https://doi.org/10.31235/osf.io/g395f_v1)  
+*with Sam Fuller · APSA 2025*
+
+[What Predicts Support for Political Violence? Results from a Machine Learning Meta-Reanalysis](https://doi.org/10.31235/osf.io/d968h_v2)  
+*with Sam Fuller and Alexa Federice · Harvard American Politics Research Workshop 2024 · MPSA 2025 · APSA 2025*
+
+[The Changing Landscape of Democratic (Dis)Satisfaction: Results from the American National Election Study 1996--2024](https://doi.org/10.31235/osf.io/cy964_v1)  
+*with Sam Fuller and Neil S. Williams · MPSA 2026*
