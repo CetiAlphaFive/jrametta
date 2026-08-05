@@ -1,0 +1,24 @@
+# Music page data — edit albums + playlist URL here.
+# Each album needs artist, title, tidal_url. cover_url is optional override.
+# Cover art auto-fetched from iTunes Search API and cached in images/albums/.
+#
+# mockup_count: if > 0, ignore `albums:` list and pull that many random covers
+# from iTunes top-albums charts. Set to 0 (or remove) to use the real list.
+
+mockup_count: 0
+
+playlist_url: "https://tidal.com/browse/playlist/REPLACE_WITH_PLAYLIST_ID"
+playlist_label: "Mega-Shuffle Playlist on Tidal"
+
+albums:
+  - artist: "Radiohead"
+    title: "In Rainbows"
+    tidal_url: "https://tidal.com/browse/album/REPLACE"
+
+  - artist: "Fiona Apple"
+    title: "Fetch the Bolt Cutters"
+    tidal_url: "https://tidal.com/browse/album/REPLACE"
+
+  - artist: "Kendrick Lamar"
+    title: "To Pimp a Butterfly"
+    tidal_url: "https://tidal.com/browse/album/REPLACE"

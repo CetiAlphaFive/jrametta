@@ -86,3 +86,59 @@
   margin-top: 0.3em;
   letter-spacing: 0.01em;
 }
+
+.tidal-cta {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background: #000;
+  color: #fff !important;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-weight: 600;
+  margin: 0.5em 0 1.5em;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.tidal-cta:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.quarto-dark .tidal-cta {
+  background: #ff5112;
+  color: #181818 !important;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 0;
+  margin: 1.5em 0;
+  width: 100%;
+}
+
+.album-grid > p {
+  display: contents;
+}
+
+.album-tile {
+  display: block;
+  text-decoration: none !important;
+  color: inherit !important;
+  position: relative;
+  transition: transform 0.15s ease, z-index 0s 0.15s;
+}
+
+.album-tile:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  transition: transform 0.15s ease, z-index 0s;
+}
+
+.album-cover {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: #222;
+}

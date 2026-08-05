@@ -25,28 +25,28 @@
     "href": "research.html#publications",
     "title": "Research",
     "section": "Publications",
-    "text": "Publications\n\nAffect, Not Ideology: The Heterogeneous Effects of Political Cues on Policy Support. Coauthored with Nicolás de la Cerda and Sam Fuller. 2025 Political Behavior. Presented at WPSA 2023."
+    "text": "Publications\nAffect, Not Ideology: The Heterogeneous Effects of Political Cues on Policy Support\nwith Nicolás de la Cerda and Sam Fuller · Political Behavior, 2025 · WPSA 2023"
   },
   {
     "objectID": "research.html#book-project",
     "href": "research.html#book-project",
     "title": "Research",
     "section": "Book Project",
-    "text": "Book Project\n\nAdvanced Machine Learning for Experiments in the Social Sciences. Coauthored with Christopher D. Hare and Sam Fuller. Advance Contract, Cambridge Elements: Experimental Political Science. Expected 2026-2027."
+    "text": "Book Project\nAdvanced Machine Learning for Experiments in the Social Sciences\nwith Christopher D. Hare and Sam Fuller · Advance contract, Cambridge Elements: Experimental Political Science · Expected 2026-2027\nCausal Forest and Doubly Robust Machine Learning for Political Science\nwith Sam Fuller · Companion paper · MPSA 2023 · APSA 2024"
   },
   {
     "objectID": "research.html#research-under-review",
     "href": "research.html#research-under-review",
     "title": "Research",
     "section": "Research under Review",
-    "text": "Research under Review\n\nDid the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports. Under Review. Presented at MPSA 2024.\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables (with Sam Fuller). Under Review. Presented at UC Davis Political Science Research Workshop and ICPSR 2024.\nWhat Predicts Support for Political Violence? Results from a Machine Learning Meta-Reanalysis (with Sam Fuller and Alexa Federice). Under Review. Presented at Harvard American Politics Research Workshop 2024, MPSA 2025, and APSA 2025\nCausal Forest and Double Machine Learning for Political Science (with Sam Fuller). Presented at MPSA 2023, APSA 2024"
+    "text": "Research under Review\nHostile Principals and The Beginning of the End of the Legislative State\nMPSA 2024 · previously titled “Did the Republican Revolution Hamstring Congressional Oversight? Evidence from 55,000 GAO Reports”\nAre Random Forests Still “Good Enough”? Tabular Prior-Data Fitted Networks for Predictive and Causal Tasks\nHow Model Choice Obscures Forecast Uncertainty: The Rashomon Effect and the 2026 Senate\nwith Christopher D. Hare\nLeaving Money on the Table: A Monte-Carlo Study Comparing Causal Forest and Standard Regression Models for Experiments\nwith Sam Fuller · APSA 2025\nWhat Predicts Support for Political Violence? Results from a Machine Learning Meta-Reanalysis\nwith Sam Fuller and Alexa Federice · Harvard American Politics Research Workshop 2024 · MPSA 2025 · APSA 2025\nThe Changing Landscape of Democratic (Dis)Satisfaction: Results from the American National Election Study 1996–2024\nwith Sam Fuller and Neil S. Williams · MPSA 2026"
   },
   {
     "objectID": "research.html#selected-research-in-preparation",
     "href": "research.html#selected-research-in-preparation",
     "title": "Research",
     "section": "Selected Research in Preparation",
-    "text": "Selected Research in Preparation\n\nPopulism and the Political Economy of Congressional Professionalization\nRational Voting in the Age of Ideological Polarization & Responsible Parties: Examining Presidential Elections from 1972–2024. (with Carlos Algara and Sam Fuller).\nAre Random Forests “Good Enough”? Exploring the Utility of Prior-Data Fitted Networks for Predictive and Causal Tasks\nFast and Improved (Ordered) Optimal Classification (with Christopher D. Hare).\nThe Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019) (with Sam Fuller). Presented at MPSA 2024."
+    "text": "Selected Research in Preparation\nPopulism and the Political Economy of Congressional Professionalization\nocx: Fast and Improved (Ordinal) Optimal Classification\nwith Christopher D. Hare, Tzu-Ping Liu, and Keith T. Poole\nThe Balance Permutation Test: A Machine Learning Replacement for Balance Tables\nwith Sam Fuller · UC Davis Political Science Research Workshop · ICPSR 2024\nRational Voting in the Age of Ideological Polarization & Responsible Parties: Examining Presidential Elections from 1972–2024\nwith Carlos Algara and Sam Fuller · SPSA 2026\nThe Dangers of Calculating Conditional Effects: A Reevaluation of Barber and Pope (2019)\nwith Sam Fuller · MPSA 2024"
   },
   {
     "objectID": "software.html",
@@ -102,6 +102,13 @@
     "href": "index.html",
     "title": "Jack T. Rametta",
     "section": "",
-    "text": "2026 Senate Forecast → \n\nHello there! I’m a political scientist and postdoctoral fellow at the Ronald Reagan Presidential Foundation and Institute in Washington D.C.\nMy substantive research employs causally oriented machine learning methods to study American political institutions, political behavior, and public policy. I work on oversight and policymaking in I dub the “Legislative State,” a network of understudied people and institutions that support the Congress.\nMethodologically I develop and apply new methods, as well as software tools, for difficult social science problems. To that end, I teach a graduate-level topical workshop on causal machine learning methods at the Inter-university Consortium for Political & Social Research (ICPSR) at the University of Michigan.\nI hold a Ph.D. in Political Science at the University of California, Davis with subfields in methods and American politics. I also received a B.A. in Economics and Political Science from George Washington University.\nBefore graduate school, I was an economic policy research analyst at the Bipartisan Policy Center. At BPC, I contributed to research on the federal budget, debt limit, Social Security and Medicare financing, and defense personnel reform."
+    "text": "2026 Senate Forecast → \n\nHello there! I’m a political scientist and postdoctoral fellow at the Ronald Reagan Presidential Foundation and Institute in Washington D.C.\nMy substantive research employs causally oriented machine learning methods to study American political institutions, political behavior, and public policy. I work on oversight and policymaking in what I dub the “Legislative State,” a network of understudied people and institutions that support the Congress.\nMethodologically I develop and apply new methods, as well as software tools, for difficult social science problems. To that end, I teach a graduate-level topical workshop on causal machine learning methods at the Inter-university Consortium for Political & Social Research (ICPSR) at the University of Michigan.\nI hold a Ph.D. in Political Science from the University of California, Davis with subfields in methods and American politics. I also received a B.A. in Economics and Political Science from George Washington University.\nBefore graduate school, I was an economic policy research analyst at the Bipartisan Policy Center. At BPC, I contributed to research on the federal budget, debt limit, Social Security and Medicare financing, and defense personnel reform."
+  },
+  {
+    "objectID": "music.html",
+    "href": "music.html",
+    "title": "Music",
+    "section": "",
+    "text": "A wall of albums I keep coming back to. Click any cover to open it on Tidal.\n\nMega-Shuffle Playlist on Tidal"
   }
 ]

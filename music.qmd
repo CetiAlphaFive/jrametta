@@ -1,0 +1,152 @@
+---
+title: "Music"
+editor: visual
+---
+
+A wall of albums I keep coming back to. Click any cover to open it on Tidal.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+#| column: screen-inset
+
+library(yaml)
+library(jsonlite)
+library(htmltools)
+
+data <- yaml::read_yaml("albums.yml")
+
+csv_path <- path.expand("~/Downloads/albums.csv")
+
+dir.create("images/albums", showWarnings = FALSE, recursive = TRUE)
+
+slugify <- function(x) {
+  x <- tolower(x)
+  x <- gsub("[^a-z0-9]+", "-", x)
+  x <- gsub("^-|-$", "", x)
+  x
+}
+
+fetch_cover <- function(artist, title, slug, override = NULL) {
+  dest <- file.path("images", "albums", paste0(slug, ".jpg"))
+  if (file.exists(dest)) return(dest)
+
+  src <- override
+  if (is.null(src) || !nzchar(src)) {
+    q <- utils::URLencode(paste(artist, title))
+    url <- sprintf("https://itunes.apple.com/search?term=%s&entity=album&limit=1", q)
+    res <- tryCatch(jsonlite::fromJSON(url), error = function(e) NULL)
+    if (!is.null(res) && res$resultCount > 0) {
+      art <- res$results$artworkUrl100[1]
+      src <- sub("100x100bb", "600x600bb", art)
+    }
+  }
+
+  if (is.null(src) || !nzchar(src)) return(NA_character_)
+
+  ok <- tryCatch({
+    utils::download.file(src, dest, mode = "wb", quiet = TRUE)
+    TRUE
+  }, error = function(e) FALSE, warning = function(w) FALSE)
+
+  if (ok) dest else NA_character_
+}
+
+fetch_rss_feed <- function(genre = NULL, limit = 100) {
+  url <- if (is.null(genre)) {
+    sprintf("https://itunes.apple.com/us/rss/topalbums/limit=%d/json", limit)
+  } else {
+    sprintf("https://itunes.apple.com/us/rss/topalbums/limit=%d/genre=%d/json", limit, genre)
+  }
+  res <- tryCatch(jsonlite::fromJSON(url, simplifyVector = FALSE), error = function(e) NULL)
+  if (is.null(res)) return(list())
+  entries <- res$feed$entry
+  if (is.null(entries)) return(list())
+  lapply(entries, function(e) {
+    imgs <- e[["im:image"]]
+    img_url <- imgs[[length(imgs)]]$label
+    img_url <- sub("170x170bb", "600x600bb", img_url)
+    link <- e$link
+    href <- if (is.list(link) && !is.null(link$attributes$href)) {
+      link$attributes$href
+    } else if (is.list(link) && length(link) > 0 && !is.null(link[[1]]$attributes$href)) {
+      link[[1]]$attributes$href
+    } else {
+      "#"
+    }
+    list(cover_url = img_url, href = href, id = e$id$label %||% img_url)
+  })
+}
+
+mockup_pool <- function(n) {
+  genres <- list(NULL, 21, 18, 20, 14, 7)  # all, rock, hip-hop, alt, pop, electronic
+  pool <- list()
+  for (g in genres) {
+    pool <- c(pool, fetch_rss_feed(g, 100))
+    if (length(pool) >= n * 2) break
+  }
+  ids <- vapply(pool, function(x) x$id %||% "", character(1))
+  pool <- pool[!duplicated(ids)]
+  if (length(pool) > n) pool <- pool[sample.int(length(pool), n)]
+  pool
+}
+
+playlist_url <- data$playlist_url %||% ""
+playlist_label <- data$playlist_label %||% "Open shuffle playlist on Tidal"
+if (nzchar(playlist_url)) {
+  cat(sprintf(
+    '<a class="tidal-cta" href="%s" target="_blank" rel="noopener">%s</a>\n\n',
+    playlist_url, playlist_label
+  ))
+}
+
+mockup_n <- data$mockup_count %||% 0
+use_csv <- file.exists(csv_path) && mockup_n == 0
+
+if (use_csv) {
+  rows <- utils::read.csv(csv_path, stringsAsFactors = FALSE, check.names = FALSE)
+  names(rows) <- tolower(names(rows))
+  artist_col <- intersect(c("artist"), names(rows))[1]
+  title_col  <- intersect(c("album", "title"), names(rows))[1]
+  rows <- rows[!is.na(rows[[artist_col]]) & nzchar(rows[[artist_col]]), , drop = FALSE]
+  rows <- rows[sample.int(nrow(rows)), , drop = FALSE]
+  tiles <- vapply(seq_len(nrow(rows)), function(i) {
+    artist <- rows[[artist_col]][i]
+    title  <- rows[[title_col]][i]
+    slug   <- slugify(paste(artist, title))
+    cover  <- fetch_cover(artist, title, slug)
+    img_src <- if (is.na(cover)) "images/albums/_placeholder.svg" else cover
+    href <- sprintf("https://tidal.com/search?q=%s",
+                    utils::URLencode(paste(artist, title), reserved = TRUE))
+    sprintf(
+      '<a class="album-tile" href="%s" target="_blank" rel="noopener" title="%s — %s"><img class="album-cover" src="%s" alt="%s — %s" loading="lazy"></a>',
+      href, artist, title, img_src, artist, title
+    )
+  }, character(1))
+} else if (mockup_n > 0) {
+  pool <- mockup_pool(mockup_n)
+  pool <- pool[sample.int(length(pool))]
+  tiles <- vapply(pool, function(a) {
+    sprintf(
+      '<a class="album-tile" href="%s" target="_blank" rel="noopener"><img class="album-cover" src="%s" alt="" loading="lazy"></a>',
+      a$href, a$cover_url
+    )
+  }, character(1))
+} else {
+  albums <- data$albums
+  albums <- albums[sample.int(length(albums))]
+  tiles <- vapply(albums, function(a) {
+    slug <- slugify(paste(a$artist, a$title))
+    cover <- fetch_cover(a$artist, a$title, slug, a$cover_url)
+    img_src <- if (is.na(cover)) "images/albums/_placeholder.svg" else cover
+    sprintf(
+      '<a class="album-tile" href="%s" target="_blank" rel="noopener" title="%s — %s"><img class="album-cover" src="%s" alt="%s — %s" loading="lazy"></a>',
+      a$tidal_url, a$artist, a$title, img_src, a$artist, a$title
+    )
+  }, character(1))
+}
+
+cat('<div class="album-grid">', paste(tiles, collapse = ""), '</div>', sep = "")
+```
