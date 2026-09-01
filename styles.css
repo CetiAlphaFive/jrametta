@@ -6,6 +6,24 @@
   margin: 0 1.5em 1em 0;
 }
 
+/* Bio text sits in its own block formatting context so it forms a single
+   column beside the floated headshot instead of wrapping underneath it. */
+.bio {
+  display: flow-root;
+}
+
+/* Narrow screens: stack the headshot above the bio rather than squeezing
+   the text column to a sliver. */
+@media (max-width: 700px) {
+  .headshot-col {
+    float: none;
+    margin: 0 auto 1.5em;
+  }
+  .bio {
+    display: block;
+  }
+}
+
 .headshot {
   width: 100%;
   border: 2px solid #ccc;
