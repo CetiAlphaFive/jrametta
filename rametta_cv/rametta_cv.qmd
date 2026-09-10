@@ -74,7 +74,7 @@ Instructor(s) of record listed in the parentheses where applicable.
 
 ## Software
 
-[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) An expansive package that provides a suite functions associated with causal machine learning. This includes: causal variable importance implementations (e.g. leave-one-covariate-out (LOCO) variable importance), an omnibus suite of treatment effect heterogeneity tests, implementations of alternative curve-fitting algorithms for popular causal machine learning methods, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. 
+[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) An expansive package that provides a suite of functions associated with causal machine learning. This includes: causal variable importance implementations (e.g. leave-one-covariate-out (LOCO) variable importance), an omnibus suite of treatment effect heterogeneity tests, implementations of alternative curve-fitting algorithms for popular causal machine learning methods, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package. 
 
 [**gao:**](https://github.com/CetiAlphaFive/gao) A package that scrapes all publicly available Government Accountability Office published materials and returns both the original PDF/.html files as well as a cleaned dataset that extracts information from the pages. Updated daily. Associated working paper is Rametta (2026).
 
@@ -100,7 +100,7 @@ Western Political Science Association Annual Meeting \hfill 2023
 
 ## Discipline Service
 
-*Referee:* Political Behavior, Journal of Public Policy, PS: Political Science and Policy.
+*Referee:* Political Behavior, Journal of Public Policy, PS: Political Science & Politics.
 
 ## Graduate Student Researcher Experience
 
@@ -116,8 +116,8 @@ Professor Ryan Hübert. Political Appointments and Outcomes in Federal District 
 ["Would Secrecy Make Congress Do Its Job?"](https://lawliberty.org/would-secrecy-make-congress-do-its-job/)  
 *Law and Liberty, 2025*
 
-["Putting America Back On Track: A Bipartisan Approach To Fiscal Policy Solutions"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf)  
-*with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim Shaw · Peter G. Peterson Institute, 2019*
+["Putting America Back on Track: A Bipartisan Approach to Fiscal Policy Solutions"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf)  
+*with Bill Hoagland, Shai Akabas, Jason Fichtner, and Tim Shaw · Peter G. Peterson Foundation, 2019*
 
 ["Debt Limit Analysis: Everything You Need to Know in 30 Slides"](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/07/Debt-Limit-Analysis-Everything-You-Need-to-Know-in-30-Slides.pdf)  
 *with Shai Akabas and Kody Carmody · Bipartisan Policy Center, 2019*

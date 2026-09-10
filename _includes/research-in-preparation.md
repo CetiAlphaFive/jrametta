@@ -1,5 +1,8 @@
 Populism and the Political Economy of Congressional Professionalization
 
+Unbundling Support for Political Violence: Actors, Targets, Severity, and Justification  
+*with Sam Fuller and Alexa Federice · MPSA 2026 · APSA 2026*
+
 ocx: Fast and Improved (Ordinal) Optimal Classification  
 *with Christopher D. Hare, Tzu-Ping Liu, and Keith T. Poole*
 
