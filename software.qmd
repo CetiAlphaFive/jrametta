@@ -6,7 +6,7 @@ editor: visual
 ::: pkg-entry
 [![](images/utopiaplanitia_sticker.png)](https://github.com/CetiAlphaFive/UtopiaPlanitia)
 
-[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) An expansive package that provides a suite functions associated with causal machine learning. This includes: causal variable importance implementations (e.g. leave-one-covariate-out (LOCO) variable importance), an omnibus suite of treatment effect heterogeneity tests, implementations of alternative curve-fitting algorithms for popular causal machine learning methods, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package.
+[**UtopiaPlanitia:**](https://github.com/CetiAlphaFive/UtopiaPlanitia) An expansive package that provides a suite of functions associated with causal machine learning. This includes: causal variable importance implementations (e.g. leave-one-covariate-out (LOCO) variable importance), an omnibus suite of treatment effect heterogeneity tests, implementations of alternative curve-fitting algorithms for popular causal machine learning methods, partial dependence plots, and S3 summary/plot methods for causal forest objects from the `grf` package.
 :::
 
 ::: pkg-entry

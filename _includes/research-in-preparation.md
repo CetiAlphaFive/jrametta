@@ -1,6 +1,6 @@
 Populism and the Political Economy of Congressional Professionalization
 
-Unbundling Support for Political Violence: Actors, Targets, Severity, and Justification  
+[Unbundling Support for Political Violence: Actors, Targets, Severity, and Justification](https://doi.org/10.31235/osf.io/x86eh_v1)  
 *with Sam Fuller and Alexa Federice · MPSA 2026 · APSA 2026*
 
 ocx: Fast and Improved (Ordinal) Optimal Classification  

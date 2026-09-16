@@ -6,7 +6,7 @@
 
 *The University of California, Davis*
 
--   POL 213: Quantitative Analysis in Politics Science II (MLE) (S: 2022, Lauren Peritz)
+-   POL 213: Quantitative Analysis in Political Science II (MLE) (S: 2022, Lauren Peritz)
 
 -   POL 212: Quantitative Analysis in Political Science I (OLS) (W: 2022, Christopher D. Hare)
 
