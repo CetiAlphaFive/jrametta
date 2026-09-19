@@ -22,7 +22,9 @@ csl: apa-cv.csl
 
 ## Academic Appointments
 
-Postdoctoral Fellow, Ronald Reagan Presidential Foundation & Institute \hfill 2025-Present
+Emerging Scholar, Mercatus Center at George Mason University \hfill 2026-Present
+
+Postdoctoral Fellow, Ronald Reagan Presidential Foundation & Institute \hfill 2025-2026
 
 Instructor, Inter-university Consortium for Political & Social Research, University of Michigan \hfill 2025-Present
 
