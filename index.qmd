@@ -18,9 +18,9 @@ editor: visual
 
 ::: bio
 
-Hello there! I'm an Emerging Scholar at the [Mercatus Center](https://www.mercatus.org/) at George Mason University.
+Hello there! I am a political scientist and emerging scholar at the [Mercatus Center](https://www.mercatus.org/) at George Mason University.
 
-I am a political scientist whose research bridges American political institutions, statistical methodology, and democratic behavior. A central focus is oversight and lawmaking capacity in what I dub the "Legislative State," a network of understudied people and institutions that support Congress.
+My research bridges American political institutions, statistical methodology, and democratic behavior. A central focus is oversight and lawmaking capacity in what I dub the "Legislative State," a network of understudied people and institutions that support Congress.
 
 Additionally, I teach a graduate-level topical workshop on [causal machine learning](https://samjfuller.com/content/ICPSR_Causal_Machine_Learning_Syllabus_2025.pdf) methods at the Inter-university Consortium for Political & Social Research (ICPSR) at the University of Michigan.
 
