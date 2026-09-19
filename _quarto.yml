@@ -4,6 +4,11 @@ project:
   resources:
     - senate-forecast/**
     - files/**
+  # docs/senate-forecast/ is owned by a daily GitHub Action, not by Quarto.
+  # A full render wipes docs/ and re-copies the stale local senate-forecast/
+  # source, so put the committed (bot-updated) version back afterwards.
+  post-render:
+    - git checkout HEAD -- docs/senate-forecast
 
 website:
   title: "Jack T. Rametta"
