@@ -26,7 +26,7 @@ editor: visual
 :::
 
 ::: pkg-entry
-[**2026 Senate Forecast:**](/senate-forecast/) A live, Bayesian forecast of the 2026 U.S. Senate elections (with Christopher D. Hare). Companion working paper: Rametta and Hare (2026).
+[**2026 Senate Forecast:**](/senate-forecast/) A live, Bayesian forecast of the 2026 U.S. Senate elections (with Christopher D. Hare). Companion paper: [Rametta and Hare (2026)](https://doi.org/10.1017/S1049096526103059), *PS: Political Science & Politics*.
 :::
 
 ::: pkg-entry

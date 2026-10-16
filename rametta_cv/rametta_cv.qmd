@@ -22,7 +22,7 @@ csl: apa-cv.csl
 
 ## Academic Appointments
 
-Emerging Scholar, Mercatus Center at George Mason University \hfill 2026-Present
+Research Fellow, Mercatus Center at George Mason University \hfill 2026-Present
 
 Postdoctoral Fellow, Ronald Reagan Presidential Foundation & Institute \hfill 2025-2026
 
@@ -84,7 +84,7 @@ Instructor(s) of record listed in the parentheses where applicable.
 
 [**MLbalance:**](https://github.com/CetiAlphaFive/MLbalance) Implements a suite of machine learning balance tests for experimental and observational data. These tests are designed to detect failures of random assignment or covariate imbalance using machine learning and permutation inference. Associated working paper is Rametta and Fuller (2026).
 
-[**2026 Senate Forecast:**](https://jackrametta.com) A live, Bayesian forecast of the 2026 U.S. Senate elections (with Christopher D. Hare). Companion working paper: Rametta and Hare (2026).
+[**2026 Senate Forecast:**](https://jackrametta.com) A live, Bayesian forecast of the 2026 U.S. Senate elections (with Christopher D. Hare). Companion paper: [Rametta and Hare (2026)](https://doi.org/10.1017/S1049096526103059), *PS: Political Science & Politics*.
 
 [**roadrunner:**](https://github.com/CetiAlphaFive/roadrunner) Fast, low-dependency implementations of classical machine learning algorithms with C++ backends via `Rcpp` and `RcppParallel`. Includes multivariate adaptive regression splines, kernel regularized least squares, penalized linear discriminant analysis, and component-wise P-spline gradient boosting, plus `meep()`, a cross-fitted stacked ensemble built for double machine learning and causal-forest nuisance estimation.
 

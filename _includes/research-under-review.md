@@ -4,9 +4,6 @@
 [Are Random Forests Still "Good Enough"? Tabular Prior-Data Fitted Networks for Predictive and Causal Tasks](https://doi.org/10.31235/osf.io/g29xc_v1)  
 *Under review: Political Analysis · with Sam Fuller*
 
-[How Model Choice Obscures Forecast Uncertainty: The Rashomon Effect and the 2026 Senate](https://doi.org/10.31235/osf.io/e9kpv_v1)  
-*Revise & resubmit: PS: Political Science & Politics · with Christopher D. Hare*
-
 [Leaving Money on the Table: A Monte-Carlo Study Comparing Causal Forest and Standard Regression Models for Experiments](https://doi.org/10.31235/osf.io/g395f_v1)  
 *Under review: Journal of Politics · with Sam Fuller · APSA 2025*
 

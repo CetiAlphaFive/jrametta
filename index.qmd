@@ -18,7 +18,7 @@ editor: visual
 
 ::: bio
 
-Hello there! I am a political scientist and emerging scholar at the [Mercatus Center](https://www.mercatus.org/) at George Mason University.
+Hello there! I am a political scientist and Research Fellow at the [Mercatus Center](https://www.mercatus.org/) at George Mason University.
 
 My research bridges American political institutions, statistical methodology, and democratic behavior. A central focus is oversight and lawmaking capacity in what I dub the "Legislative State," a network of understudied people and institutions that support Congress.
 
