@@ -636,6 +636,16 @@
     font-size: 12px;
     text-align: right;
   }
+  /* Dated update note stacked above the original welcome note */
+  .notes-stack {
+    flex: 1 1 480px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .notes-stack .welcome-box { flex: 1 1 auto; }
+  .update-box { border-left: 3px solid #5a8fd4; }
   .forecast-trend-title {
     font-size: 11px;
     color: #888;
@@ -822,12 +832,21 @@
         <div class="forecast-trend-annot" id="trend-annot"></div>
         <div class="trend-tooltip" id="trend-tooltip"></div>
       </div>
-      <div class="welcome-box">
-        <div class="welcome-box-title">Welcome</div>
-        <div class="welcome-box-body">
-          Greetings! This is a 2026 Senate forecast. Our model blends fundamentals and polls (details below). To see how sensitive the forecast is to alternative assumptions, adjust the &ldquo;Customize Assumptions&rdquo; sliders above. If you have any questions please let us know.
+      <div class="notes-stack">
+        <div class="welcome-box update-box">
+          <div class="welcome-box-title">Update</div>
+          <div class="welcome-box-body">
+            We&rsquo;ve updated our model to omit polls from the fraudulent Wedgewood polling outfit as of October 20th. This update resulted in a very minor change to the current forecast.
+          </div>
+          <div class="welcome-box-sig">&mdash; Jack, 10.20.2026</div>
         </div>
-        <div class="welcome-box-sig">&mdash; Jack, 7.20.2026</div>
+        <div class="welcome-box">
+          <div class="welcome-box-title">Welcome</div>
+          <div class="welcome-box-body">
+            Greetings! This is a 2026 Senate forecast. Our model blends fundamentals and polls (details below). To see how sensitive the forecast is to alternative assumptions, adjust the &ldquo;Customize Assumptions&rdquo; sliders above. If you have any questions please let us know.
+          </div>
+          <div class="welcome-box-sig">&mdash; Jack, 7.20.2026</div>
+        </div>
       </div>
       <a class="paper-card" href="https://doi.org/10.1017/S1049096526103059" target="_blank" rel="noopener" title="Read the paper in PS: Political Science &amp; Politics">
         <svg class="paper-icon" width="40" height="48" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
