@@ -372,8 +372,9 @@
   }
 
   function fOf(s) {
-    if (s.eevp != null && s.eevp > 0) return s.eevp / 100;
-    return s.expected > 0 ? Math.min(1, (s.total || 0) / s.expected) : 0;
+    const f = s.eevp != null && s.eevp > 0 ? s.eevp / 100
+            : (s.expected > 0 ? (s.total || 0) / s.expected : 0);
+    return Math.min(1, Math.max(0, f));
   }
 
   // Quantiles of column j via a 0.02-pt histogram (fast, no sort)

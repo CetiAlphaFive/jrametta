@@ -429,10 +429,12 @@ function ingest(feed) {
   return lastOut;
 }
 
-let backoff = POLL_MS, pollTimer = null;
+let backoff = POLL_MS, pollTimer = null, polling = false;
 async function poll() {
   clearTimeout(pollTimer);
-  if (document.hidden) return;
+  // One poll chain at a time: a tab shown again mid-fetch must not start a second
+  if (document.hidden || polling) return;
+  polling = true;
   const src = feedUrl();
   try {
     const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 15000);
@@ -453,6 +455,7 @@ async function poll() {
     setStatus("err", COPY.statusError);
     backoff = Math.min(backoff * 2, 300000);
   }
+  polling = false;
   pollTimer = setTimeout(poll, backoff);
 }
 function feedUrl() {
