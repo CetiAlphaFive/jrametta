@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>2026 Senate: Election Night Needle</title>
+<style>
+  :root {
+    --bg: #0f1117; --panel: #161822; --card: #1e2030; --line: #2a2d3a; --line2: #3a3d4e;
+    --ink: #e0e0e0; --ink2: #b4b8c7; --muted: #8b93a7;
+    --dem: #4e8ef7; --rep: #e55656; --dem-soft: rgba(78,142,247,0.16); --rep-soft: rgba(229,86,86,0.16);
+    --band50: rgba(224,224,224,0.42); --band90: rgba(224,224,224,0.16);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); font-size: 14px; line-height: 1.4; }
+  .header { background: var(--panel); border-bottom: 1px solid var(--line); padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+  .header h1 { font-size: 20px; font-weight: 600; color: #fff; }
+  .subtitle { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .status { font-size: 12px; color: var(--ink2); display: flex; align-items: center; gap: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); flex: none; }
+  .dot.live { background: #3fb950; box-shadow: 0 0 0 3px rgba(63,185,80,0.18); }
+  .dot.err { background: #d29922; }
+  .demo-bar { background: #2b2412; border-bottom: 1px solid #5a4a1a; color: #f2d48a; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; font-size: 13px; }
+  .demo-bar input[type=range] { width: min(420px, 60vw); }
+  .demo-bar button, .seg button, .toggles label { font: inherit; }
+  .demo-bar button { background: #3a3220; color: #f2d48a; border: 1px solid #6b5a2a; border-radius: 6px; padding: 3px 10px; cursor: pointer; }
+  main { max-width: 1180px; margin: 0 auto; padding: 20px 20px 48px; display: grid; gap: 20px; }
+  .panel { background: var(--card); border-radius: 10px; padding: 18px 20px; }
+  .control { display: grid; grid-template-columns: minmax(280px, 420px) 1fr; gap: 24px; align-items: center; }
+  @media (max-width: 760px) { .control { grid-template-columns: 1fr; } }
+  .control h2, .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+  .big-odds { display: flex; gap: 28px; margin: 6px 0 4px; }
+  .big-odds .n { font-size: 34px; font-weight: 700; font-variant-numeric: tabular-nums; color: #fff; }
+  .big-odds .who { font-size: 12px; color: var(--ink2); display: flex; align-items: center; gap: 6px; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .facts { font-size: 13px; color: var(--ink2); margin-top: 6px; display: grid; gap: 3px; }
+  .facts b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .hist-wrap { margin-top: 14px; }
+  .hist-wrap .cap { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  svg text { font-family: inherit; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+  .seg { display: inline-flex; border: 1px solid var(--line2); border-radius: 8px; overflow: hidden; }
+  .seg button { background: transparent; color: var(--ink2); border: 0; padding: 6px 12px; cursor: pointer; font-size: 13px; }
+  .seg button[aria-pressed=true] { background: var(--line2); color: #fff; }
+  .toggles { display: flex; gap: 16px; font-size: 13px; color: var(--ink2); }
+  .toggles label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border-radius: 10px; padding: 14px 14px 12px; display: grid; gap: 6px; }
+  .card .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .card .st { font-size: 15px; font-weight: 600; color: #fff; }
+  .chip { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: var(--line); color: var(--ink2); white-space: nowrap; }
+  .chip.counting { background: rgba(63,185,80,0.15); color: #8fdc9c; }
+  .chip.called { background: var(--line2); color: #fff; }
+  .chip.warn { background: rgba(210,153,34,0.18); color: #e8c46a; }
+  .matchup { font-size: 12px; color: var(--ink2); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .matchup span { display: inline-flex; align-items: center; gap: 5px; }
+  .card .est { font-size: 13px; color: var(--ink); text-align: center; font-variant-numeric: tabular-nums; }
+  .card .est b { font-size: 16px; }
+  .card .sub { font-size: 12px; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
+  .card .bar { height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; }
+  .card .bar i { display: block; height: 100%; background: var(--ink2); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .notes { font-size: 12px; color: var(--muted); display: grid; gap: 6px; }
+  .tip { position: fixed; pointer-events: none; background: #0b0d13; border: 1px solid var(--line2); border-radius: 6px; padding: 6px 9px; font-size: 12px; color: var(--ink); z-index: 10; white-space: nowrap; }
+  .loading { padding: 60px 0; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1 id="t-title"></h1>
+    <div class="subtitle" id="t-subtitle"></div>
+  </div>
+  <div class="status"><span class="dot" id="dot"></span><span id="status"></span></div>
+</div>
+<div class="demo-bar" id="demo-bar" hidden>
+  <strong id="t-demo"></strong>
+  <label><span id="demo-clock"></span> <input type="range" id="demo-hour" min="0" max="14" step="0.25" value="0"></label>
+  <button id="demo-play"></button>
+  <button id="demo-new"></button>
+  <span id="demo-truth"></span>
+</div>
+
+<main id="app">
+  <div class="loading" id="loading"></div>
+
+  <section class="panel control" id="control" hidden>
+    <div>
+      <h2 id="t-control"></h2>
+      <svg id="ctl-gauge" viewBox="0 0 420 250" role="img"></svg>
+    </div>
+    <div>
+      <div class="big-odds">
+        <div><div class="who"><span class="swatch" style="background:var(--dem)"></span><span id="t-dem-party"></span></div><div class="n" id="p-dem"></div></div>
+        <div><div class="who"><span class="swatch" style="background:var(--rep)"></span><span id="t-rep-party"></span></div><div class="n" id="p-rep"></div></div>
+      </div>
+      <div class="facts" id="facts"></div>
+      <div class="hist-wrap">
+        <div class="cap" id="t-hist"></div>
+        <svg id="hist" viewBox="0 0 560 150" role="img"></svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="races" hidden>
+    <div class="toolbar" style="margin-bottom:12px">
+      <div class="seg" id="filter"></div>
+      <div class="toggles">
+        <label><input type="checkbox" id="opt-calls" checked> <span id="t-opt-calls"></span></label>
+        <label><input type="checkbox" id="opt-jitter"> <span id="t-opt-jitter"></span></label>
+        <label><input type="checkbox" id="opt-table"> <span id="t-opt-table"></span></label>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="panel" id="table-wrap" hidden><table id="table"></table></div>
+  </section>
+
+  <section class="panel notes" id="notes" hidden></section>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script src="engine.js"></script>
+<script src="nyt_adapter.js"></script>
+<script src="simulate.js"></script>
+<script>
+"use strict";
+// ---------------------------------------------------------------------------
+// Every string a reader sees is here. DRAFT copy: needs Jack's OK before it
+// goes on jackrametta.com (see needle/README.md).
+// ---------------------------------------------------------------------------
+const COPY = {
+  title: "2026 Senate: Election Night Needle",
+  subtitle: "Our forecast, updated live with the vote count",
+  loading: "Loading the forecast…",
+  control: "Chance of Senate control",
+  demParty: "Democrats",
+  repParty: "Republicans",
+  facts: (o) => [
+    `Expected Democratic seats: <b>${o.seats}</b> (50% range ${o.lo50}–${o.hi50})`,
+    `Democrats need 51 seats; at 50–50 the vice president keeps the Senate Republican.`,
+    `Races called: <b>${o.calledD}</b> D, <b>${o.calledR}</b> R · counting: <b>${o.counting}</b> · not yet reporting: <b>${o.none}</b>`,
+  ],
+  hist: "Democratic seats, chance of each total",
+  histTip: (s, p) => `${s} Democratic seats: ${p}`,
+  bands: ["Very likely D", "Likely D", "Leans D", "Toss-up", "Leans R", "Likely R", "Very likely R"],
+  filters: { competitive: "Competitive", all: "All 35", counting: "Counting", called: "Called" },
+  optCalls: "Use race calls",
+  optJitter: "Jitter",
+  optTable: "Table",
+  statusNone: "Not reporting yet",
+  statusTooFew: "First votes in",
+  statusCounting: (f) => `${f} of expected vote in`,
+  statusCalled: (name) => `Called: ${name}`,
+  statusFeed: "Feed problem",
+  estimate: (lead) => `Estimated final margin: <b>${lead}</b>`,
+  range: (lo, hi) => `90% range: ${lo} to ${hi}`,
+  winProb: (name, p) => `${name} wins ${p}`,
+  counted: (lead, f) => `Counted so far: ${lead} (${f} in)`,
+  forecastOnly: (p) => `Forecast before any votes: ${p}`,
+  mtNote: "Bodnar (I) is counted with the Democrats, as in the forecast",
+  rcvNote: "Ranked-choice: estimate of the final round from first choices",
+  even: "Even",
+  tableHead: ["State", "Race", "Est. margin", "90% range", "D-side win", "Expected vote in", "Counted margin"],
+  statusWaiting: "Waiting for results",
+  statusLive: (time, n) => `Results updated ${time} · ${n} of 35 races counting`,
+  statusError: "Can't reach the results feed; showing the last numbers received",
+  statusNoFeed: "Results feed not available yet; showing the forecast",
+  demoBanner: "DEMO: simulated election night, not real results",
+  demoPlay: "Play", demoPause: "Pause", demoNew: "New night",
+  demoTruth: (seats) => `This night's true outcome: ${seats} D seats`,
+  notes: [
+    "How it works: the needle starts from the final forecast, all 50,000 of its simulated elections, and moves each race as votes are counted. A partial count is treated as evidence about the final margin that gets stronger as the share of expected vote counted grows, allowing for the order in which places and ballot types are counted. Because the forecast links states, a count in one state also moves similar states. Called races are fixed for the winner.",
+    "Results: The Associated Press, via The New York Times.",
+  ],
+  forecastStamp: (d) => `Forecast locked ${d}.`,
+};
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const pct = (p) => p >= 0.995 ? ">99%" : p <= 0.005 ? "<1%" : `${Math.round(p * 100)}%`;
+const params = new URLSearchParams(location.search);
+const DEMO = params.has("demo");
+const POLL_MS = 30000;
+
+let prior, pjson, gate = NytAdapter.Gate();
+let lastFeed = null, lastNorm = null, lastOut = null, names = {}, problems = {};
+let filterMode = "competitive";
+let jitterTimer = null;
+
+// ------------------------------------------------------------------ text
+function fillCopy() {
+  document.title = COPY.title;
+  $("t-title").textContent = COPY.title;
+  $("t-subtitle").textContent = COPY.subtitle;
+  $("loading").textContent = COPY.loading;
+  $("t-control").textContent = COPY.control;
+  $("t-dem-party").textContent = COPY.demParty;
+  $("t-rep-party").textContent = COPY.repParty;
+  $("t-hist").textContent = COPY.hist;
+  $("t-opt-calls").textContent = COPY.optCalls;
+  $("t-opt-jitter").textContent = COPY.optJitter;
+  $("t-opt-table").textContent = COPY.optTable;
+  $("t-demo").textContent = COPY.demoBanner;
+  $("demo-play").textContent = COPY.demoPlay;
+  $("demo-new").textContent = COPY.demoNew;
+  const f = $("filter");
+  for (const k of ["competitive", "all", "counting", "called"]) {
+    const b = document.createElement("button");
+    b.textContent = COPY.filters[k]; b.dataset.k = k;
+    b.setAttribute("aria-pressed", k === filterMode);
+    b.onclick = () => { filterMode = k; [...f.children].forEach((c) => c.setAttribute("aria-pressed", c.dataset.k === k)); renderRaces(); };
+    f.appendChild(b);
+  }
+}
+
+// ------------------------------------------------------------------ gauges
+// Position x in [0,1] from left (Democratic side) to right (Republican side)
+function polar(cx, cy, r, x) { const a = Math.PI * (1 - x); return [cx + r * Math.cos(a), cy - r * Math.sin(a)]; }
+function arcPath(cx, cy, r0, r1, x0, x1) {
+  const [a, b] = polar(cx, cy, r1, x0), [c, d] = polar(cx, cy, r1, x1);
+  const [e, f] = polar(cx, cy, r0, x1), [g, h] = polar(cx, cy, r0, x0);
+  const large = (x1 - x0) > 1 ? 1 : 0;
+  return `M${a},${b} A${r1},${r1} 0 ${large} 1 ${c},${d} L${e},${f} A${r0},${r0} 0 ${large} 0 ${g},${h} Z`;
+}
+
+function controlGauge(p) {
+  const svg = $("ctl-gauge"), cx = 210, cy = 210, r1 = 190, r0 = 120;
+  const cuts = [0, 0.05, 0.15, 0.35, 0.65, 0.85, 0.95, 1];   // the forecast's rating cut points, in P(R)
+  const fills = ["rgba(78,142,247,0.55)", "rgba(78,142,247,0.36)", "rgba(78,142,247,0.2)", "rgba(224,224,224,0.10)", "rgba(229,86,86,0.2)", "rgba(229,86,86,0.36)", "rgba(229,86,86,0.55)"];
+  let s = "";
+  for (let i = 0; i < 7; i++) s += `<path d="${arcPath(cx, cy, r0, r1, cuts[i] + 0.002, cuts[i + 1] - 0.002)}" fill="${fills[i]}"/>`;
+  // band labels on the outer edge
+  for (let i = 0; i < 7; i++) {
+    const mid = (cuts[i] + cuts[i + 1]) / 2;
+    const [x, y] = polar(cx, cy, (r0 + r1) / 2, mid);
+    const w = cuts[i + 1] - cuts[i];
+    if (w < 0.09) continue;
+    s += `<text x="${x}" y="${y + 4}" text-anchor="middle" font-size="11" fill="#b4b8c7">${esc(COPY.bands[i])}</text>`;
+  }
+  const x = 1 - p;
+  const [nx, ny] = polar(cx, cy, r1 - 4, x);
+  s += `<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="#fff" stroke-width="4" stroke-linecap="round"/>`;
+  s += `<circle cx="${cx}" cy="${cy}" r="9" fill="#fff"/>`;
+  s += `<text x="${cx - r1}" y="${cy + 26}" font-size="12" fill="#b4b8c7">${esc(COPY.demParty)}</text>`;
+  s += `<text x="${cx + r1}" y="${cy + 26}" font-size="12" fill="#b4b8c7" text-anchor="end">${esc(COPY.repParty)}</text>`;
+  svg.innerHTML = s;
+  svg.setAttribute("aria-label", `${COPY.control}: ${COPY.demParty} ${pct(p)}, ${COPY.repParty} ${pct(1 - p)}`);
+}
+
+const MARGIN_SPAN = 20;
+function raceGauge(r, jitterX) {
+  const cx = 110, cy = 100, r1 = 92, r0 = 62;
+  const mx = (m) => (MARGIN_SPAN - Math.max(-MARGIN_SPAN, Math.min(MARGIN_SPAN, m))) / (2 * MARGIN_SPAN);
+  let s = `<path d="${arcPath(cx, cy, r0, r1, 0, 0.5)}" fill="var(--dem-soft)"/><path d="${arcPath(cx, cy, r0, r1, 0.5, 1)}" fill="var(--rep-soft)"/>`;
+  s += `<path d="${arcPath(cx, cy, r0 + 6, r1 - 6, mx(r.q[4]), mx(r.q[0]))}" fill="var(--band90)"/>`;
+  s += `<path d="${arcPath(cx, cy, r0 + 6, r1 - 6, mx(r.q[3]), mx(r.q[1]))}" fill="var(--band50)"/>`;
+  for (const t of [-20, -10, 0, 10, 20]) {
+    const [a, b] = polar(cx, cy, r1, mx(t)), [c, d] = polar(cx, cy, r1 + 5, mx(t));
+    s += `<line x1="${a}" y1="${b}" x2="${c}" y2="${d}" stroke="#8b93a7" stroke-width="1"/>`;
+    const [lx, ly] = polar(cx, cy, r1 + 13, mx(t));
+    s += `<text x="${lx}" y="${ly + 3}" font-size="9" fill="#8b93a7" text-anchor="middle">${t === 0 ? "0" : Math.abs(t)}</text>`;
+  }
+  const x = jitterX != null ? jitterX : mx(r.median);
+  const [nx, ny] = polar(cx, cy, r1 - 2, x);
+  s += `<line class="needle" x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="#fff" stroke-width="3" stroke-linecap="round"/>`;
+  s += `<circle cx="${cx}" cy="${cy}" r="6" fill="#fff"/>`;
+  return `<svg viewBox="0 -14 220 126" role="img" aria-label="${esc(r.aria)}">${s}</svg>`;
+}
+
+function hist(h) {
+  const svg = $("hist"), lo = 42, hi = 62, W = 560, H = 150, padB = 22, bw = W / (hi - lo + 1);
+  let max = 0; for (let t = lo; t <= hi; t++) max = Math.max(max, h[t]);
+  let s = "";
+  for (let t = lo; t <= hi; t++) {
+    const v = h[t] || 0, bh = max > 0 ? (H - padB - 8) * v / max : 0;
+    const x = (t - lo) * bw;
+    const fill = t >= prior.maj ? "var(--dem)" : "var(--rep)";
+    s += `<rect x="${x + 1}" y="${H - padB - bh}" width="${bw - 2}" height="${Math.max(bh, 0)}" rx="2" fill="${fill}" data-tip="${esc(COPY.histTip(t, pct(v)))}"/>`;
+    s += `<rect x="${x}" y="0" width="${bw}" height="${H - padB}" fill="transparent" data-tip="${esc(COPY.histTip(t, pct(v)))}"/>`;
+    if (t % 2 === 0) s += `<text x="${x + bw / 2}" y="${H - 6}" font-size="10" fill="#8b93a7" text-anchor="middle">${t}</text>`;
+  }
+  const xm = (prior.maj - lo) * bw;
+  s += `<line x1="${xm}" y1="0" x2="${xm}" y2="${H - padB}" stroke="#e0e0e0" stroke-dasharray="3,3" stroke-width="1"/>`;
+  s += `<text x="${xm + 4}" y="10" font-size="10" fill="#e0e0e0">51</text>`;
+  svg.innerHTML = s;
+}
+
+// ------------------------------------------------------------------ render
+// Plain text; escape at the point of insertion into HTML
+function lead(m, r, nm) {
+  if (Math.abs(m) < 0.05) return COPY.even;
+  return `${m > 0 ? nm.dem : nm.rep} +${Math.abs(m).toFixed(1)}`;
+}
+function raceNames(st) {
+  const race = pjson.races[st];
+  return names[st] || { dem: race.dem.name, rep: race.rep.name, ind: race.ind ? race.ind.name : null };
+}
+function partyTag(st, side) {
+  if (side === "dem") return ["NE", "ID", "SD"].includes(st) ? "I" : "D";
+  return side === "rep" ? "R" : "I";
+}
+
+function renderAll(out) {
+  lastOut = out;
+  $("loading").hidden = true;
+  $("control").hidden = false; $("races").hidden = false; $("notes").hidden = false;
+  const c = out.control;
+  controlGauge(c.p_dem_majority);
+  $("p-dem").textContent = pct(c.p_dem_majority);
+  $("p-rep").textContent = pct(1 - c.p_dem_majority);
+  const cum = []; let acc = 0; for (let t = 0; t <= 100; t++) { acc += c.seats_hist[t]; cum[t] = acc; }
+  const qn = (p) => cum.findIndex((v) => v >= p);
+  let calledD = 0, calledR = 0, counting = 0, none = 0;
+  for (const st of prior.states) {
+    const r = out.races[st];
+    if (r.called === "D" || r.called === "I") calledD++; else if (r.called === "R") calledR++;
+    if (r.status === "none") none++; else if (!r.called) counting++;
+  }
+  $("facts").innerHTML = COPY.facts({ seats: c.expected_dem_seats.toFixed(1), lo50: qn(0.25), hi50: qn(0.75), calledD, calledR, counting, none })
+    .map((l) => `<div>${l}</div>`).join("");
+  hist(c.seats_hist);
+  renderRaces();
+}
+
+function raceView(st) {
+  const r = lastOut.races[st], race = pjson.races[st], nm = raceNames(st);
+  const fIn = `${Math.round(r.f * 100)}%`;
+  let chip, chipClass = "";
+  if (problems[st]) { chip = COPY.statusFeed; chipClass = "warn"; }
+  else if (r.called) {
+    const who = r.called === "D" ? nm.dem : r.called === "R" ? nm.rep : r.called === "I" ? nm.ind : "";
+    chip = COPY.statusCalled(who || "?"); chipClass = "called";
+  } else if (r.status === "counting") { chip = COPY.statusCounting(fIn); chipClass = "counting"; }
+  else if (r.status === "too_few") chip = COPY.statusTooFew;
+  else chip = COPY.statusNone;
+  return { r, race, nm, chip, chipClass, fIn, pD: r.p_dem };
+}
+
+function renderRaces() {
+  if (!lastOut) return;
+  const grid = $("grid");
+  let list = prior.states.slice();
+  const comp = (st) => Math.abs(pjson.races[st].prior.p_dem - 0.5);
+  list.sort((a, b) => comp(a) - comp(b));
+  if (filterMode === "competitive") list = list.filter((st) => pjson.races[st].prior.p_dem > 0.05 && pjson.races[st].prior.p_dem < 0.95);
+  if (filterMode === "counting") list = list.filter((st) => lastOut.races[st].status !== "none" && !lastOut.races[st].called);
+  if (filterMode === "called") list = list.filter((st) => lastOut.races[st].called);
+  const html = list.map((st) => {
+    const v = raceView(st), { r, race, nm } = v;
+    const winName = v.pD >= 0.5 ? nm.dem : nm.rep, winP = v.pD >= 0.5 ? v.pD : 1 - v.pD;
+    r.aria = `${race.name}: ${COPY.estimate(lead(r.median, r, nm)).replace(/<[^>]+>/g, "")}; ${COPY.winProb(winName, pct(winP))}`;
+    const lines = [];
+    lines.push(`<div class="est">${COPY.estimate(esc(lead(r.median, r, nm)))}</div>`);
+    lines.push(`<div class="sub">${esc(COPY.range(lead(r.q[0], r, nm), lead(r.q[4], r, nm)))}</div>`);
+    lines.push(`<div class="sub">${esc(COPY.winProb(winName, pct(winP)))}</div>`);
+    if (r.counted != null && r.status !== "none") lines.push(`<div class="sub">${esc(COPY.counted(lead(r.counted, r, nm), v.fIn))}</div>`);
+    if (r.status === "none" && !r.called) lines.push(`<div class="sub">${esc(COPY.forecastOnly(pct(race.prior.p_dem >= 0.5 ? race.prior.p_dem : 1 - race.prior.p_dem) + " " + (race.prior.p_dem >= 0.5 ? nm.dem : nm.rep)))}</div>`);
+    if (race.ind) lines.push(`<div class="sub">${esc(COPY.mtNote)}</div>`);
+    if (race.rcv) lines.push(`<div class="sub">${esc(COPY.rcvNote)}</div>`);
+    const matchup = [["dem", "var(--dem)"], ["rep", "var(--rep)"]].map(([side, col]) =>
+      `<span><span class="swatch" style="background:${col}"></span>${esc(nm[side])} (${partyTag(st, side)})</span>`).join("")
+      + (race.ind ? `<span><span class="swatch" style="background:var(--ink2)"></span>${esc(nm.ind)} (I)</span>` : "");
+    return `<div class="card" data-st="${st}">
+      <div class="top"><span class="st">${esc(race.name)}</span><span class="chip ${v.chipClass}">${esc(v.chip)}</span></div>
+      <div class="matchup">${matchup}</div>
+      <div class="gauge">${raceGauge(r)}</div>
+      ${lines.join("")}
+      <div class="bar" title="${esc(v.fIn)}"><i style="width:${Math.round(r.f * 100)}%"></i></div>
+    </div>`;
+  }).join("");
+  grid.innerHTML = html;
+  renderTable();
+  setJitter($("opt-jitter").checked);
+}
+
+function renderTable() {
+  const showTable = $("opt-table").checked;
+  $("table-wrap").hidden = !showTable; $("grid").hidden = showTable;
+  if (!showTable) return;
+  const rows = prior.states.slice().sort((a, b) => pjson.races[a].name.localeCompare(pjson.races[b].name)).map((st) => {
+    const v = raceView(st), { r, race, nm } = v;
+    return `<tr><td>${esc(race.name)}</td><td>${esc(nm.dem)} v. ${esc(nm.rep)}</td><td>${esc(lead(r.median, r, nm))}</td>
+      <td>${esc(lead(r.q[0], r, nm))} to ${esc(lead(r.q[4], r, nm))}</td><td>${pct(r.p_dem)}</td><td>${r.status === "none" ? "–" : v.fIn}</td>
+      <td>${r.counted != null && r.status !== "none" ? esc(lead(r.counted, r, nm)) : "–"}</td></tr>`;
+  }).join("");
+  $("table").innerHTML = `<thead><tr>${COPY.tableHead.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody>`;
+}
+
+// Jitter: needles wander inside each race's 50% range (decorative; off by default)
+function setJitter(on) {
+  if (jitterTimer) { clearInterval(jitterTimer); jitterTimer = null; }
+  if (!on || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  jitterTimer = setInterval(() => {
+    for (const card of document.querySelectorAll(".card")) {
+      const r = lastOut.races[card.dataset.st];
+      const lo = r.q[1], hi = r.q[3], m = lo + Math.random() * (hi - lo);
+      const g = card.querySelector(".gauge");
+      g.innerHTML = raceGauge(r, (MARGIN_SPAN - Math.max(-MARGIN_SPAN, Math.min(MARGIN_SPAN, m))) / (2 * MARGIN_SPAN));
+    }
+  }, 700);
+}
+
+function renderNotes() {
+  const d = new Date(pjson.forecast_timestamp.replace(" UTC", "Z").replace(" ", "T"));
+  const stamp = isNaN(d) ? pjson.forecast_timestamp : d.toLocaleString("en-US", { timeZone: "America/New_York", dateStyle: "medium", timeStyle: "short" }) + " ET";
+  $("notes").innerHTML = COPY.notes.map((n) => `<p>${esc(n)}</p>`).join("") + `<p>${esc(COPY.forecastStamp(stamp))}</p>`;
+}
+
+// ------------------------------------------------------------------ data flow
+function setStatus(kind, text) { $("dot").className = "dot " + (kind || ""); $("status").textContent = text; }
+
+function recompute() {
+  if (!lastNorm) { renderAll(NeedleEngine.update(prior, {})); return; }
+  const out = NeedleEngine.update(prior, lastNorm.snapshot, { useCalls: $("opt-calls").checked });
+  renderAll(out);
+}
+
+function ingest(feed) {
+  const norm = NytAdapter.normalize(feed, pjson);
+  const g = gate.filter(norm.snapshot);
+  names = norm.names; problems = norm.problems;
+  lastNorm = { snapshot: g.snapshot, updated: norm.updated };
+  recompute();
+  return lastOut;
+}
+
+let backoff = POLL_MS, pollTimer = null;
+async function poll() {
+  clearTimeout(pollTimer);
+  if (document.hidden) return;
+  const src = feedUrl();
+  try {
+    const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 15000);
+    const res = await fetch(src, { signal: ctl.signal });
+    clearTimeout(to);
+    if (res.status === 404 || res.status === 403) { if (!lastOut) recompute(); setStatus("err", COPY.statusNoFeed); backoff = Math.min(backoff * 2, 300000); }
+    else if (!res.ok) throw new Error("HTTP " + res.status);
+    else {
+      const feed = await res.json();
+      const out = ingest(feed);
+      backoff = POLL_MS;
+      const t = lastNorm.updated ? new Date(lastNorm.updated) : new Date();
+      if (out.n_reporting === 0 && !Object.values(out.races).some((r) => r.called)) setStatus("live", COPY.statusWaiting);
+      else setStatus("live", COPY.statusLive(t.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" }) + " ET", out.n_reporting));
+    }
+  } catch (e) {
+    if (!lastOut) recompute();
+    setStatus("err", COPY.statusError);
+    backoff = Math.min(backoff * 2, 300000);
+  }
+  pollTimer = setTimeout(poll, backoff);
+}
+function feedUrl() {
+  const f = params.get("feed");
+  // Only same-site files may replace the NYT feed (for a manual fallback)
+  if (f && /^[\w\-./]+\.json$/.test(f) && !f.includes("..")) return f;
+  return NytAdapter.FEED_URL;
+}
+
+// ------------------------------------------------------------------ demo
+let demoNight = null, demoTimer = null;
+function demoSetup() {
+  $("demo-bar").hidden = false;
+  const seed = +params.get("demo") || Math.floor(Math.random() * 1e6);
+  demoNight = NeedleSim.night(prior, seed, NeedleEngine.CONFIG);
+  const hour = $("demo-hour");
+  if (params.has("hour")) hour.value = +params.get("hour");
+  const run = () => {
+    const h = +hour.value;
+    const hh = 18 + h, H = Math.floor(hh) % 24, M = Math.round((hh % 1) * 60);
+    $("demo-clock").textContent = `${((H + 11) % 12) + 1}:${String(M).padStart(2, "0")} ${H < 12 ? "AM" : "PM"} ET`;
+    ingest(NeedleSim.feedAt(prior, demoNight, h, NeedleEngine.CONFIG));
+    setStatus("live", COPY.demoBanner);
+    if (h >= 14) $("demo-truth").textContent = COPY.demoTruth(truthSeats(demoNight));
+    else $("demo-truth").textContent = "";
+  };
+  let pending = false;
+  hour.oninput = () => { if (pending) return; pending = true; requestAnimationFrame(() => { pending = false; run(); }); };
+  $("demo-play").onclick = () => {
+    if (demoTimer) { clearInterval(demoTimer); demoTimer = null; $("demo-play").textContent = COPY.demoPlay; return; }
+    $("demo-play").textContent = COPY.demoPause;
+    demoTimer = setInterval(() => { if (+hour.value >= 14) { clearInterval(demoTimer); demoTimer = null; $("demo-play").textContent = COPY.demoPlay; return; } hour.value = +hour.value + 0.25; run(); }, 900);
+  };
+  $("demo-new").onclick = () => { gate = NytAdapter.Gate(); demoNight = NeedleSim.night(prior, Math.floor(Math.random() * 1e6), NeedleEngine.CONFIG); hour.value = 0; run(); };
+  run();
+}
+function truthSeats(nt) {
+  let t = prior.nc[nt.row];
+  for (const st of prior.states) {
+    if (st === "MT") { const m = nt.truth.MT, iv = nt.ind, d = (1 - iv) * (0.5 + m / 200), r = 1 - iv - d; t += (d > r && d > iv) || (iv > d && iv > r) ? 1 : 0; }
+    else t += nt.truth[st] > 0 ? 1 : 0;
+  }
+  return t;
+}
+
+// ------------------------------------------------------------------ tooltips
+document.addEventListener("mousemove", (e) => {
+  const t = e.target.closest && e.target.closest("[data-tip]"), tip = $("tip");
+  if (!t) { tip.hidden = true; return; }
+  tip.textContent = t.getAttribute("data-tip"); tip.hidden = false;
+  tip.style.left = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8) + "px"; tip.style.top = (e.clientY + 14) + "px";
+});
+
+// ------------------------------------------------------------------ start
+(async function main() {
+  fillCopy();
+  const res = await fetch("data/prior.json");
+  pjson = await res.json();
+  prior = NeedleEngine.loadPrior(pjson);
+  renderNotes();
+  $("opt-calls").onchange = recompute;
+  $("opt-jitter").onchange = (e) => setJitter(e.target.checked);
+  $("opt-table").onchange = renderTable;
+  if (DEMO) { demoSetup(); return; }
+  recompute();
+  setStatus("", COPY.statusWaiting);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) poll(); });
+  poll();
+})();
+</script>
+</body>
+</html>
