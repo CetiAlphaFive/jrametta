@@ -26,10 +26,6 @@ editor: visual
 :::
 
 ::: pkg-entry
-[**2026 Senate Forecast:**](/senate-forecast/) A live, Bayesian forecast of the 2026 U.S. Senate elections (with Christopher D. Hare). Companion paper: [Rametta and Hare (2026)](https://doi.org/10.1017/S1049096526103059), *PS: Political Science & Politics*.
-:::
-
-::: pkg-entry
 [![](images/roadrunner_sticker.png)](https://github.com/CetiAlphaFive/roadrunner)
 
 [**roadrunner:**](https://github.com/CetiAlphaFive/roadrunner) Fast, low-dependency implementations of classical machine learning algorithms with C++ backends via `Rcpp` and `RcppParallel`. Includes multivariate adaptive regression splines, kernel regularized least squares, penalized linear discriminant analysis, and component-wise P-spline gradient boosting, plus `meep()`, a cross-fitted stacked ensemble built for double machine learning and causal-forest nuisance estimation.
