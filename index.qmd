@@ -2,6 +2,16 @@
 editor: visual
 ---
 
+::: column-margin
+<a href="https://mixedsignals.jackrametta.com" class="newsletter-btn" title="Mixed Signals, my newsletter on Substack">
+  <img src="images/mixedsignals_wordmark.png" alt="Mixed Signals" class="newsletter-btn-wordmark">
+  <svg class="newsletter-btn-arrow" viewBox="0 0 48 16" aria-hidden="true">
+    <path d="M 2 8 H 44 M 36 2 L 44 8 L 36 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
+:::
+
+:::: intro
 ::: headshot-col
 ![](images/headshot.png){.headshot}
 :::
@@ -19,6 +29,7 @@ I hold a Ph.D. in [Political Science](https://ps.ucdavis.edu/) from the [Univers
 Before graduate school, I was an economic policy research analyst at the [Bipartisan Policy Center](https://bipartisanpolicy.org/). At BPC, I contributed to research on the [federal budget](https://bipartisanpolicy.org/wp-content/uploads/2019/09/PGPF-Bipartisan-Policy-Center-Solutions-Initiative-2019-Report.pdf), [debt limit](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/Debt-Limit-Analysis-Everything-You-Need-to-Know-March-2019.pdf), [Social Security and Medicare financing](https://bipartisanpolicy.org/download/?file=/wp-content/uploads/2019/03/A-Guide-to-the-2018-Social-Security-and-Medicare-Trustees-Reports.pdf), and [defense personnel reform](https://www.heritage.org/sites/default/files/2018-09/2019_IndexOfUSMilitaryStrength_CHAPTERS_MISZTAL-RAMETTA.pdf).
 
 :::
+::::
 
 ::: hex-stickers
 [![MLbalance](images/mlbalance_sticker.png)](https://github.com/CetiAlphaFive/MLbalance) [![UtopiaPlanitia](images/utopiaplanitia_sticker.png)](https://github.com/CetiAlphaFive/UtopiaPlanitia) [![gao](images/gao_sticker.png)](https://github.com/CetiAlphaFive/gao) [![roadrunner](images/roadrunner_sticker.png)](https://github.com/CetiAlphaFive/roadrunner)

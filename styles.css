@@ -105,6 +105,51 @@
   letter-spacing: 0.01em;
 }
 
+/* Mixed Signals newsletter link in the home page's right margin: the
+   two-colour wordmark with an arrow under it. Colours are the newsletter's
+   own (green #2B5E10, pink #EF557C, sage #EFF4ED). */
+.newsletter-btn {
+  --newsletter-arrow: #2B5E10;
+  display: block;
+  max-width: 15em;
+  margin: 0 auto 1em;
+  text-align: center;
+  text-decoration: none !important;
+  color: var(--newsletter-arrow) !important;
+  opacity: 0.9;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.newsletter-btn:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.newsletter-btn-wordmark {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The wordmark's dark green disappears on the dark theme, so it sits on the
+   newsletter's sage surface there, as it does on Substack. */
+.quarto-dark .newsletter-btn {
+  --newsletter-arrow: #EF557C;
+}
+
+.quarto-dark .newsletter-btn-wordmark {
+  background: #EFF4ED;
+  border-radius: 4px;
+  padding: 0.3em 0.5em;
+}
+
+.newsletter-btn-arrow {
+  display: block;
+  width: 2.5em;
+  height: auto;
+  margin: 0.35em auto 0;
+}
+
 .tidal-cta {
   display: inline-block;
   padding: 0.6em 1.2em;

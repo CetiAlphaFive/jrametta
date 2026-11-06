@@ -26,9 +26,6 @@ website:
       - teaching.qmd
       - software.qmd
       # - posts.qmd
-      # Mixed Signals: Substack on custom subdomain
-      - text: Mixed Signals
-        href: https://mixedsignals.jackrametta.com
       - rametta_cv/rametta_cv.qmd
     right:
       - music.qmd
